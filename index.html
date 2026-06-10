@@ -319,17 +319,16 @@
           />
         </div>
         <div class="home-overlay-image">
+          <!-- data-src: deferred until scroll animation needs them — prevents LCP misidentification -->
           <img
-            src="assets/images/homebanner-BM.jpg"
+            data-src="assets/images/homebanner-BM.jpg"
             alt="Linkar52 Shah Alam — Pembangunan Berorientasikan Transit"
             class="w-100 d-none d-md-block"
-            loading="lazy" decoding="async"
           />
           <img
-            src="assets/m_images/home-bm.jpg"
+            data-src="assets/m_images/home-bm.jpg"
             alt="Linkar52 Shah Alam — Pembangunan Berorientasikan Transit (mobile)"
             class="w-100 d-block d-md-none"
-            loading="lazy" decoding="async"
           />
         </div>
       </div>
@@ -340,6 +339,24 @@
 
     <div class="w-100 Section_One_Extra_Scroll" style="height: 250vh"></div>
     <!-- Section One End -->
+
+    <!-- Preload overlay images on first scroll — keeps them out of initial LCP consideration -->
+    <script>
+      (function () {
+        var loaded = false;
+        function loadOverlayImages() {
+          if (loaded) return;
+          loaded = true;
+          document.querySelectorAll(".home-overlay-image img[data-src]").forEach(function (img) {
+            img.src = img.getAttribute("data-src");
+            img.removeAttribute("data-src");
+          });
+        }
+        window.addEventListener("scroll", loadOverlayImages, { once: true, passive: true });
+        // Fallback: load after 3s even if no scroll (e.g. desktop with no scroll needed)
+        setTimeout(loadOverlayImages, 3000);
+      })();
+    </script>
 
     <!-- Section Two Start -->
     <div class="Home_Section_Two content" id="Lokasi">

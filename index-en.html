@@ -288,17 +288,16 @@
           />
         </div>
         <div class="home-overlay-image">
+          <!-- data-src: deferred until scroll animation needs them — prevents LCP misidentification -->
           <img
-            src="assets/images/homebanner.png"
+            data-src="assets/images/homebanner.png"
             alt="Linkar52 Shah Alam — Transit-Oriented Living"
             class="w-100 d-none d-md-block"
-            loading="lazy" decoding="async"
           />
           <img
-            src="assets/m_images/home-en.jpg"
+            data-src="assets/m_images/home-en.jpg"
             alt="Linkar52 Shah Alam — Transit-Oriented Living (mobile)"
             class="w-100 d-block d-md-none"
-            loading="lazy" decoding="async"
           />
         </div>
       </div>
@@ -309,6 +308,23 @@
 
     <div class="w-100 Section_One_Extra_Scroll" style="height: 250vh"></div>
     <!-- Section One End -->
+
+    <!-- Preload overlay images on first scroll — keeps them out of initial LCP consideration -->
+    <script>
+      (function () {
+        var loaded = false;
+        function loadOverlayImages() {
+          if (loaded) return;
+          loaded = true;
+          document.querySelectorAll(".home-overlay-image img[data-src]").forEach(function (img) {
+            img.src = img.getAttribute("data-src");
+            img.removeAttribute("data-src");
+          });
+        }
+        window.addEventListener("scroll", loadOverlayImages, { once: true, passive: true });
+        setTimeout(loadOverlayImages, 3000);
+      })();
+    </script>
 
     <!-- Section Two Start -->
     <div class="Home_Section_Two content" id="Lokasi">
