@@ -27,6 +27,17 @@
     <meta name="twitter:image" content="https://pknslinkar52.com.my/wp-content/v2/assets/images/homebanner-BM.jpg" />
 
 
+    <!-- Preconnect to CDN origins -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+
+    <!-- Preload LCP images (desktop + mobile) -->
+    <link rel="preload" as="image" href="assets/images/home-main-banner.webp"
+          media="(min-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/m_images/home.jpg"
+          media="(max-width: 767px)" fetchpriority="high" />
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
