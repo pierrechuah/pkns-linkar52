@@ -36,70 +36,24 @@
           media="(max-width: 767px)" fetchpriority="high" />
 
     <!-- Bootstrap -->
-    <!-- Critical Bootstrap inline (3KB) — eliminates render-blocking CSS -->
-    <style>
-/* Critical Bootstrap — above-fold only */
-.container{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto}
-@media(min-width:576px){.container{max-width:540px}}
-@media(min-width:768px){.container{max-width:720px}}
-@media(min-width:992px){.container{max-width:960px}}
-@media(min-width:1200px){.container{max-width:1140px}}
-@media(min-width:1400px){.container{max-width:1320px}}
-.row{--bs-gutter-x:1.5rem;--bs-gutter-y:0;display:flex;flex-wrap:wrap;margin-top:calc(-1*var(--bs-gutter-y));margin-right:calc(-.5*var(--bs-gutter-x));margin-left:calc(-.5*var(--bs-gutter-x))}
-.row>*{box-sizing:border-box;flex-shrink:0;width:100%;max-width:100%;padding-right:calc(var(--bs-gutter-x)*.5);padding-left:calc(var(--bs-gutter-x)*.5);margin-top:var(--bs-gutter-y)}
-.col-12{flex:0 0 auto;width:100%}
-.d-none{display:none!important}.d-flex{display:flex!important}.d-block{display:block!important}.d-inline-block{display:inline-block!important}
-@media(min-width:768px){.d-md-none{display:none!important}.d-md-block{display:block!important}.d-md-flex{display:flex!important}}
-.h-100{height:100%!important}.w-100{width:100%!important}.position-relative{position:relative!important}.position-absolute{position:absolute!important}
-.object-fit-cover{object-fit:cover!important}.object-fit-contain{object-fit:contain!important}
-.overflow-hidden{overflow:hidden!important}
-.text-white{--bs-text-opacity:1;color:rgba(255,255,255,var(--bs-text-opacity))!important}
-.text-center{text-align:center!important}.text-decoration-none{text-decoration:none!important}
-.justify-content-center{justify-content:center!important}.justify-content-between{justify-content:space-between!important}
-.align-items-center{align-items:center!important}.align-items-start{align-items:flex-start!important}.align-items-end{align-items:flex-end!important}
-.flex-column{flex-direction:column!important}
-.gap-1{gap:.25rem!important}.gap-3{gap:1rem!important}
-.p-2{padding:.5rem!important}.p-3{padding:1rem!important}.p-4{padding:1.5rem!important}
-.px-0{padding-right:0!important;padding-left:0!important}.px-2{padding-right:.5rem!important;padding-left:.5rem!important}
-.px-3{padding-right:1rem!important;padding-left:1rem!important}
-.py-2{padding-top:.5rem!important;padding-bottom:.5rem!important}.py-3{padding-top:1rem!important;padding-bottom:1rem!important}
-.py-4{padding-top:1.5rem!important;padding-bottom:1.5rem!important}.py-5{padding-top:3rem!important;padding-bottom:3rem!important}
-.pt-5{padding-top:3rem!important}.pb-5{padding-bottom:3rem!important}
-.ps-3{padding-left:1rem!important}.ps-4{padding-left:1.5rem!important}
-.mt-3{margin-top:1rem!important}.mb-3{margin-bottom:1rem!important}.mb-0{margin-bottom:0!important}
-.ms-3{margin-left:1rem!important}.me-3{margin-right:1rem!important}
-.vh-100{height:100vh!important}.vw-100{width:100vw!important}
-.start-0{left:0!important}.end-0{right:0!important}.top-0{top:0!important}
-.z-1{z-index:1!important}.z-3{z-index:3!important}.z-n1{z-index:-1!important}
-.fw-bold{font-weight:700!important}.fw-normal{font-weight:400!important}.fw-semibold{font-weight:600!important}
-.bg-transparent{--bs-bg-opacity:1;background-color:transparent!important}.bg-white{--bs-bg-opacity:1;background-color:rgba(255,255,255,var(--bs-bg-opacity))!important}
-.border-0{border:0!important}.border-bottom{border-bottom:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important}
-    </style>
-    <!-- Full Bootstrap async — for below-fold components -->
-    <link rel="preload" href="assets/vendor/css/bootstrap.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" /></noscript>
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
-    <!-- Below-fold CSS — async loaded to avoid render-blocking -->
-    <link rel="preload" href="assets/vendor/css/splide.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/splide.min.css" /></noscript>
+    <link rel="stylesheet"
+      href="assets/vendor/css/splide.min.css" />
 
-    <link rel="preload" href="assets/vendor/css/sweetalert2.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" /></noscript>
+	<!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" />
 
-    <link rel="preload" href="assets/vendor/css/aos.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/aos.css" /></noscript>
+
+    <!-- Aos -->
+    <link href="assets/vendor/css/aos.css" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Glide CSS async, JS synchronous (bare Glide().mount() inline below) -->
-    <link rel="preload" href="assets/vendor/css/glide.core.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" /></noscript>
+    <!-- Glide js -->
+    <link rel="stylesheet"
+      href="assets/vendor/css/glide.core.min.css" />
     <script src="assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
@@ -317,8 +271,20 @@
             loading="eager" decoding="async" fetchpriority="high"
           />
         </div>
-        <!-- home-overlay-image: imgs injected by JS on scroll to exclude from LCP -->
-        <div class="home-overlay-image"></div>
+        <div class="home-overlay-image">
+          <img
+            src="assets/images/homebanner-BM.jpg"
+            alt="Linkar52 Shah Alam — Pembangunan Berorientasikan Transit"
+            class="w-100 d-none d-md-block"
+            loading="eager" decoding="async" fetchpriority="high"
+          />
+          <img
+            src="assets/m_images/home-bm.jpg"
+            alt="Linkar52 Shah Alam — Pembangunan Berorientasikan Transit (mobile)"
+            class="w-100 d-block d-md-none"
+            loading="eager" decoding="async" fetchpriority="high"
+          />
+        </div>
       </div>
     </section>
     <div class="imgremark white" id="Home_Img_Desc" style="height: fit-content">
@@ -327,30 +293,6 @@
 
     <div class="w-100 Section_One_Extra_Scroll" style="height: 250vh"></div>
     <!-- Section One End -->
-
-    <!-- Inject overlay images on first scroll — zero DOM presence until needed -->
-    <script>
-      (function () {
-        var loaded = false;
-        function loadOverlayImages() {
-          if (loaded) return;
-          loaded = true;
-          var container = document.querySelector(".home-overlay-image");
-          if (!container) return;
-          var imgD = document.createElement("img");
-          imgD.src = "assets/images/homebanner-BM.jpg";
-          imgD.alt = "Linkar52 Shah Alam — Pembangunan Berorientasikan Transit";
-          imgD.className = "w-100 d-none d-md-block";
-          var imgM = document.createElement("img");
-          imgM.src = "assets/m_images/home-bm.jpg";
-          imgM.alt = "Linkar52 Shah Alam — Pembangunan Berorientasikan Transit (mobile)";
-          imgM.className = "w-100 d-block d-md-none";
-          container.appendChild(imgD);
-          container.appendChild(imgM);
-        }
-        window.addEventListener("scroll", loadOverlayImages, { once: true, passive: true });
-      })();
-    </script>
 
     <!-- Section Two Start -->
     <div class="Home_Section_Two content" id="Lokasi">
@@ -3751,7 +3693,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     // document.body.style.overflowY = 'hidden';
   </script>
 
-  <script src="assets/vendor/js/splide.min.js" defer></script>
+  <script src="assets/vendor/js/splide.min.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -3773,7 +3715,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       "Di Seksyen 14, Shah Alam,<br>Segalanya Terhubung untuk<br>Gaya Hidup Moden";
   </script>
 
-  <script src="assets/js/index.js" defer></script>
+  <script src="assets/js/index.js"></script>
 
   <!-- usp-lrt -->
   <script>
@@ -4244,7 +4186,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </script>
 
   <!-- Aos-animation -->
-<script src="assets/vendor/js/aos.js" defer></script>
+  <script src="assets/vendor/js/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ once: true, duration: 800 });
@@ -4291,18 +4233,16 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       }
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-      new Glide(".glide", {
-        type: "carousel",
-        perView: 2.5,
-        autoplay: 3000,
-        hoverpause: false,
-        breakpoints: {
-          1024: { perView: 2.25 },
-          992: { perView: 2 },
-        },
-      }).mount();
-    });
+    new Glide(".glide", {
+      type: "carousel",
+      perView: 2.5,
+      autoplay: 3000,
+      hoverpause: false,
+      breakpoints: {
+        1024: { perView: 2.25 },
+        992: { perView: 2 },
+      },
+    }).mount();
 
     document.addEventListener("DOMContentLoaded", function () {
       /**
@@ -4366,7 +4306,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </script>
 
 <!-- SweetAlert2 JS -->
-<script src="assets/vendor/js/sweetalert2.all.min.js" defer></script>
+<script src="assets/vendor/js/sweetalert2.all.min.js"></script>
 
 <script>
   // Vanilla JS form handler — jQuery removed (saves 87KB)
@@ -4419,7 +4359,9 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   });
 </script>
   <!-- ===== Deferred JS (moved from head to prevent render-blocking) ===== -->
-  <script src="assets/vendor/js/bootstrap.bundle.min.js" defer></script>
+  <script
+    src="assets/vendor/js/bootstrap.bundle.min.js"
+  ></script>
 
   </body>
 </html>
