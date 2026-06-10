@@ -103,26 +103,9 @@
   </head>
   <body>
     <!-- 1. FULL-SCREEN BLACK SPLASH OVERLAY -->
-    <div id="splash-overlay"></div>
+    <!-- splash-overlay removed: blocks LCP (20-29s penalty) -->
 
-    <!-- Entrance animation -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var overlay = document.getElementById("splash-overlay");
-        var graphic = document.getElementById("Linkar_Graphic_2");
-        if (overlay) {
-          setTimeout(function () {
-            overlay.classList.add("fade-out");
-            if (graphic) {
-              graphic.classList.add("zoom-in");
-            }
-          }, 300);
-          setTimeout(function () {
-            overlay.style.display = "none";
-          }, 2000);
-        }
-      });
-    </script>
+
 
     <!-- 2. LOGO -->
     <div id="logo-animate" class="logo-container mt-3">
