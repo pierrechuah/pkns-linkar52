@@ -27,11 +27,6 @@
     <meta name="twitter:image" content="https://pknslinkar52.com.my/wp-content/v2/assets/images/homebanner-BM.jpg" />
 
 
-    <!-- Preconnect to CDN origins -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-    <link rel="preconnect" href="https://unpkg.com" crossorigin />
-
     <!-- Preload LCP images (desktop + mobile) -->
     <link rel="preload" as="image" href="assets/images/linkar-graphic-2.webp"
           fetchpriority="high" />
@@ -42,7 +37,7 @@
 
     <!-- Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="assets/vendor/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
@@ -50,14 +45,14 @@
     <!-- Bootstrap JS moved to bottom -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      href="assets/vendor/css/splide.min.css"
     />
 
 	<!-- SweetAlert2 CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.23.0/sweetalert2.min.css">
+	<link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css">
 
     <!-- Aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/css/aos.css" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -65,9 +60,9 @@
     <!-- Glide js -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+      href="assets/vendor/css/glide.core.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -3670,7 +3665,7 @@
     // document.body.style.overflowY = 'hidden';
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="assets/vendor/js/splide.min.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -4140,7 +4135,7 @@
   </script>
 
   <!-- Aos-animation -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/vendor/js/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ once: true, duration: 800 });
@@ -4259,13 +4254,11 @@
     });
   </script>
   <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"
+    src="assets/vendor/js/jquery.min.js"
   ></script>
 
 <!-- SweetAlert2 JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.23.0/sweetalert2.all.min.js"></script>
+<script src="assets/vendor/js/sweetalert2.all.min.js"></script>
 
   <script>
     var postUrl = 'https://sales-api.property-x.asia/api/Microsite';
@@ -4326,9 +4319,7 @@
   </script>
   <!-- ===== Deferred JS (moved from head to prevent render-blocking) ===== -->
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
+    src="assets/vendor/js/bootstrap.bundle.min.js"
   ></script>
 
   </body>
