@@ -286,19 +286,8 @@
             loading="eager" decoding="async" fetchpriority="high"
           />
         </div>
-        <div class="home-overlay-image">
-          <!-- data-src: deferred until scroll — prevents LCP misidentification -->
-          <img
-            data-src="assets/images/homebanner.png"
-            alt="Linkar52 Shah Alam — Transit-Oriented Living"
-            class="w-100 d-none d-md-block"
-          />
-          <img
-            data-src="assets/m_images/home-en.jpg"
-            alt="Linkar52 Shah Alam — Transit-Oriented Living (mobile)"
-            class="w-100 d-block d-md-none"
-          />
-        </div>
+        <!-- home-overlay-image: imgs injected by JS on scroll to exclude from LCP -->
+        <div class="home-overlay-image"></div>
       </div>
     </section>
     <div class="imgremark white" id="Home_Img_Desc" style="height: fit-content">
@@ -308,17 +297,25 @@
     <div class="w-100 Section_One_Extra_Scroll" style="height: 250vh"></div>
     <!-- Section One End -->
 
-    <!-- Load overlay images on first scroll — keeps out of LCP consideration -->
+    <!-- Inject overlay images on first scroll — zero DOM presence until needed -->
     <script>
       (function () {
         var loaded = false;
         function loadOverlayImages() {
           if (loaded) return;
           loaded = true;
-          document.querySelectorAll(".home-overlay-image img[data-src]").forEach(function (img) {
-            img.src = img.getAttribute("data-src");
-            img.removeAttribute("data-src");
-          });
+          var container = document.querySelector(".home-overlay-image");
+          if (!container) return;
+          var imgD = document.createElement("img");
+          imgD.src = "assets/images/homebanner.png";
+          imgD.alt = "Linkar52 Shah Alam — Transit-Oriented Living";
+          imgD.className = "w-100 d-none d-md-block";
+          var imgM = document.createElement("img");
+          imgM.src = "assets/m_images/home-en.jpg";
+          imgM.alt = "Linkar52 Shah Alam — Transit-Oriented Living (mobile)";
+          imgM.className = "w-100 d-block d-md-none";
+          container.appendChild(imgD);
+          container.appendChild(imgM);
         }
         window.addEventListener("scroll", loadOverlayImages, { once: true, passive: true });
         setTimeout(loadOverlayImages, 3000);
