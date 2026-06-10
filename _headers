@@ -1,0 +1,25 @@
+# Cloudflare Pages _headers
+# Cache static assets for 1 year (immutable)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache fonts aggressively
+/assets/css/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML pages — revalidate on each visit (so updates deploy instantly)
+/
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/index-en.html
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Favicon
+/favicon.png
+  Cache-Control: public, max-age=86400

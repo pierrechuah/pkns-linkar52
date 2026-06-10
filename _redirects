@@ -1,0 +1,4 @@
+# Cloudflare Pages _redirects
+# EN route only — root serves index.html automatically
+/en/    /index-en.html    200
+/en     /index-en.html    200

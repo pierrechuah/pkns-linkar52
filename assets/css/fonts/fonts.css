@@ -1,0 +1,30 @@
+/* Co Headline */
+@font-face {
+    font-family: 'Co Headline';
+    src: url('./co-headline/co-headline.otf') format('opentype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Co Headline';
+    src: url('./co-headline/co-headline-bold.otf') format('opentype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Co Headline';
+    src: url('./co-headline/co-headline-light.otf') format('opentype');
+    font-weight: lighter;
+    font-display: swap;
+}
+/* Co Headline */
+
+/* Gotham book */
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('./gotham-book/gotham-book.otf') format('opentype');
+    font-display: swap;
+}
+/* Gotham book */
