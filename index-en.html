@@ -33,6 +33,8 @@
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
 
     <!-- Preload LCP images (desktop + mobile) -->
+    <link rel="preload" as="image" href="assets/images/linkar-graphic-2.webp"
+          fetchpriority="high" />
     <link rel="preload" as="image" href="assets/images/home-main-banner.webp"
           media="(min-width: 768px)" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/m_images/home.jpg"
@@ -223,6 +225,8 @@
             src="assets/images/linkar-graphic-2.webp"
             alt="Linkar52 city graphic illustration Shah Alam"
             style="animation-delay: unset"
+            fetchpriority="high"
+            loading="eager"
           />
           <!--<img class="left_img zoom-in slide-in-left" src="assets/images/leaf2.webp" alt="" />
         <img class="right_img zoom-in slide-in-right" src="assets/images/leaf.webp" alt="" />-->
