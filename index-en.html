@@ -97,11 +97,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Glide CSS + JS — below-fold, async CSS + deferred JS -->
+    <!-- Glide CSS async, JS synchronous (bare Glide().mount() inline below) -->
     <link rel="preload" href="assets/vendor/css/glide.core.min.css" as="style"
           onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" /></noscript>
-    <script src="assets/vendor/js/glide.min.js" defer></script>
+    <script src="assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
 	<link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -4221,16 +4221,18 @@
       }
     });
 
-    new Glide(".glide", {
-      type: "carousel",
-      perView: 2.5,
-      autoplay: 3000,
-      hoverpause: false,
-      breakpoints: {
-        1024: { perView: 2.25 },
-        992: { perView: 2 },
-      },
-    }).mount();
+    document.addEventListener("DOMContentLoaded", function () {
+      new Glide(".glide", {
+        type: "carousel",
+        perView: 2.5,
+        autoplay: 3000,
+        hoverpause: false,
+        breakpoints: {
+          1024: { perView: 2.25 },
+          992: { perView: 2 },
+        },
+      }).mount();
+    });
 
     document.addEventListener("DOMContentLoaded", function () {
       /**
