@@ -100,6 +100,36 @@
         transform: rotate(90deg);
       }
 
+      /* ── Virtual Tour button ── */
+      .Virtual_Tour_Link {
+        background-color: #DA0D82 !important;
+        color: #FFFFFF !important;
+        border-radius: 32px !important;
+        width: auto;
+        min-width: 280px;
+        max-width: 360px;
+        font-weight: 300;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-flex !important;
+        justify-content: space-between !important;
+        align-items: center;
+        height: unset;
+        transition-duration: 400ms;
+      }
+      .Virtual_Tour_Link:hover {
+        background-color: #FFFFFF !important;
+        color: #1E1E1E !important;
+      }
+      .Virtual_Tour_Link .terokai-link-icon {
+        height: 38px;
+        width: 38px;
+        padding: 10px;
+      }
+      .Virtual_Tour_Link:hover .terokai-link-icon {
+        background-color: #DA0D82;
+        color: #FFFFFF;
+      }
       /* ── Submit button swipe shimmer ── */
       #submitBtn {
         position: relative;
@@ -2056,11 +2086,12 @@
 
     <!-- 3D Virtual Tour Section -->
     <div style="z-index: 8; position: relative; background-color: #fff;">
-      <div class="container py-5 text-center">
+      <div class="container py-5 text-center d-flex flex-column align-items-center">
         <h3
           style="
             color: var(--primary-pink);
             font-family: 'Co Headline';
+            font-size: 2rem;
             margin-bottom: 12px;
           "
         >
@@ -2068,7 +2099,7 @@
         </h3>
         <p
           class="Primary_Font"
-          style="color: #555; max-width: 560px; margin: 0 auto 28px; font-size: 16px; line-height: 1.6;"
+          style="color: #555; max-width: 560px; margin: 0 auto 28px; font-size: 13px; line-height: 1.6;"
         >
           Rasai sendiri suasana dan rekabentuk Linkar52 melalui pengalaman lawatan 3D interaktif kami.
         </p>
@@ -2076,10 +2107,12 @@
           href="https://streetview.my/pkns/linkar52"
           target="_blank"
           rel="noopener noreferrer"
-          class="Btn Primary_Btn"
-          style="display: inline-flex; align-items: center; gap: 10px; font-size: 16px; padding: 14px 32px; height: unset;"
+          class="Virtual_Tour_Link Primary_Font p-2 ps-4 ps-3"
         >
-          <span><span style="font-family: sans-serif; font-style: normal;">→</span> Lawatan 3D</span>
+          <span class="terokai-link-text">Jelajahi Sekarang</span>
+          <span class="terokai-link-icon text-decoration-none">
+            <i class="object-fit-contain h-100 w-100" data-name="right-arrow"></i>
+          </span>
         </a>
       </div>
     </div>
