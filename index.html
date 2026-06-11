@@ -88,6 +88,41 @@
         opacity: 0.7;
         cursor: not-allowed;
       }
+
+      /* ── + icon spin on hover ── */
+      .terokai-link-icon .bi-plus {
+        transition: transform 0.35s ease;
+        display: block;
+      }
+      a:hover .terokai-link-icon .bi-plus,
+      button:hover .terokai-link-icon .bi-plus {
+        transform: rotate(90deg);
+      }
+
+      /* ── Submit button swipe shimmer ── */
+      #submitBtn {
+        position: relative;
+        overflow: hidden;
+      }
+      #submitBtn::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent 0%,
+          rgba(255,255,255,0.25) 50%,
+          transparent 100%
+        );
+        transition: left 0.5s ease;
+        pointer-events: none;
+      }
+      #submitBtn:hover::after {
+        left: 150%;
+      }
     </style>
 
     <!-- ===== Structured data (JSON-LD) ===== -->
@@ -2043,8 +2078,7 @@
           class="Btn Primary_Btn"
           style="display: inline-flex; align-items: center; gap: 10px; font-size: 16px; padding: 14px 32px; height: unset;"
         >
-          <i class="icon" data-name="building" style="width:22px;height:22px;flex-shrink:0;"></i>
-          <span>Lawatan 3D</span>
+          <span><span style="font-family: sans-serif; font-style: normal;">↗</span> Lawatan 3D</span>
         </a>
       </div>
     </div>
@@ -2826,6 +2860,7 @@
                 alt="Unit B2A Map"
                 width="100%"
                 id="Unit_B2A_Map2"
+                style="max-width: 1025px;"
               />
               <!-- Unit_B2A -->
 
