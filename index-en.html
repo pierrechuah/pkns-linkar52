@@ -4433,5 +4433,61 @@
     src="assets/vendor/js/bootstrap.bundle.min.js"
   ></script>
 
+  <!-- Floating WhatsApp Widget -->
+  <a
+    href="https://wa.me/60109280187"
+    target="_blank"
+    rel="noopener noreferrer"
+    id="whatsapp-float"
+    aria-label="WhatsApp Us"
+  >
+    <span id="whatsapp-float-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.824.736 5.476 2.027 7.782L0 32l8.437-2.01A15.938 15.938 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.771-1.854l-.485-.29-5.01 1.195 1.234-4.874-.317-.5A13.267 13.267 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.77c-.398-.199-2.354-1.162-2.718-1.294-.364-.133-.63-.199-.895.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.464.298-.862.1-.398-.2-1.681-.62-3.203-1.977-1.183-1.057-1.982-2.362-2.214-2.76-.232-.398-.025-.613.175-.811.18-.178.398-.464.597-.696.199-.232.265-.398.398-.663.133-.265.066-.497-.033-.696-.1-.199-.895-2.157-1.227-2.953-.323-.775-.651-.67-.895-.682l-.763-.013c-.265 0-.696.1-1.06.497-.364.398-1.393 1.361-1.393 3.319 0 1.957 1.426 3.848 1.625 4.113.199.265 2.807 4.285 6.802 6.011.951.41 1.693.655 2.271.839.954.304 1.823.261 2.51.158.765-.114 2.354-.962 2.686-1.891.332-.929.332-1.726.232-1.891-.099-.166-.364-.265-.762-.464z"/>
+      </svg>
+    </span>
+    <span id="whatsapp-float-text">WhatsApp Us</span>
+  </a>
+  <style>
+    #whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999999;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px 10px 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      font-family: 'Gotham Book', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background-color 0.25s ease, transform 0.25s ease;
+    }
+    #whatsapp-float:hover {
+      background-color: #1da851;
+      transform: scale(1.05);
+      color: #fff;
+    }
+    #whatsapp-float-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (max-width: 600px) {
+      #whatsapp-float {
+        bottom: 20px;
+        right: 16px;
+        padding: 9px 14px 9px 10px;
+        font-size: 13px;
+      }
+    }
+  </style>
+  <!-- Floating WhatsApp Widget End -->
+
   </body>
 </html>
