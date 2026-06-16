@@ -35,17 +35,11 @@
     <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
 
-    <!-- Preload primary fonts to break the fonts.css request chain -->
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-          href="assets/css/fonts/co-headline/CoHeadline-Regular.woff2" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin
-          href="assets/css/fonts/gotham-book/Gotham-Book.woff2" />
-
-    <!-- Bootstrap -->
+    <!-- Bootstrap (synchronous — hero depends on it) -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
 
-    <!-- Below-fold CSS — async loaded to avoid render-blocking -->
+    <!-- Below-fold CSS — async (carousel, alerts, scroll anims; hero does not use these) -->
     <link rel="preload" href="assets/vendor/css/splide.min.css" as="style"
           onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="assets/vendor/css/splide.min.css" /></noscript>
@@ -62,10 +56,8 @@
     <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Glide CSS async, JS synchronous (inline init below depends on it) -->
-    <link rel="preload" href="assets/vendor/css/glide.core.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" /></noscript>
+    <!-- Glide CSS synchronous (hero-area, keep blocking to protect LCP); JS sync in head -->
+    <link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" />
     <script src="assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
@@ -3815,7 +3807,7 @@
     // document.body.style.overflowY = 'hidden';
   </script>
 
-  <script src="assets/vendor/js/splide.min.js" defer></script>
+  <script src="assets/vendor/js/splide.min.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -3837,7 +3829,7 @@
       "In Seksyen 14, Shah Alam,<br>Everything is Made Closer<br>for a Connected Lifestyle";
   </script>
 
-  <script src="assets/js/index.js" defer></script>
+  <script src="assets/js/index.js"></script>
 
   <!-- usp-lrt -->
   <script>
@@ -4285,7 +4277,7 @@
   </script>
 
   <!-- Aos-animation -->
-  <script src="assets/vendor/js/aos.js" defer></script>
+  <script src="assets/vendor/js/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ once: true, duration: 800 });
@@ -4332,18 +4324,16 @@
       }
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-      new Glide(".glide", {
-        type: "carousel",
-        perView: 2.5,
-        autoplay: 3000,
-        hoverpause: false,
-        breakpoints: {
-          1024: { perView: 2.25 },
-          992: { perView: 2 },
-        },
-      }).mount();
-    });
+    new Glide(".glide", {
+      type: "carousel",
+      perView: 2.5,
+      autoplay: 3000,
+      hoverpause: false,
+      breakpoints: {
+        1024: { perView: 2.25 },
+        992: { perView: 2 },
+      },
+    }).mount();
 
     document.addEventListener("DOMContentLoaded", function () {
       /**
@@ -4407,7 +4397,7 @@
   </script>
 
 <!-- SweetAlert2 JS -->
-<script src="assets/vendor/js/sweetalert2.all.min.js" defer></script>
+<script src="assets/vendor/js/sweetalert2.all.min.js"></script>
 
 <script>
   // Vanilla JS form handler — jQuery removed (saves 87KB)
@@ -4459,7 +4449,9 @@
   });
 </script>
   <!-- ===== Deferred JS (moved from head to prevent render-blocking) ===== -->
-  <script src="assets/vendor/js/bootstrap.bundle.min.js" defer></script>
+  <script
+    src="assets/vendor/js/bootstrap.bundle.min.js"
+  ></script>
 
   <!-- Instant jump to form — skip smooth scroll animation -->
   <script>
