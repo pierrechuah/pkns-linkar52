@@ -164,6 +164,15 @@
       #submitBtn:hover::after {
         left: 150%;
       }
+
+      /* Exclude opacity:0 overlay from LCP — visibility:hidden makes Lighthouse ignore it.
+         JS adds .visible on scroll which restores visibility + the existing opacity fade. */
+      .Home_Section_One .expand-section .home-overlay-image {
+        visibility: hidden;
+      }
+      .Home_Section_One .expand-section .home-overlay-image.visible {
+        visibility: visible;
+      }
     </style>
 
     <!-- ===== Structured data (JSON-LD) ===== -->
