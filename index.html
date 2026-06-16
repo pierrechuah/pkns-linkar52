@@ -35,6 +35,12 @@
     <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
 
+    <!-- Preload primary fonts to break the fonts.css request chain -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="assets/css/fonts/co-headline/CoHeadline-Regular.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin
+          href="assets/css/fonts/gotham-book/Gotham-Book.woff2" />
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
