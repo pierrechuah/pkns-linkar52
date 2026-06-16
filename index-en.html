@@ -38,26 +38,28 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
-    <link
-      rel="stylesheet"
-      href="assets/vendor/css/splide.min.css"
-    />
 
-	<!-- SweetAlert2 CSS -->
-	<link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css">
+    <!-- Below-fold CSS — async loaded to avoid render-blocking -->
+    <link rel="preload" href="assets/vendor/css/splide.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="assets/vendor/css/splide.min.css" /></noscript>
 
-    <!-- Aos -->
-    <link href="assets/vendor/css/aos.css" rel="stylesheet" />
+    <link rel="preload" href="assets/vendor/css/sweetalert2.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" /></noscript>
+
+    <link rel="preload" href="assets/vendor/css/aos.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="assets/vendor/css/aos.css" /></noscript>
 
     <!-- Fonts loaded directly to avoid @import chain delay -->
     <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Glide js -->
-    <link
-      rel="stylesheet"
-      href="assets/vendor/css/glide.core.min.css"
-    />
+    <!-- Glide CSS async, JS synchronous (inline init below depends on it) -->
+    <link rel="preload" href="assets/vendor/css/glide.core.min.css" as="style"
+          onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" /></noscript>
     <script src="assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
@@ -3807,7 +3809,7 @@
     // document.body.style.overflowY = 'hidden';
   </script>
 
-  <script src="assets/vendor/js/splide.min.js"></script>
+  <script src="assets/vendor/js/splide.min.js" defer></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -3829,7 +3831,7 @@
       "In Seksyen 14, Shah Alam,<br>Everything is Made Closer<br>for a Connected Lifestyle";
   </script>
 
-  <script src="assets/js/index.js"></script>
+  <script src="assets/js/index.js" defer></script>
 
   <!-- usp-lrt -->
   <script>
@@ -4277,7 +4279,7 @@
   </script>
 
   <!-- Aos-animation -->
-  <script src="assets/vendor/js/aos.js"></script>
+  <script src="assets/vendor/js/aos.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ once: true, duration: 800 });
@@ -4324,16 +4326,18 @@
       }
     });
 
-    new Glide(".glide", {
-      type: "carousel",
-      perView: 2.5,
-      autoplay: 3000,
-      hoverpause: false,
-      breakpoints: {
-        1024: { perView: 2.25 },
-        992: { perView: 2 },
-      },
-    }).mount();
+    document.addEventListener("DOMContentLoaded", function () {
+      new Glide(".glide", {
+        type: "carousel",
+        perView: 2.5,
+        autoplay: 3000,
+        hoverpause: false,
+        breakpoints: {
+          1024: { perView: 2.25 },
+          992: { perView: 2 },
+        },
+      }).mount();
+    });
 
     document.addEventListener("DOMContentLoaded", function () {
       /**
@@ -4397,7 +4401,7 @@
   </script>
 
 <!-- SweetAlert2 JS -->
-<script src="assets/vendor/js/sweetalert2.all.min.js"></script>
+<script src="assets/vendor/js/sweetalert2.all.min.js" defer></script>
 
 <script>
   // Vanilla JS form handler — jQuery removed (saves 87KB)
@@ -4449,9 +4453,7 @@
   });
 </script>
   <!-- ===== Deferred JS (moved from head to prevent render-blocking) ===== -->
-  <script
-    src="assets/vendor/js/bootstrap.bundle.min.js"
-  ></script>
+  <script src="assets/vendor/js/bootstrap.bundle.min.js" defer></script>
 
   <!-- Instant jump to form — skip smooth scroll animation -->
   <script>
