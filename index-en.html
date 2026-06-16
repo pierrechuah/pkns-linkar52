@@ -164,23 +164,6 @@
       #submitBtn:hover::after {
         left: 150%;
       }
-
-      /* Exclude opacity:0 overlay from LCP — visibility:hidden makes Lighthouse ignore it.
-         JS adds .visible on scroll which restores visibility + the existing opacity fade. */
-      .Home_Section_One .expand-section .home-overlay-image {
-        visibility: hidden;
-      }
-      .Home_Section_One .expand-section .home-overlay-image.visible {
-        visibility: visible;
-      }
-
-      /* LCP fix: render the hero graphic in its final position immediately
-         instead of animating it in from translateX(-100%) scale(0) */
-      #Linkar_Graphic_2 {
-        transform: none !important;
-        opacity: 1 !important;
-        animation: none !important;
-      }
     </style>
 
     <!-- ===== Structured data (JSON-LD) ===== -->
@@ -361,18 +344,17 @@
           />
         </div>
         <div class="home-overlay-image">
-          <!-- lazy: these start opacity:0, revealed on scroll — must not be LCP candidates -->
           <img
             src="assets/images/homebanner.png"
             alt="Linkar52 Shah Alam — Transit-Oriented Living"
             class="w-100 d-none d-md-block"
-            loading="lazy" decoding="async"
+            loading="eager" decoding="async" fetchpriority="high"
           />
           <img
             src="assets/m_images/home-en.webp"
             alt="Linkar52 Shah Alam — Transit-Oriented Living (mobile)"
             class="w-100 d-block d-md-none"
-            loading="lazy" decoding="async"
+            loading="eager" decoding="async" fetchpriority="high"
           />
         </div>
       </div>
