@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pknslinkar52.com.my/sitemap.xml
