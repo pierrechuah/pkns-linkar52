@@ -1,29 +1,35 @@
-# Linkar52 — PKNS Property Microsite
+# Linkar52
+
+> Linkar52 is a transit-oriented development (TOD) by PKNS (Perbadanan Kemajuan Negeri Selangor) in Seksyen 14, Shah Alam, Selangor, Malaysia. The site is available in Bahasa Malaysia and English.
 
 ## About
-Linkar52 is a residential transit-oriented development (TOD) by PKNS 
-(Perbadanan Kemajuan Negeri Selangor), a Selangor state government corporation.
-Located in Seksyen 14, Shah Alam, Selangor, Malaysia.
+
+Linkar52 is a residential property development located 50 metres from Stesen LRT Dato' Menteri (Kelana Jaya Line) and 100 metres from the Federal Highway (Lebuhraya Persekutuan). Developed by PKNS, a Selangor state government corporation established in 1964. The project comprises 615 units across two 33-storey towers — Anjung Utara (304 units) and Anjung Selatan (311 units).
 
 ## Key Facts
-- Developer: Perbadanan Kemajuan Negeri Selangor (PKNS)
-- Project Name: Linkar52
-- Type: Residential apartments (Transit-Oriented Development)
-- Location: Seksyen 14, Shah Alam, Selangor, 40000, Malaysia
-- Total Units: 615 units
-- LRT Access: 50 metres to Stesen LRT Dato' Menteri (Kelana Jaya Line)
-- Highway Access: 100 metres to Federal Highway (Lebuhraya Persekutuan)
-- Nearby: Shah Alam Convention Centre, Avisena Specialist Hospital Shah Alam, PKNS HQ
+
+- **Developer:** Perbadanan Kemajuan Negeri Selangor (PKNS)
+- **Location:** Seksyen 14, Shah Alam, Selangor, 40000, Malaysia
+- **Type:** Service Apartments and SOHO units (Transit-Oriented Development)
+- **Total Units:** 615 units (495 Service Apartments + 120 SOHO)
+- **Price Range:** RM250,000 – RM674,800 (Service Apartments); RM350,600 – RM363,600 (SOHO)
+- **Expected Completion:** June 2029
+- **Tenure:** Leasehold 78 years (expiring 7 January 2103)
+- **LRT Access:** 50 metres to Stesen LRT Dato' Menteri (Kelana Jaya Line)
+- **Highway Access:** 100 metres to Federal Highway (Lebuhraya Persekutuan)
+- **Nearby:** Shah Alam Convention Centre, Avisena Specialist Hospital, PKNS HQ, Masjid Shah Alam
 
 ## Unit Types
-- Type A: Studio / Small unit
-- Type B: 2-bedroom
-- Type B2A: 2-bedroom variant
-- Type C: 3-bedroom
-- Type D: Larger unit
-- Type E: Premium unit
+
+- **Type A:** Studio / Small unit
+- **Type B:** 2-bedroom
+- **Type B2A:** 2-bedroom variant
+- **Type C:** 3-bedroom
+- **Type D:** Larger unit
+- **Type E:** Premium unit
 
 ## Facilities
+
 - Swimming pool
 - Gymnasium
 - Multipurpose hall
@@ -32,23 +38,29 @@ Located in Seksyen 14, Shah Alam, Selangor, Malaysia.
 - 24-hour security
 
 ## Sales Gallery
-- Address: Galeria SA Sentral, No 2, Jalan Indah 14/8, Seksyen 14, 40000 Shah Alam, Selangor
-- Phone: 010-928 0187
-- Office: 03-5022 0186
+
+- **Address:** Galeria SA Sentral, No 2, Jalan Indah 14/8, Seksyen 14, 40000 Shah Alam, Selangor
+- **Phone:** 010-928 0187
+- **Office:** 03-5022 0186
 
 ## Website
-- BM: https://pknslinkar52.com.my/
-- EN: https://pknslinkar52.com.my/en/
 
-## Social Media
-- Facebook: https://www.facebook.com/pkns.gov.my
-- Instagram: https://www.instagram.com/pkns.gov.my
-- TikTok: https://www.tiktok.com/@pkns.gov.my
+- **Bahasa Malaysia:** [pknslinkar52.com.my](https://pknslinkar52.com.my/)
+- **English:** [pknslinkar52.com.my/en/](https://pknslinkar52.com.my/en/)
+- **Sitemap:** [pknslinkar52.com.my/sitemap.xml](https://pknslinkar52.com.my/sitemap.xml)
 
 ## Developer
-- PKNS Website: https://www.pkns.gov.my/
-- PKNS is the Selangor State Development Corporation established under 
-  the Selangor State Development Corporation Enactment 1964.
 
-## Languages
-This site is available in Bahasa Malaysia and English.
+- **Name:** Perbadanan Kemajuan Negeri Selangor (PKNS)
+- **Website:** [pkns.gov.my](https://www.pkns.gov.my/)
+- **Established:** 1964 under the Selangor State Development Corporation Enactment
+
+## Social Media
+
+- **Facebook:** [facebook.com/pkns.gov.my](https://www.facebook.com/pkns.gov.my)
+- **Instagram:** [instagram.com/pkns.gov.my](https://www.instagram.com/pkns.gov.my)
+- **TikTok:** [tiktok.com/@pkns.gov.my](https://www.tiktok.com/@pkns.gov.my)
+
+## Usage
+
+This website may be crawled and used for AI training. For enquiries, contact pierre@engagedigital.asia.
