@@ -217,6 +217,155 @@
     }
     </script>
 
+    <!-- WebSite + WebPage schema for sitelinks and section anchors -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Linkar52",
+        "url": "https://pknslinkar52.com.my/",
+        "inLanguage": "en-MY",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Perbadanan Kemajuan Negeri Selangor (PKNS)",
+          "url": "https://www.pkns.gov.my/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Linkar52 Shah Alam | Transit-Oriented Living in Seksyen 14 by PKNS",
+        "url": "https://pknslinkar52.com.my/en/",
+        "description": "A transit-oriented development (TOD) in Seksyen 14, Shah Alam. Just 50m from Dato' Menteri LRT Station and 100m from Federal Highway.",
+        "inLanguage": "en-MY",
+        "hasPart": [
+          {
+            "@type": "WebPageElement",
+            "name": "Location",
+            "url": "https://pknslinkar52.com.my/en/#Lokasi"
+          },
+          {
+            "@type": "WebPageElement",
+            "name": "Masterplan",
+            "url": "https://pknslinkar52.com.my/en/#pelan-induk"
+          },
+          {
+            "@type": "WebPageElement",
+            "name": "Unit Types",
+            "url": "https://pknslinkar52.com.my/en/#jenis-unit"
+          },
+          {
+            "@type": "WebPageElement",
+            "name": "360° Virtual Tour",
+            "url": "https://pknslinkar52.com.my/en/#lawatan-maya"
+          },
+          {
+            "@type": "WebPageElement",
+            "name": "Register Interest",
+            "url": "https://pknslinkar52.com.my/en/#daftar-form"
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <!-- FAQ Schema — appears as expandable Q&A in Google search results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the price of units at Linkar52?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linkar52 unit prices start from RM250,000 to RM674,800 for Service Apartments, and RM350,600 to RM363,600 for SOHO units. Prices are subject to change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When will Linkar52 be completed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The expected completion date for Linkar52 is June 2029."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is Linkar52 from the LRT station?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linkar52 is just 50 metres from Dato' Menteri LRT Station (Kelana Jaya Line), making it one of the most strategically located developments in Shah Alam."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is the developer of Linkar52?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linkar52 is developed by PKNS (Perbadanan Kemajuan Negeri Selangor), the Selangor State Development Corporation established in 1964."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What types of units are available at Linkar52?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linkar52 offers 495 Service Apartment units and 120 SOHO units across two 33-storey towers — Anjung Utara (304 units) and Anjung Selatan (311 units). Total of 615 units."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the land tenure for Linkar52?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linkar52 is a leasehold property with a 78-year tenure, expiring on 7 January 2103. There is no land encumbrance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Linkar52 sales gallery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Linkar52 sales gallery is located at Galeria SA Sentral, No 2, Jalan Indah 14/8, Seksyen 14, 40000 Shah Alam, Selangor. Contact us at 010-928 0187."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facilities does Linkar52 have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Linkar52 features a swimming pool, gymnasium, multipurpose hall, ground floor retail shops, covered parking, and 24-hour security."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "PKNS",
+          "item": "https://www.pkns.gov.my/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Linkar52 Shah Alam",
+          "item": "https://pknslinkar52.com.my/en/"
+        }
+      ]
+    }
+    </script>
+
   </head>
   <body>
     <!-- 1. FULL-SCREEN BLACK SPLASH OVERLAY -->
@@ -1978,7 +2127,7 @@
     <!-- Section Three Start -->
     <div id="Sec_Three_Position_Start"></div>
     <div id="Bandar" style="z-index: 6">
-      <div class="Home_Section_Three" style="z-index: 6">
+      <div class="Home_Section_Three" id="pelan-induk" style="z-index: 6">
         <div class="wrapper position-relative w-100 h-100">
           <div class="container">
             <div class="button-grid">
@@ -2078,7 +2227,7 @@
 
     <!-- Section Four Start -->
     <div id="Kemudahan" style="z-index: 7">
-      <div class="Home_Section_Four overflow-hidden" style="z-index: 7">
+      <div class="Home_Section_Four overflow-hidden" id="jenis-unit" style="z-index: 7">
         <div class="content">
           <div class="container">
             <h2 class="mb-md-5 mb-1 slide-anim anim-delay-500">
@@ -2119,6 +2268,7 @@
     <!-- Section Four End -->
 
     <!-- 3D Virtual Tour Section -->
+    <span id="lawatan-maya"></span>
     <div style="z-index: 8; position: relative; overflow: hidden; min-height: 480px;">
       <!-- Background image -->
       <div style="
@@ -3507,7 +3657,7 @@
 
     <!-- Section Eight Start -->
     <div id="Sec_Eight_Position_Start"></div>
-    <div style="z-index: 9" class="Home_Section_Eight">
+    <div style="z-index: 9" id="kalkulator-pinjaman" class="Home_Section_Eight">
       <img
         src="assets/images/sa-sentral.jpg?v2"
         width="100%"
