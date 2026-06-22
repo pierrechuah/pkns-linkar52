@@ -4540,5 +4540,63 @@
   </style>
   <!-- Floating WhatsApp Widget End -->
 
+  <!-- Popup Modal -->
+  <div id="pkns-popup-overlay" style="
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  ">
+    <div style="position: relative; max-width: 520px; width: 100%;">
+      <!-- X close button -->
+      <button
+        id="pkns-popup-close"
+        aria-label="Close"
+        style="
+          position: absolute;
+          top: -14px;
+          right: -14px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+          z-index: 1;
+          line-height: 1;
+        "
+      >&times;</button>
+      <!-- Popup image — links to Google Form -->
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScya9BAGj2jvrChsULFgQ78kqkaw33DGF8NXt8Rtr4KC6qXIQ/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="assets/images/PKNS-Linkar52-Popup.webp"
+          alt="Linkar52 — Register Interest"
+          style="width: 100%; display: block; border-radius: 8px; cursor: pointer;"
+        />
+      </a>
+    </div>
+  </div>
+  <script>
+    document.getElementById("pkns-popup-close").addEventListener("click", function () {
+      document.getElementById("pkns-popup-overlay").style.display = "none";
+    });
+  </script>
+  <!-- Popup Modal End -->
+
   </body>
 </html>
