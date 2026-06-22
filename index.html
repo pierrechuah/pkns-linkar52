@@ -4530,7 +4530,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     }
     #whatsapp-float {
       position: fixed;
-      bottom: 28px;
+      bottom: 170px;
       right: 28px;
       z-index: 999999;
       background-color: #25D366;
@@ -4563,9 +4563,9 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     #whatsapp-float:hover #whatsapp-float-icon {
       animation: none;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 992px) {
       #whatsapp-float {
-        bottom: 20px;
+        bottom: 65px;
         right: 16px;
         padding: 9px 14px 9px 10px;
         font-size: 13px;
@@ -4574,13 +4574,38 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </style>
   <!-- Floating WhatsApp Widget End -->
 
-  <!-- Popup Modal -->
+  <!-- Sticky Footer Banner -->
+  <a
+    id="pkns-sticky-footer"
+    href="https://docs.google.com/forms/d/e/1FAIpQLScya9BAGj2jvrChsULFgQ78kqkaw33DGF8NXt8Rtr4KC6qXIQ/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999998;
+      display: block;
+      cursor: pointer;
+      line-height: 0;
+    "
+  >
+    <img
+      src="assets/images/banner-d.png"
+      alt="Linkar52 — Daftar Minat"
+      style="width: 100%; display: block; height: auto;"
+    />
+  </a>
+  <!-- Sticky Footer Banner End -->
+
+  <!-- Popup Modal (shows once per day via cookie) -->
   <div id="pkns-popup-overlay" style="
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.7);
     z-index: 9999999;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 16px;
@@ -4626,9 +4651,38 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     </div>
   </div>
   <script>
-    document.getElementById("pkns-popup-close").addEventListener("click", function () {
-      document.getElementById("pkns-popup-overlay").style.display = "none";
-    });
+    (function () {
+      var COOKIE_NAME = "pkns_popup_seen";
+      var COOKIE_DAYS = 1; // show once per day
+
+      function getCookie(name) {
+        var match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+        return match ? match[2] : null;
+      }
+
+      function setCookie(name, days) {
+        var expires = new Date(Date.now() + days * 864e5).toUTCString();
+        document.cookie = name + "=1; expires=" + expires + "; path=/";
+      }
+
+      var overlay = document.getElementById("pkns-popup-overlay");
+
+      // Show popup only if cookie not set
+      if (!getCookie(COOKIE_NAME)) {
+        overlay.style.display = "flex";
+      }
+
+      // On close — set cookie and hide
+      document.getElementById("pkns-popup-close").addEventListener("click", function () {
+        overlay.style.display = "none";
+        setCookie(COOKIE_NAME, COOKIE_DAYS);
+      });
+
+      // Clicking the image also sets cookie (user is going to the form)
+      overlay.querySelector("a").addEventListener("click", function () {
+        setCookie(COOKIE_NAME, COOKIE_DAYS);
+      });
+    })();
   </script>
   <!-- Popup Modal End -->
 
