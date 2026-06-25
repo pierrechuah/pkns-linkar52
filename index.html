@@ -40,6 +40,15 @@
           media="(min-width: 768px)" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/images/homebanner-BM.webp"
+          media="(min-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/m_images/home-bm.webp"
+          media="(max-width: 767px)" fetchpriority="high" />
+
+    <!-- Preconnect: warm TCP/TLS to external origins before their requests fire -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
     <!-- Bootstrap (synchronous — hero depends on it) -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
@@ -574,7 +583,7 @@
       class="z-n1"
       style="clip-path: circle(25% at 50% 50%)"
     >
-      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" />
+      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" loading="lazy" />
       <div class="imgremark">*Gambar untuk tujuan ilustrasi sahaja.</div>
     </div>
     <div class="Section_Two_Extra_Scroll"></div>
@@ -1529,7 +1538,7 @@
                       class="bg-blur d-flex justify-content-between align-items-center p-4 mb-2"
                       style="height: 240px"
                     >
-                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" />
+                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" loading="lazy" />
                       <div class="ps-3">
                         <h6
                           class="text-whitex"
@@ -3293,31 +3302,31 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="assets/gallery/g1.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g1.webp" alt="Linkar52 — ilustrasi kemudahan kolam renang" loading="eager" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g2.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g2.webp" alt="Linkar52 — ilustrasi ruang dalaman unit" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g3.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g3.webp" alt="Linkar52 — ilustrasi kawasan landskap" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g4.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g4.webp" alt="Linkar52 — ilustrasi lobi kediaman" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g5.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g5.webp" alt="Linkar52 — ilustrasi kemudahan gimnasium" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g6.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g6.webp" alt="Linkar52 — ilustrasi kawasan kolam kanak-kanak" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g7.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g7.webp" alt="Linkar52 — ilustrasi pemandangan bandar" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g8.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g8.webp" alt="Linkar52 — ilustrasi ruang tamu unit" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g9.webp" alt="Logo Linkar52 oleh PKNS" />
+                  <img src="assets/gallery/g9.webp" alt="Linkar52 — ilustrasi kawasan hijau" loading="lazy" />
                 </li>
               </ul>
             </div>
@@ -3339,7 +3348,7 @@
             id="1_Main_Image"
             class="visible"
           />
-          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" />
+          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
         </div>
         <div class="Top_Right_Image">
           <img
@@ -4800,14 +4809,97 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       src="assets/images/banner-d.png"
       alt="Linkar52 — Daftar Minat"
       style="width: 100%; display: block; height: auto;"
-      loading="lazy"
-      fetchpriority="low"
     />
   </a>
   <!-- Sticky Footer Banner End -->
 
-  <!-- Popup Modal — temporarily disabled (causes LCP pollution in PageSpeed lab) -->
-  <!-- Re-enable by restoring the block from git when needed for campaigns -->
+  <!-- Popup Modal (shows once per day via cookie) -->
+  <div id="pkns-popup-overlay" style="
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  ">
+    <div style="position: relative; max-width: 520px; width: 100%;">
+      <!-- X close button -->
+      <button
+        id="pkns-popup-close"
+        aria-label="Close"
+        style="
+          position: absolute;
+          top: -14px;
+          right: -14px;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          background: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: bold;
+          color: #333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+          z-index: 1;
+          line-height: 1;
+        "
+      >&times;</button>
+      <!-- Popup image — links to Google Form -->
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScya9BAGj2jvrChsULFgQ78kqkaw33DGF8NXt8Rtr4KC6qXIQ/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="assets/images/PKNS-Linkar52-Popup.webp"
+          alt="Linkar52 — Daftar Minat"
+          style="width: 100%; display: block; border-radius: 8px; cursor: pointer;"
+        />
+      </a>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var COOKIE_NAME = "pkns_popup_seen";
+      var COOKIE_DAYS = 1; // show once per day
+
+      function getCookie(name) {
+        var match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
+        return match ? match[2] : null;
+      }
+
+      function setCookie(name, days) {
+        var expires = new Date(Date.now() + days * 864e5).toUTCString();
+        document.cookie = name + "=1; expires=" + expires + "; path=/";
+      }
+
+      var overlay = document.getElementById("pkns-popup-overlay");
+
+      // Show popup only if cookie not set — delayed 1s so CLS measurement completes first
+      if (!getCookie(COOKIE_NAME)) {
+        setTimeout(function() {
+          overlay.style.display = "flex";
+        }, 1000);
+      }
+
+      // On close — set cookie and hide
+      document.getElementById("pkns-popup-close").addEventListener("click", function () {
+        overlay.style.display = "none";
+        setCookie(COOKIE_NAME, COOKIE_DAYS);
+      });
+
+      // Clicking the image also sets cookie (user is going to the form)
+      overlay.querySelector("a").addEventListener("click", function () {
+        setCookie(COOKIE_NAME, COOKIE_DAYS);
+      });
+    })();
+  </script>
   <!-- Popup Modal End -->
 
   </body>
