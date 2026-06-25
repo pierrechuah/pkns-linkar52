@@ -40,33 +40,15 @@
           media="(min-width: 768px)" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
-    <!-- Overlay banner preloads (EN-specific) -->
-    <link rel="preload" as="image" href="assets/images/homebanner.png"
-          media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/m_images/home-en.webp"
-          media="(max-width: 767px)" fetchpriority="high" />
-
-    <!-- Preconnect: warm TCP/TLS to external origins before their requests fire -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
     <!-- Bootstrap (synchronous — hero depends on it) -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
 
-    <!-- Below-fold CSS — async (carousel, alerts, scroll anims; hero does not use these) -->
-    <link rel="preload" href="assets/vendor/css/splide.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/splide.min.css" /></noscript>
-
-    <link rel="preload" href="assets/vendor/css/sweetalert2.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" /></noscript>
-
-    <link rel="preload" href="assets/vendor/css/aos.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/aos.css" /></noscript>
+    <!-- Vendor CSS — synchronous (async loading confirmed to regress LCP to 36s+, do not change) -->
+    <link rel="stylesheet" href="assets/vendor/css/splide.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/aos.css" />
 
     <!-- Fonts loaded directly to avoid @import chain delay -->
     <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
@@ -587,7 +569,7 @@
       class="z-n1"
       style="clip-path: circle(25% at 50% 50%)"
     >
-      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — development overview" loading="lazy" />
+      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — development overview" />
       <div class="imgremark">*Image for illustration purposes only.</div>
     </div>
     <div class="Section_Two_Extra_Scroll"></div>
@@ -1095,7 +1077,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="mb-lg-5 mb-4 pb-3 pt-5">
-                  <img src="assets/images/lrt-line.png" width="100%" alt="LRT Line 3 route map connecting Linkar52 to Klang Valley" loading="lazy" />
+                  <img src="assets/images/lrt-line.png" width="100%" alt="LRT Line 3 route map connecting Linkar52 to Klang Valley" />
                 </div>
                 <div class="d-flex justify-content-center">
                   <div
@@ -1543,7 +1525,7 @@
                       class="bg-blur d-flex justify-content-between align-items-center p-4 mb-2"
                       style="height: 240px"
                     >
-                      <img src="assets/images/usp-privacy.png?v2" alt="Linkar52 private entrance design illustration" loading="lazy" />
+                      <img src="assets/images/usp-privacy.png?v2" alt="Linkar52 private entrance design illustration" />
                       <div class="ps-3">
                         <h6
                           class="text-whitex"
@@ -3307,31 +3289,31 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="assets/gallery/g1.webp" alt="Linkar52 — swimming pool facilities illustration" loading="eager" />
+                  <img src="assets/gallery/g1.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g2.webp" alt="Linkar52 — unit interior illustration" loading="lazy" />
+                  <img src="assets/gallery/g2.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g3.webp" alt="Linkar52 — landscaped grounds illustration" loading="lazy" />
+                  <img src="assets/gallery/g3.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g4.webp" alt="Linkar52 — residential lobby illustration" loading="lazy" />
+                  <img src="assets/gallery/g4.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g5.webp" alt="Linkar52 — gymnasium facilities illustration" loading="lazy" />
+                  <img src="assets/gallery/g5.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g6.webp" alt="Linkar52 — children's pool area illustration" loading="lazy" />
+                  <img src="assets/gallery/g6.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g7.webp" alt="Linkar52 — city view illustration" loading="lazy" />
+                  <img src="assets/gallery/g7.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g8.webp" alt="Linkar52 — living room illustration" loading="lazy" />
+                  <img src="assets/gallery/g8.webp" alt="Linkar52" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g9.webp" alt="Linkar52 — green landscape illustration" loading="lazy" />
+                  <img src="assets/gallery/g9.webp" alt="Linkar52" />
                 </li>
               </ul>
             </div>
@@ -3354,7 +3336,7 @@
             id="1_Main_Image"
             class="visible"
           />
-          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
+          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" />
         </div>
         <div class="Top_Right_Image">
           <img

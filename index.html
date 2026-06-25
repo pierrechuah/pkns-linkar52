@@ -40,33 +40,15 @@
           media="(min-width: 768px)" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
-    <!-- Overlay banner preloads -->
-    <link rel="preload" as="image" href="assets/images/homebanner-BM.webp"
-          media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/m_images/home-bm.webp"
-          media="(max-width: 767px)" fetchpriority="high" />
-
-    <!-- Preconnect: warm TCP/TLS to external origins before their requests fire -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
     <!-- Bootstrap (synchronous — hero depends on it) -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
 
-    <!-- Below-fold CSS — async (carousel, alerts, scroll anims; hero does not use these) -->
-    <link rel="preload" href="assets/vendor/css/splide.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/splide.min.css" /></noscript>
-
-    <link rel="preload" href="assets/vendor/css/sweetalert2.min.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" /></noscript>
-
-    <link rel="preload" href="assets/vendor/css/aos.css" as="style"
-          onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/vendor/css/aos.css" /></noscript>
+    <!-- Vendor CSS — synchronous (async loading confirmed to regress LCP to 36s+, do not change) -->
+    <link rel="stylesheet" href="assets/vendor/css/splide.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/aos.css" />
 
     <!-- Fonts loaded directly to avoid @import chain delay -->
     <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
@@ -592,7 +574,7 @@
       class="z-n1"
       style="clip-path: circle(25% at 50% 50%)"
     >
-      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" loading="lazy" />
+      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" />
       <div class="imgremark">*Gambar untuk tujuan ilustrasi sahaja.</div>
     </div>
     <div class="Section_Two_Extra_Scroll"></div>
@@ -1547,7 +1529,7 @@
                       class="bg-blur d-flex justify-content-between align-items-center p-4 mb-2"
                       style="height: 240px"
                     >
-                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" loading="lazy" />
+                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" />
                       <div class="ps-3">
                         <h6
                           class="text-whitex"
@@ -3311,31 +3293,31 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="assets/gallery/g1.webp" alt="Linkar52 — ilustrasi kemudahan kolam renang" loading="eager" />
+                  <img src="assets/gallery/g1.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g2.webp" alt="Linkar52 — ilustrasi ruang dalaman unit" loading="lazy" />
+                  <img src="assets/gallery/g2.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g3.webp" alt="Linkar52 — ilustrasi kawasan landskap" loading="lazy" />
+                  <img src="assets/gallery/g3.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g4.webp" alt="Linkar52 — ilustrasi lobi kediaman" loading="lazy" />
+                  <img src="assets/gallery/g4.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g5.webp" alt="Linkar52 — ilustrasi kemudahan gimnasium" loading="lazy" />
+                  <img src="assets/gallery/g5.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g6.webp" alt="Linkar52 — ilustrasi kawasan kolam kanak-kanak" loading="lazy" />
+                  <img src="assets/gallery/g6.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g7.webp" alt="Linkar52 — ilustrasi pemandangan bandar" loading="lazy" />
+                  <img src="assets/gallery/g7.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g8.webp" alt="Linkar52 — ilustrasi ruang tamu unit" loading="lazy" />
+                  <img src="assets/gallery/g8.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g9.webp" alt="Linkar52 — ilustrasi kawasan hijau" loading="lazy" />
+                  <img src="assets/gallery/g9.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
               </ul>
             </div>
@@ -3357,7 +3339,7 @@
             id="1_Main_Image"
             class="visible"
           />
-          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
+          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" />
         </div>
         <div class="Top_Right_Image">
           <img
