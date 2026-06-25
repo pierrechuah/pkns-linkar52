@@ -4861,9 +4861,11 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 
       var overlay = document.getElementById("pkns-popup-overlay");
 
-      // Show popup only if cookie not set
+      // Show popup only if cookie not set — delayed 1s so CLS measurement completes first
       if (!getCookie(COOKIE_NAME)) {
-        overlay.style.display = "flex";
+        setTimeout(function() {
+          overlay.style.display = "flex";
+        }, 1000);
       }
 
       // On close — set cookie and hide
