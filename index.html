@@ -4841,26 +4841,20 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
           line-height: 1;
         "
       >&times;</button>
-      <!-- Popup image — links to Google Form -->
+      <!-- Popup image injected by JS to prevent LCP pollution -->
       <a
+        id="pkns-popup-link"
         href="https://docs.google.com/forms/d/e/1FAIpQLScya9BAGj2jvrChsULFgQ78kqkaw33DGF8NXt8Rtr4KC6qXIQ/viewform"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        <img
-          src="assets/images/PKNS-Linkar52-Popup.webp"
-          alt="Linkar52 — Daftar Minat"
-          style="width: 100%; display: block; border-radius: 8px; cursor: pointer;"
-          loading="lazy"
-          fetchpriority="low"
-        />
-      </a>
+      ></a>
     </div>
   </div>
   <script>
     (function () {
       var COOKIE_NAME = "pkns_popup_seen";
-      var COOKIE_DAYS = 1; // show once per day
+      var COOKIE_DAYS = 1;
+      var IMG_SRC = "assets/images/PKNS-Linkar52-Popup.webp";
 
       function getCookie(name) {
         var match = document.cookie.match(new RegExp("(^| )" + name + "=([^;]+)"));
@@ -4874,21 +4868,25 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 
       var overlay = document.getElementById("pkns-popup-overlay");
 
-      // Show popup only if cookie not set — delayed 1s so CLS measurement completes first
       if (!getCookie(COOKIE_NAME)) {
-        setTimeout(function() {
+        setTimeout(function () {
+          // Inject image only now — keeps it out of initial page load / LCP measurement
+          var link = document.getElementById("pkns-popup-link");
+          var img = new Image();
+          img.src = IMG_SRC;
+          img.alt = "Linkar52 — Daftar Minat";
+          img.style.cssText = "width:100%;display:block;border-radius:8px;cursor:pointer;";
+          link.appendChild(img);
           overlay.style.display = "flex";
         }, 1000);
       }
 
-      // On close — set cookie and hide
       document.getElementById("pkns-popup-close").addEventListener("click", function () {
         overlay.style.display = "none";
         setCookie(COOKIE_NAME, COOKIE_DAYS);
       });
 
-      // Clicking the image also sets cookie (user is going to the form)
-      overlay.querySelector("a").addEventListener("click", function () {
+      document.getElementById("pkns-popup-link").addEventListener("click", function () {
         setCookie(COOKIE_NAME, COOKIE_DAYS);
       });
     })();
