@@ -385,7 +385,7 @@
       <div class="Header_Wraper">
         <div class="Header_Left slide-down">
           <div class="d-flex align-items-center gap-md-2 gap-1">
-            <button style="all: unset; cursor: pointer" id="Menu_Button">
+            <button style="all: unset; cursor: pointer" id="Menu_Button" aria-label="Buka Menu">
               <i class="icon mx-md-2 mx-1" data-name="menu"></i>
             </button>
             <a
@@ -520,6 +520,7 @@
             alt="Linkar52 — kediaman TOD di Seksyen 14, Shah Alam (mobile)"
             class="m_img h-100 object-fit-cover d-block d-md-none"
             loading="eager" decoding="async" fetchpriority="high"
+            style="will-change: transform, top;"
           />
         </div>
         <div class="home-overlay-image">
@@ -3903,6 +3904,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://www.facebook.com/sasentral.bypkns/"
                 target="_blank"
                 class="text-white"
+                aria-label="Facebook SA Sentral"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="facebook"></i>
@@ -3912,6 +3914,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://www.instagram.com/sa.sentral/"
                 target="_blank"
                 class="text-white"
+                aria-label="Instagram SA Sentral"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="instagram"></i>
@@ -3921,6 +3924,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://www.tiktok.com/@sa.sentral"
                 target="_blank"
                 class="text-white"
+                aria-label="TikTok SA Sentral"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="tik-tok"></i>
@@ -4012,6 +4016,13 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       });
 
       splide.mount();
+
+      // Fix Splide ARIA: change role="tabpanel" to role="group" on slide elements
+      splide.on("mounted", function () {
+        document.querySelectorAll("#image-carousel .splide__slide").forEach(function (slide) {
+          slide.setAttribute("role", "group");
+        });
+      });
     });
 
     const S1_TITLE = "Pembangunan<br>Berorientasikan<br>Transit";
