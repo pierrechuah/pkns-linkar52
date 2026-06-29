@@ -1005,7 +1005,7 @@ i[data-name="tik-tok"] {
       rgba(0, 0, 0, 0.4) 35%,
       rgba(0, 0, 0, 0.2) 45%,
       rgba(0, 0, 0, 0.1) 50%),
-    url("../images/usp-commercial-main-section.webp");
+    url("../images/usp-commercial-main-section.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1020,7 +1020,7 @@ i[data-name="tik-tok"] {
       rgba(0, 0, 0, 0.4) 35%,
       rgba(0, 0, 0, 0.2) 45%,
       rgba(0, 0, 0, 0.1) 50%),
-    url("../images/usp-facilities-main-section.webp");
+    url("../images/usp-facilities-main-section.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1035,7 +1035,7 @@ i[data-name="tik-tok"] {
       rgba(0, 0, 0, 0.4) 35%,
       rgba(0, 0, 0, 0.2) 45%,
       rgba(0, 0, 0, 0.1) 50%),
-    url("../images/usp-2.webp?v2");
+    url("../images/usp-2.jpg?v2");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1050,7 +1050,7 @@ i[data-name="tik-tok"] {
       rgba(0, 0, 0, 0.4) 35%,
       rgba(0, 0, 0, 0.2) 45%,
       rgba(0, 0, 0, 0.1) 50%),
-    url("../images/mens-lrt.webp");
+    url("../images/mens-lrt.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1065,7 +1065,7 @@ i[data-name="tik-tok"] {
       rgba(0, 0, 0, 0.4) 35%,
       rgba(0, 0, 0, 0.2) 45%,
       rgba(0, 0, 0, 0.1) 50%),
-    url("../images/usp-privacy.webp");
+    url("../images/usp-privacy.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1085,7 +1085,7 @@ i[data-name="tik-tok"] {
 }
 
 .bg-image-usp-facilities-expand {
-  background-image: url("../images/usp-facilities-expand-image-1.webp");
+  background-image: url("../images/usp-facilities-expand-image-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1094,7 +1094,7 @@ i[data-name="tik-tok"] {
 }
 
 .bg-image-usp-highway-expand {
-  background-image: url("../images/Location_LRT.webp");
+  background-image: url("../images/Location_LRT.jpg");
   padding-top: 110px;
   background-size: cover;
   background-position: left top;
@@ -1501,7 +1501,7 @@ i[data-name="tik-tok"] {
 
 /* ===== SECTION SEVEN ===== */
 .bg-image-section-seven {
-  background-image: url("../images/awardbg.webp");
+  background-image: url("../images/awardbg.jpg");
   background-color: #060c1a;
   padding-top: 110px;
   background-size: 100%;
@@ -1669,7 +1669,7 @@ input.form-check-input {
 
 /* ===== LOAN CALCULATOR ===== */
 .bg-image-loan-calculator {
-  background-image: url("../images/calculator-bg.webp");
+  background-image: url("../images/calculator-bg.png");
   padding-top: 110px;
   background-size: cover;
   background-position: center;
@@ -2160,7 +2160,7 @@ input[type=number] {
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0.25) 45%,
         rgba(0, 0, 0, 0.1) 75%),
-      url("../m_images/usp-privacy.webp");
+      url("../m_images/usp-privacy.jpg");
     background-position: bottom;
   }
 
