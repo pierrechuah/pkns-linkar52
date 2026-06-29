@@ -4370,7 +4370,8 @@
       });
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
+    // Defer calculator init until browser idle — reduces TBT
+    function initCalculator() {
       // Input Elements
       const purchaseInput = document.getElementById("purchaseValue");
       const purchaseRange = document.getElementById("purchasePrice");
@@ -4497,7 +4498,12 @@
 
       // Initialize
       calculate();
-    });
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(initCalculator);
+    } else {
+      setTimeout(initCalculator, 200);
+    }
   </script>
 
   <!-- Aos-animation -->

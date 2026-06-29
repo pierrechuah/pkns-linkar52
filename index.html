@@ -4403,7 +4403,8 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       });
     });
 
-    document.addEventListener("DOMContentLoaded", () => {
+    // Defer calculator init until browser idle — reduces TBT
+    function initCalculator() {
       // Input Elements
       const purchaseInput = document.getElementById("purchaseValue");
       const purchaseRange = document.getElementById("purchasePrice");
@@ -4529,7 +4530,12 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 
       // Initialize
       calculate();
-    });
+    }
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(initCalculator);
+    } else {
+      setTimeout(initCalculator, 200);
+    }
   </script>
 
   <!-- Aos-animation -->
