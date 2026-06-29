@@ -1,5 +1,8 @@
 # Cloudflare Pages _redirects
 
+# Block pages.dev — redirect to real domain
+https://linkar52.pages.dev/* https://pknslinkar52.com.my/:splat 301
+
 # Redirect WWW to root domain
 https://www.pknslinkar52.com.my/* https://pknslinkar52.com.my/:splat 301
 
