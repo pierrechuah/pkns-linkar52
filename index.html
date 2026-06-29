@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="ms">
   <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W4SFCKLC');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,6 +9,7 @@
     <meta name="description" content="Linkar52 — kediaman berorientasikan transit (TOD) di Seksyen 14, Shah Alam. Hanya 50m dari Stesen LRT Dato' Menteri dan 100m dari Lebuhraya Persekutuan. Sebuah projek PKNS." />
     <link rel="canonical" href="https://pknslinkar52.com.my/" />
     <!-- Staging only — prevent Google indexing this subdomain -->
+    <meta name="robots" content="noindex, nofollow" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -40,31 +34,27 @@
           media="(min-width: 768px)" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/images/homebanner-BM.webp"
-          media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/m_images/home-bm.webp"
-          media="(max-width: 767px)" fetchpriority="high" />
 
-    <!-- Preconnect: warm TCP/TLS to external origins before their requests fire -->
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-    <link rel="dns-prefetch" href="https://www.clarity.ms" />
-
-    <!-- Bootstrap (synchronous — hero depends on it) -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
+    <link rel="stylesheet"
+      href="assets/vendor/css/splide.min.css" />
 
-    <!-- Vendor CSS — synchronous (async loading confirmed to regress LCP to 36s+, do not change) -->
-    <link rel="stylesheet" href="assets/vendor/css/splide.min.css" />
+	<!-- SweetAlert2 CSS -->
     <link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" />
-    <link rel="stylesheet" href="assets/vendor/css/aos.css" />
+
+
+    <!-- Aos -->
+    <link href="assets/vendor/css/aos.css" rel="stylesheet" />
 
     <!-- Fonts loaded directly to avoid @import chain delay -->
     <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- Glide CSS synchronous (hero-area, keep blocking to protect LCP); JS sync in head -->
-    <link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" />
+    <!-- Glide js -->
+    <link rel="stylesheet"
+      href="assets/vendor/css/glide.core.min.css" />
     <script src="assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
@@ -172,232 +162,29 @@
       "@context": "https://schema.org",
       "@type": "ApartmentComplex",
       "name": "Linkar52",
-      "alternateName": "Linkar52 Shah Alam",
-      "description": "Kediaman berorientasikan transit (TOD) di Seksyen 14, Shah Alam, hanya 50m dari Stesen LRT Dato' Menteri dan 100m dari Lebuhraya Persekutuan. Sebuah projek PKNS.",
+      "description": "Kediaman berorientasikan transit (TOD) di Seksyen 14, Shah Alam, hanya 50m dari Stesen LRT Dato' Menteri.",
       "url": "https://pknslinkar52.com.my/",
-      "image": "https://pknslinkar52.com.my/assets/images/homebanner-BM.webp",
+      "image": "https://pknslinkar52.com.my/wp-content/v2/assets/images/homebanner-BM.webp",
       "numberOfAccommodationUnits": 615,
-      "telephone": "+60109280187",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "No. 10, Jalan Dato' Menteri 14/10, Seksyen 14",
+        "streetAddress": "Seksyen 14",
         "addressLocality": "Shah Alam",
         "addressRegion": "Selangor",
         "postalCode": "40000",
         "addressCountry": "MY"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 3.0736,
-        "longitude": 101.5183
-      },
       "developer": {
         "@type": "Organization",
         "name": "Perbadanan Kemajuan Negeri Selangor (PKNS)",
-        "url": "https://www.pkns.gov.my/",
-        "logo": "https://pknslinkar52.com.my/assets/images/logo.webp"
-      },
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "LRT Station", "value": "50m to Stesen LRT Dato' Menteri" },
-        { "@type": "LocationFeatureSpecification", "name": "Highway Access", "value": "100m to Federal Highway" },
-        { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Gymnasium", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Retail Shops", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Multipurpose Hall", "value": true }
-      ],
-      "containsPlace": {
-        "@type": "Place",
-        "name": "Galeria SA Sentral",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No 2, Jalan Indah 14/8, Seksyen 14",
-          "addressLocality": "Shah Alam",
-          "addressRegion": "Selangor",
-          "postalCode": "40000",
-          "addressCountry": "MY"
-        }
-      },
-      "inLanguage": "ms-MY",
-      "sameAs": [
-        "https://www.facebook.com/pkns.gov.my",
-        "https://www.instagram.com/pkns.gov.my"
-      ]
-    }
-    </script>
-
-    <!-- WebSite + WebPage schema for sitelinks and section anchors -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Linkar52",
-        "url": "https://pknslinkar52.com.my/",
-        "inLanguage": "ms-MY",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Perbadanan Kemajuan Negeri Selangor (PKNS)",
-          "url": "https://www.pkns.gov.my/"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Linkar52 Shah Alam | Kediaman TOD di Seksyen 14 oleh PKNS",
-        "url": "https://pknslinkar52.com.my/",
-        "description": "Kediaman berorientasikan transit (TOD) di Seksyen 14, Shah Alam. Hanya 50m dari Stesen LRT Dato' Menteri dan 100m dari Lebuhraya Persekutuan.",
-        "inLanguage": "ms-MY",
-        "hasPart": [
-          {
-            "@type": "WebPageElement",
-            "name": "Lokasi",
-            "url": "https://pknslinkar52.com.my/#Lokasi"
-          },
-          {
-            "@type": "WebPageElement",
-            "name": "Pelan Induk",
-            "url": "https://pknslinkar52.com.my/#pelan-induk"
-          },
-          {
-            "@type": "WebPageElement",
-            "name": "Jenis Unit",
-            "url": "https://pknslinkar52.com.my/#jenis-unit"
-          },
-          {
-            "@type": "WebPageElement",
-            "name": "Lawatan Maya 360°",
-            "url": "https://pknslinkar52.com.my/#lawatan-maya"
-          },
-          {
-            "@type": "WebPageElement",
-            "name": "Daftar Minat",
-            "url": "https://pknslinkar52.com.my/#daftar-form"
-          }
-        ]
+        "url": "https://www.pkns.gov.my/"
       }
-    ]
-    </script>
-
-
-    <!-- FAQ Schema — appears as expandable Q&A in Google search results -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Berapakah harga unit di Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Harga unit Linkar52 bermula dari RM250,000 hingga RM674,800 untuk Pangsapuri Servis, dan RM350,600 hingga RM363,600 untuk unit SOHO. Harga adalah tertakluk kepada perubahan."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Bila Linkar52 akan siap?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jangkaan tarikh siap Linkar52 adalah Jun 2029."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Berapa jauh Linkar52 dari stesen LRT?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 terletak hanya 50 meter dari Stesen LRT Dato' Menteri (Laluan Kelana Jaya), menjadikannya salah satu pembangunan paling strategik di Shah Alam."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Siapakah pemaju Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 dibangunkan oleh PKNS (Perbadanan Kemajuan Negeri Selangor), sebuah badan berkanun kerajaan negeri Selangor yang ditubuhkan sejak 1964."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah jenis hartanah di Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 menawarkan 495 unit Pangsapuri Servis dan 120 unit SOHO, tersebar dalam dua menara 33 tingkat — Anjung Utara (304 unit) dan Anjung Selatan (311 unit). Jumlah keseluruhan 615 unit."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah status pegangan tanah Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 adalah hartanah pajakan selama 78 tahun, berakhir pada 7 Januari 2103. Tiada bebanan tanah."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Di mana galeri jualan Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Galeri jualan Linkar52 terletak di Galeria SA Sentral, No 2, Jalan Indah 14/8, Seksyen 14, 40000 Shah Alam, Selangor. Hubungi kami di 010-928 0187."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah kemudahan yang ada di Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 dilengkapi dengan kolam renang, gimnasium, dewan serba guna, kedai runcit di tingkat bawah, tempat letak kereta berbumbung, dan kawasan keselamatan 24 jam."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah itu SA Sentral dan apakah hubungannya dengan Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SA Sentral ialah inisiatif peremajaan bandar utama PKNS di Seksyen 14, Shah Alam — merangkumi kawasan seluas 58.6 hektar dengan nilai pembangunan kasar (GDV) dianggarkan RM3 bilion. Pembangunan ini merangkumi tiga teras utama: Rejuvenate, Reconnect dan Reinvent. Linkar52 merupakan projek kediaman pertama di SA Sentral, dihubungkan terus melalui sistem pejalan kaki bersepadu yang menghubungkan Galeria SA Sentral, Aneka Walk, Plaza Alam Sentral dan Stesen LRT3 Dato' Menteri."
-          }
-        }
-      ]
     }
     </script>
 
-    <!-- BreadcrumbList Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "PKNS",
-          "item": "https://www.pkns.gov.my/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Linkar52 Shah Alam",
-          "item": "https://pknslinkar52.com.my/"
-        }
-      ]
-    }
-    </script>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ugmi9k4501");
-    </script>
-    <!-- End Microsoft Clarity -->
   </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4SFCKLC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- 1. FULL-SCREEN BLACK SPLASH OVERLAY -->
     <!-- splash-overlay removed: blocks LCP (20-29s penalty) -->
 
@@ -413,11 +200,11 @@
       <div class="Header_Wraper">
         <div class="Header_Left slide-down">
           <div class="d-flex align-items-center gap-md-2 gap-1">
-            <button style="all: unset; cursor: pointer" id="Menu_Button" aria-label="Buka Menu">
+            <button style="all: unset; cursor: pointer" id="Menu_Button">
               <i class="icon mx-md-2 mx-1" data-name="menu"></i>
             </button>
             <a
-              href="assets/brochure/booklet.pdf"
+              href="https://pknslinkar52.com.my/wp-content/uploads/2026/05/booklet.pdf"
               target="_blank"
               class="Btn Primary_Btn Close_Modal noshowmobile"
               ><span style="height: unset; display: flex; align-items: center"
@@ -437,7 +224,7 @@
             class="header-menu-container flex-column Primary_Font px-2 d-flex"
           >
             <a
-              href="assets/brochure/booklet.pdf"
+              href="https://pknslinkar52.com.my/wp-content/uploads/2026/05/booklet.pdf"
               target="_blank"
               class="Btn Primary_Btn Close_Modal noshowdesktop mb-3"
               ><span style="height: unset; display: flex; align-items: center"
@@ -548,7 +335,6 @@
             alt="Linkar52 — kediaman TOD di Seksyen 14, Shah Alam (mobile)"
             class="m_img h-100 object-fit-cover d-block d-md-none"
             loading="eager" decoding="async" fetchpriority="high"
-            style="will-change: transform, top;"
           />
         </div>
         <div class="home-overlay-image">
@@ -591,7 +377,7 @@
       class="z-n1"
       style="clip-path: circle(25% at 50% 50%)"
     >
-      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" loading="lazy" />
+      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" />
       <div class="imgremark">*Gambar untuk tujuan ilustrasi sahaja.</div>
     </div>
     <div class="Section_Two_Extra_Scroll"></div>
@@ -1546,7 +1332,7 @@
                       class="bg-blur d-flex justify-content-between align-items-center p-4 mb-2"
                       style="height: 240px"
                     >
-                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" loading="lazy" />
+                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" />
                       <div class="ps-3">
                         <h6
                           class="text-whitex"
@@ -2161,7 +1947,7 @@
     <!-- Section Three Start -->
     <div id="Sec_Three_Position_Start"></div>
     <div id="Bandar" style="z-index: 6">
-      <div class="Home_Section_Three" id="pelan-induk" style="z-index: 6">
+      <div class="Home_Section_Three" style="z-index: 6">
         <div class="wrapper position-relative w-100 h-100">
           <div class="container">
             <div class="button-grid">
@@ -2261,7 +2047,7 @@
 
     <!-- Section Four Start -->
     <div id="Kemudahan" style="z-index: 7">
-      <div class="Home_Section_Four overflow-hidden" id="jenis-unit" style="z-index: 7">
+      <div class="Home_Section_Four overflow-hidden" style="z-index: 7">
         <div class="content">
           <div class="container">
             <h2 class="mb-md-5 mb-1 slide-anim anim-delay-500">
@@ -2299,7 +2085,6 @@
     <!-- Section Four End -->
 
     <!-- 3D Virtual Tour Section -->
-    <span id="lawatan-maya"></span>
     <div style="z-index: 8; position: relative; overflow: hidden; min-height: 480px;">
       <!-- Background image — cropped to show building, hide logo pin top and social bottom -->
       <div style="
@@ -3310,31 +3095,31 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="assets/gallery/g1.webp" alt="Linkar52 — ilustrasi kemudahan kolam renang" loading="eager" />
+                  <img src="assets/gallery/g1.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g2.webp" alt="Linkar52 — ilustrasi ruang dalaman unit" loading="lazy" />
+                  <img src="assets/gallery/g2.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g3.webp" alt="Linkar52 — ilustrasi kawasan landskap" loading="lazy" />
+                  <img src="assets/gallery/g3.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g4.webp" alt="Linkar52 — ilustrasi lobi kediaman" loading="lazy" />
+                  <img src="assets/gallery/g4.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g5.webp" alt="Linkar52 — ilustrasi kemudahan gimnasium" loading="lazy" />
+                  <img src="assets/gallery/g5.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g6.webp" alt="Linkar52 — ilustrasi kawasan kolam kanak-kanak" loading="lazy" />
+                  <img src="assets/gallery/g6.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g7.webp" alt="Linkar52 — ilustrasi pemandangan bandar" loading="lazy" />
+                  <img src="assets/gallery/g7.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g8.webp" alt="Linkar52 — ilustrasi ruang tamu unit" loading="lazy" />
+                  <img src="assets/gallery/g8.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g9.webp" alt="Linkar52 — ilustrasi kawasan hijau" loading="lazy" />
+                  <img src="assets/gallery/g9.webp" alt="Logo Linkar52 oleh PKNS" />
                 </li>
               </ul>
             </div>
@@ -3356,7 +3141,7 @@
             id="1_Main_Image"
             class="visible"
           />
-          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
+          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" />
         </div>
         <div class="Top_Right_Image">
           <img
@@ -3689,15 +3474,14 @@
 
     <!-- Section Eight Start -->
     <div id="Sec_Eight_Position_Start"></div>
-    <div style="z-index: 9" id="kalkulator-pinjaman" class="Home_Section_Eight">
+    <div style="z-index: 9" class="Home_Section_Eight">
       <img
-        src="assets/images/sa-sentral.webp?"
+        src="assets/images/sa-sentral.jpg?"
         width="100%"
         height="auto"
         class="Main_Img"
         alt="SA Sentral — pembangunan bersepadu oleh PKNS di Shah Alam"
-        loading="lazy"
-        fetchpriority="low"
+		  
       />
 
       <div class="imgremark white">*Gambar untuk tujuan ilustrasi sahaja.</div>
@@ -3933,7 +3717,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://www.facebook.com/sasentral.bypkns/"
                 target="_blank"
                 class="text-white"
-                aria-label="Facebook SA Sentral"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="facebook"></i>
@@ -3943,7 +3726,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://www.instagram.com/sa.sentral/"
                 target="_blank"
                 class="text-white"
-                aria-label="Instagram SA Sentral"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="instagram"></i>
@@ -3953,7 +3735,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://www.tiktok.com/@sa.sentral"
                 target="_blank"
                 class="text-white"
-                aria-label="TikTok SA Sentral"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="tik-tok"></i>
@@ -4045,13 +3826,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       });
 
       splide.mount();
-
-      // Fix Splide ARIA: change role="tabpanel" to role="group" on slide elements
-      splide.on("mounted", function () {
-        document.querySelectorAll("#image-carousel .splide__slide").forEach(function (slide) {
-          slide.setAttribute("role", "group");
-        });
-      });
     });
 
     const S1_TITLE = "Pembangunan<br>Berorientasikan<br>Transit";
@@ -4403,8 +4177,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       });
     });
 
-    // Defer calculator init until browser idle — reduces TBT
-    function initCalculator() {
+    document.addEventListener("DOMContentLoaded", () => {
       // Input Elements
       const purchaseInput = document.getElementById("purchaseValue");
       const purchaseRange = document.getElementById("purchasePrice");
@@ -4530,12 +4303,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 
       // Initialize
       calculate();
-    }
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(initCalculator);
-    } else {
-      setTimeout(initCalculator, 200);
-    }
+    });
   </script>
 
   <!-- Aos-animation -->
@@ -4759,7 +4527,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     }
     #whatsapp-float {
       position: fixed;
-      bottom: 170px;
+      bottom: 28px;
       right: 28px;
       z-index: 999999;
       background-color: #25D366;
@@ -4792,9 +4560,9 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     #whatsapp-float:hover #whatsapp-float-icon {
       animation: none;
     }
-    @media (max-width: 992px) {
+    @media (max-width: 600px) {
       #whatsapp-float {
-        bottom: 65px;
+        bottom: 20px;
         right: 16px;
         padding: 9px 14px 9px 10px;
         font-size: 13px;
@@ -4802,8 +4570,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     }
   </style>
   <!-- Floating WhatsApp Widget End -->
-
-
 
   </body>
 </html>
