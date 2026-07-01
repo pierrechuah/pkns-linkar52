@@ -2728,3 +2728,10 @@ a:where(:not([class*=wpex-decoration-])):hover {
     font-size: 15px !important;
   }
 }
+i[data-name="google-maps"] {
+  background-image: url("../icons/google-maps.svg");
+}
+
+i[data-name="waze"] {
+  background-image: url("../icons/waze.svg");
+}

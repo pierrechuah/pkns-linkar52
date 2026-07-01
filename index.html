@@ -180,7 +180,7 @@
       "telephone": "+60109280187",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "No. 10, Jalan Dato' Menteri 14/10, Seksyen 14",
+        "streetAddress": "Galeria SA Sentral, No. 1, Jalan Persidangan 14/2, Seksyen 14",
         "addressLocality": "Shah Alam",
         "addressRegion": "Selangor",
         "postalCode": "40000",
@@ -191,12 +191,12 @@
         "latitude": 3.0736,
         "longitude": 101.5183
       },
-      "developer": {
-        "@type": "Organization",
-        "name": "Perbadanan Kemajuan Negeri Selangor (PKNS)",
-        "url": "https://www.pkns.gov.my/",
-        "logo": "https://pknslinkar52.com.my/assets/images/logo.webp"
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Developer",
+        "value": "Perbadanan Kemajuan Negeri Selangor (PKNS)"
       },
+      "award": "Best Transit-Oriented Development (TOD), PropertyGuru Asia Awards Malaysia 2025",
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "LRT Station", "value": "50m to Stesen LRT Dato' Menteri" },
         { "@type": "LocationFeatureSpecification", "name": "Highway Access", "value": "100m to Federal Highway" },
@@ -210,14 +210,13 @@
         "name": "Galeria SA Sentral",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "No 2, Jalan Indah 14/8, Seksyen 14",
+          "streetAddress": "No. 1, Jalan Persidangan 14/2, Seksyen 14",
           "addressLocality": "Shah Alam",
           "addressRegion": "Selangor",
           "postalCode": "40000",
           "addressCountry": "MY"
         }
       },
-      "inLanguage": "ms-MY",
       "sameAs": [
         "https://www.facebook.com/pkns.gov.my",
         "https://www.instagram.com/pkns.gov.my"
@@ -338,7 +337,7 @@
           "name": "Di mana galeri jualan Linkar52?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Galeri jualan Linkar52 terletak di Galeria SA Sentral, No 2, Jalan Indah 14/8, Seksyen 14, 40000 Shah Alam, Selangor. Hubungi kami di 010-928 0187."
+            "text": "Galeri jualan Linkar52 terletak di Galeria SA Sentral, No. 1, Jalan Persidangan 14/2, Seksyen 14, 40000 Shah Alam, Selangor. Hubungi kami di 010-928 0187."
           }
         },
         {
@@ -363,6 +362,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ya. Linkar52 terletak hanya 50 meter dari Stesen LRT3 Dato' Menteri, yang kini beroperasi sepenuhnya sebagai sebahagian daripada Laluan LRT3 (Laluan Shah Alam). Kedudukan ini menjadikan Linkar52 antara kediaman paling dekat dengan rangkaian LRT3, memberikan penghuni akses mudah ke seluruh Lembah Klang tanpa bergantung kepada kenderaan persendirian. Sebagai pembangunan berorientasikan transit (TOD), Linkar52 menghubungkan terus penghuni dengan pengangkutan awam, SA Sentral, dan pusat bandar Shah Alam."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Adakah Linkar52 memenangi sebarang anugerah?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ya. Linkar52 telah dianugerahkan 'Best Transit-Oriented Development (TOD)' di PropertyGuru Asia Awards Malaysia 2025. Pemaju Linkar52, PKNS, turut menerima beberapa anugerah lain pada tahun yang sama termasuk People's Choice Award, Sustainable Design Champion dan Low Carbon Champion, manakala Galeria SA Sentral memenangi Best Designed Development (Malaysia) dan Best Sales Gallery Design."
           }
         }
       ]
@@ -3885,9 +3892,37 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
               Kunjungi Galeri Jualan Kami
             </h3>
             <p class="mb-4 slide-anim" style="font-size: 14px">
-              Galeria SA Sentral, No 2, Jalan Indah 14/8,<br />Seksyen
+              Galeria SA Sentral, No. 1, Jalan Persidangan 14/2,<br />Seksyen
               14, 40000 Shah Alam, Selangor Darul Ehsan.
             </p>
+            <div class="d-flex gap-3 mb-4 slide-anim">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=3.0738714,101.5246534"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Buka lokasi di Google Maps"
+                style="color: #fff; text-decoration: none"
+                ><span class="d-flex gap-2 align-items-center">
+                  <span class="d-inline-block" style="height: 25px; width: 25px">
+                    <i data-name="google-maps"></i>
+                  </span>
+                  Google Maps
+                </span></a
+              >
+              <a
+                href="https://waze.com/ul?ll=3.0738714,101.5246534&navigate=yes"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Buka lokasi di Waze"
+                style="color: #fff; text-decoration: none"
+                ><span class="d-flex gap-2 align-items-center">
+                  <span class="d-inline-block" style="height: 25px; width: 25px">
+                    <i data-name="waze"></i>
+                  </span>
+                  Waze
+                </span></a
+              >
+            </div>
 
             <h3 class="fw-semibold mb-3 slide-anim" style="font-size: 22px">
               Hubungi Kami
@@ -4675,6 +4710,14 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   // Vanilla JS form handler — jQuery removed (saves 87KB)
   var postUrl = "https://sales-api.property-x.asia/api/Microsite";
 
+  // Normalise Malaysian phone numbers to 60XXXXXXXXX (country code required by CRM)
+  function normalizePhone(raw) {
+    var digits = String(raw).replace(/\D/g, "");
+    if (digits.indexOf("60") === 0) { return digits; }
+    if (digits.indexOf("0") === 0) { return "60" + digits.substring(1); }
+    return "60" + digits;
+  }
+
   document.getElementById("form-ajax").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -4684,6 +4727,11 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       indexed_array[key] = value;
     });
     indexed_array["accountId"] = "a320ef06-e6da-11ec-a2c5-a3d3f6ecf8b4";
+    indexed_array["projectId"] = "623eca18-1b0b-433b-b912-f1e15551fc32";
+    indexed_array["remark"] = "Linkar52, SA Sentral";
+    if (indexed_array["phoneNo"]) {
+      indexed_array["phoneNo"] = normalizePhone(indexed_array["phoneNo"]);
+    }
 
     var btn = document.getElementById("submitBtn");
     var text = btn.querySelector(".btn-text");
