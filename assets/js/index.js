@@ -389,18 +389,24 @@ document.addEventListener("DOMContentLoaded", () => {
       HomeSectionFive.getBoundingClientRect().top - 0.5 * getViewportHeight();
     const SectionFiveElement_Bottom =
       HomeSectionFive.getBoundingClientRect().bottom - getViewportHeight();
+    const whatsappFloat = document.getElementById("whatsapp-float");
     if (SectionFiveElement_Top > 0) {
       HomeSectionFive.querySelector(".Unit_Bars").style.position = "absolute";
       HomeSectionFive.querySelector(".Unit_Bars").style.top = "unset";
       HomeSectionFive.querySelector(".Unit_Bars").style.bottom = 0 + "px";
+      if (whatsappFloat) whatsappFloat.style.display = "";
     } else if (SectionFiveElement_Top <= 0 && SectionFiveElement_Bottom >= 0) {
       HomeSectionFive.querySelector(".Unit_Bars").style.position = "fixed";
       HomeSectionFive.querySelector(".Unit_Bars").style.top = "unset";
       HomeSectionFive.querySelector(".Unit_Bars").style.bottom = "-30px";
+      // Floor plan tab bar is fixed and occupying the bottom of the viewport —
+      // hide the WhatsApp widget so the two fixed elements don't overlap
+      if (whatsappFloat) whatsappFloat.style.display = "none";
     } else {
       HomeSectionFive.querySelector(".Unit_Bars").style.position = "absolute";
       HomeSectionFive.querySelector(".Unit_Bars").style.top = "unset";
       HomeSectionFive.querySelector(".Unit_Bars").style.bottom = "-30px" + "px";
+      if (whatsappFloat) whatsappFloat.style.display = "";
     }
     //Section Five End
 
