@@ -4116,6 +4116,13 @@
 
       terokaiLink.addEventListener("click", (e) => {
         e.preventDefault();
+
+        // GA4 tracking — USP explore click
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "usp_explore_click",
+          usp_type: "rangkaian_bersepadu"
+        });
         scrollSection.classList.add("active");
         document.body.style.overflowY = "hidden";
         isVisible = true;
@@ -4153,6 +4160,13 @@
 
       terokaiLink.addEventListener("click", (e) => {
         e.preventDefault();
+
+        // GA4 tracking — USP explore click
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "usp_explore_click",
+          usp_type: "destinasi_pilihan"
+        });
         scrollSection.classList.add("active");
         document.body.style.overflowY = "hidden";
         isVisible = true;
@@ -4209,6 +4223,13 @@
 
       terokaiLink.addEventListener("click", (e) => {
         e.preventDefault();
+
+        // GA4 tracking — USP explore click
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "usp_explore_click",
+          usp_type: "kedamaian_rekaan"
+        });
         scrollSection.classList.add("active");
         document.body.style.overflowY = "hidden";
         isVisible = true;
@@ -4267,6 +4288,13 @@
 
       terokaiLink.addEventListener("click", (e) => {
         e.preventDefault();
+
+        // GA4 tracking — USP explore click
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "usp_explore_click",
+          usp_type: "keseimbangan_hidup"
+        });
         scrollSection.classList.add("active");
         document.body.style.overflowY = "hidden";
         isVisible = true;
@@ -4325,6 +4353,13 @@
 
       terokaiLink.addEventListener("click", (e) => {
         e.preventDefault();
+
+        // GA4 tracking — USP explore click
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "usp_explore_click",
+          usp_type: "kemudahan_harian"
+        });
         scrollSection.classList.add("active");
         document.body.style.overflowY = "hidden";
         isVisible = true;
