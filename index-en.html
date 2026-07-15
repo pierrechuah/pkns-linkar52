@@ -4654,6 +4654,14 @@
           imageElement.src = mirrorSrc;
           primaryButton.classList.remove("active");
           mirrorButton.classList.add("active");
+
+          // GA4 tracking — floor plan mirror toggle
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "floorplan_mirror_toggle",
+            unit_type: base.toUpperCase(),
+            view_mode: "mirrored"
+          });
         });
 
         // --- Primary Button Click (e.g., A1, B1, E) ---
@@ -4664,6 +4672,14 @@
             imageElement.src = primarySrc;
             mirrorButton.classList.remove("active");
             primaryButton.classList.add("active");
+
+            // GA4 tracking — floor plan mirror toggle
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: "floorplan_mirror_toggle",
+              unit_type: base.toUpperCase(),
+              view_mode: "standard"
+            });
           }
         });
       }
