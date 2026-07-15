@@ -572,6 +572,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!btn) return;
 
     const id = btn.dataset.id;
+
+    // GA4 tracking — floor plan unit tab click
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "floorplan_unit_click",
+      unit_type: id.replace("Unit_", "")
+    });
+
     unitBars.querySelector(".active")?.classList.remove("active");
     btn.classList.add("active");
 
