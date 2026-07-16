@@ -2506,7 +2506,8 @@ input[type=number] {
     width: 160px;
   }
 
-  .Scroll_Section_Footer h1 {
+  .Scroll_Section_Footer h1,
+  .Scroll_Section_Footer h2 {
     font-size: 12px !important;
   }
 

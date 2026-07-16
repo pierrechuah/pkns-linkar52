@@ -439,6 +439,15 @@
               ></a
             >
             <a
+              href="#showroom-location"
+              class="Btn Primary_Btn Close_Modal noshowmobile"
+              style="height: unset"
+              onclick="dataLayer.push({event: 'showroom_nav_click', nav_source: 'header_button'});"
+              ><span style="height: unset; display: flex; align-items: center"
+                >Lokasi Galeri</span
+              ></a
+            >
+            <a
               href="#daftar-form"
               class="Btn Primary_Btn Close_Modal noshowmobile"
               style="height: unset"
@@ -478,6 +487,12 @@
             <a class="header-menu Close_Modal" href="#Galeri">Galeri</a>
             <a
               class="header-menu Close_Modal"
+              href="#showroom-location"
+              onclick="dataLayer.push({event: 'showroom_nav_click', nav_source: 'dropdown_menu'});"
+              >Lokasi Galeri Jualan</a
+            >
+            <a
+              class="header-menu Close_Modal"
               href="https://ehartanah.lphs.gov.my/projects/A3l3wxlM"
               target="_blank"
               >RSKU</a
@@ -512,14 +527,23 @@
           position: fixed;
           top: 50%;
           right: 0px;
-          display: block;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
           z-index: 99999;
           transform: translateY(-50%);
-          height: 140px;
+          height: 294px;
           width: 40px;
         "
       >
-        <a href="#daftar-form" class="stickybuttonregister">Daftar Minat</a>
+        <a href="#daftar-form" class="stickybuttonregister" style="flex: 1;">Daftar Minat</a>
+        <a
+          href="#showroom-location"
+          class="stickybuttonregister"
+          style="flex: 1;"
+          onclick="dataLayer.push({event: 'showroom_nav_click', nav_source: 'fixed_tab'});"
+          >Galeri Jualan</a
+        >
       </div>
     </div>
 
@@ -3886,6 +3910,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
           <div
             class="col-lg-6 mb-4 ps-lg-5 px-3 px-lg-0 d-flex flex-column align-items-start"
           >
+            <span id="showroom-location" style="display:block; position:relative; top:-20px; visibility:hidden;"></span>
             <h2 class="fw-bold mb-3 slide-anim">Ada<br />Pertanyaan?</h2>
             <h3 class="fw-normal mb-3 slide-anim M_sm" style="font-size: 22px">
               Kunjungi Galeri Jualan Kami
@@ -3900,6 +3925,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Buka lokasi di Google Maps"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'google_maps'});"
                 style="color: #fff; text-decoration: none"
                 ><span class="d-flex gap-2 align-items-center">
                   <span class="d-inline-block" style="height: 25px; width: 25px">
@@ -3913,6 +3939,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Buka lokasi di Waze"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'waze'});"
                 style="color: #fff; text-decoration: none"
                 ><span class="d-flex gap-2 align-items-center">
                   <span class="d-inline-block" style="height: 25px; width: 25px">
@@ -3931,6 +3958,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 href="https://wa.me/60109280187"
                 target="_blank"
                 class="whatsapp-link"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'whatsapp_number'});"
                 style="color: #fff; text-decoration: none"
                 ><span class="d-flex gap-3 align-items-center">
                   <span
@@ -3944,6 +3972,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
               >
               <a
                 href="tel:60350220186"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'office_phone'});"
                 style="color: #fff; text-decoration: none"
                 ><span class="d-flex gap-3 align-items-center">
                   <span
@@ -3963,6 +3992,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                   href="https://pkns.gov.my"
                   target="_blank"
                   class="text-white text-decoration-none"
+                  onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'website'});"
                 >
                   pkns.gov.my
                 </a>
@@ -3978,6 +4008,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 target="_blank"
                 class="text-white"
                 aria-label="Facebook SA Sentral"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'facebook'});"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="facebook"></i>
@@ -3988,6 +4019,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 target="_blank"
                 class="text-white"
                 aria-label="Instagram SA Sentral"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'instagram'});"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="instagram"></i>
@@ -3998,6 +4030,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
                 target="_blank"
                 class="text-white"
                 aria-label="TikTok SA Sentral"
+                onclick="dataLayer.push({event: 'contact_section_click', contact_type: 'tiktok'});"
               >
                 <span class="d-inline-block" style="height: 25px; width: 25px">
                   <i data-name="tik-tok"></i>
@@ -4824,13 +4857,22 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     src="assets/vendor/js/bootstrap.bundle.min.js"
   ></script>
 
-  <!-- Instant jump to form — skip smooth scroll animation -->
+  <!-- Instant jump to form / showroom location — skip smooth scroll animation -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll('a[href="#daftar-form"]').forEach(function (link) {
         link.addEventListener("click", function (e) {
           e.preventDefault();
           var target = document.getElementById("daftar-form");
+          if (target) {
+            target.scrollIntoView({ behavior: "instant" });
+          }
+        });
+      });
+      document.querySelectorAll('a[href="#showroom-location"]').forEach(function (link) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          var target = document.getElementById("showroom-location");
           if (target) {
             target.scrollIntoView({ behavior: "instant" });
           }
