@@ -4961,7 +4961,103 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </style>
   <!-- Floating WhatsApp Widget End -->
 
+  <!-- Buy & Win Merdeka Desktop Banner (desktop only) -->
+  <a
+    href="https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/"
+    target="_blank"
+    rel="noopener noreferrer"
+    id="buyWinDesktopBanner"
+    class="d-none d-md-block"
+    onclick="dataLayer.push({event: 'promo_banner_click', promo_name: 'buy_win_merdeka', banner_type: 'desktop'});"
+    aria-label="PKNS Homes Buy and Win Merdeka Edition - klik untuk maklumat lanjut"
+    style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0;"
+  >
+    <img src="assets/merdeka/desktop-banner.png" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
+  </a>
+  <script>
+    window.addEventListener("load", function () {
+      var banner = document.getElementById("buyWinDesktopBanner");
+      var wa = document.getElementById("whatsapp-float");
+      if (banner && wa && window.innerWidth > 992) {
+        var h = banner.offsetHeight;
+        wa.style.bottom = (170 + h) + "px";
+      }
+    });
+  </script>
+  <!-- Buy & Win Merdeka Desktop Banner End -->
 
+  <!-- Buy & Win Merdeka Mobile Popup (mobile only, shows on page load) -->
+  <div
+    id="buyWinPopupOverlay"
+    style="display: none; position: fixed; inset: 0; z-index: 999997; background: rgba(0,0,0,0.6); overflow-y: auto;"
+  >
+    <div style="position: relative; max-width: 480px; margin: 40px auto;">
+      <img src="assets/merdeka/mobile-popup.png" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" />
+      <button
+        id="buyWinPopupClose"
+        aria-label="Tutup"
+        style="position: absolute; top: 0; right: 0; width: 16%; height: 7%; background: transparent; border: none; padding: 0; margin: 0; cursor: pointer;"
+      ></button>
+      <a
+        id="buyWinPopupLearnMore"
+        href="https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ketahui lebih lanjut"
+        onclick="dataLayer.push({event: 'promo_banner_click', promo_name: 'buy_win_merdeka', banner_type: 'mobile_popup'});"
+        style="position: absolute; left: 22%; right: 22%; top: 83%; height: 7%;"
+      ></a>
+    </div>
+  </div>
+  <!-- Buy & Win Merdeka Mobile Popup End -->
+
+  <!-- Buy & Win Merdeka Mobile Banner (mobile only, appears after popup is closed) -->
+  <a
+    href="https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/"
+    target="_blank"
+    rel="noopener noreferrer"
+    id="buyWinMobileBanner"
+    onclick="dataLayer.push({event: 'promo_banner_click', promo_name: 'buy_win_merdeka', banner_type: 'mobile'});"
+    aria-label="PKNS Homes Buy and Win Merdeka Edition - klik untuk maklumat lanjut"
+    style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0;"
+  >
+    <img src="assets/merdeka/mobile-banner.png" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
+  </a>
+  <style>
+    @media (min-width: 993px) {
+      #buyWinPopupOverlay,
+      #buyWinMobileBanner {
+        display: none !important;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var overlay = document.getElementById("buyWinPopupOverlay");
+      var closeBtn = document.getElementById("buyWinPopupClose");
+      var bottomBanner = document.getElementById("buyWinMobileBanner");
+      var wa = document.getElementById("whatsapp-float");
+
+      if (window.innerWidth <= 992 && overlay) {
+        overlay.style.display = "block";
+        dataLayer.push({ event: "promo_popup_view", promo_name: "buy_win_merdeka" });
+      }
+
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function () {
+          overlay.style.display = "none";
+          if (window.innerWidth <= 992 && bottomBanner) {
+            bottomBanner.style.display = "block";
+            if (wa) {
+              var h = bottomBanner.offsetHeight;
+              wa.style.bottom = (65 + h) + "px";
+            }
+          }
+        });
+      }
+    });
+  </script>
+  <!-- Buy & Win Merdeka Mobile Banner End -->
 
   </body>
 </html>
