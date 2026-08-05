@@ -4962,18 +4962,15 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   <!-- Floating WhatsApp Widget End -->
 
   <!-- Buy & Win Merdeka Desktop Banner (desktop only) -->
-  <a
-    href="https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/"
-    target="_blank"
-    rel="noopener noreferrer"
+  <button
+    type="button"
     id="buyWinDesktopBanner"
     class="d-none d-md-block"
-    onclick="dataLayer.push({event: 'promo_banner_click', promo_name: 'buy_win_merdeka', banner_type: 'desktop'});"
     aria-label="PKNS Homes Buy and Win Merdeka Edition - klik untuk maklumat lanjut"
-    style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0;"
+    style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0; border: none; padding: 0; margin: 0; background: none; cursor: pointer;"
   >
     <img src="assets/merdeka/desktop-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
-  </a>
+  </button>
   <script>
     window.addEventListener("load", function () {
       var banner = document.getElementById("buyWinDesktopBanner");
@@ -4985,6 +4982,45 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     });
   </script>
   <!-- Buy & Win Merdeka Desktop Banner End -->
+
+  <!-- Buy & Win Merdeka Desktop Registration Form Popup (desktop only) -->
+  <div
+    id="buyWinFormPopupDesktop"
+    style="display: none; position: fixed; inset: 0; z-index: 9999999; background: rgba(0,0,0,0.55);"
+  >
+    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 58vh; min-height: 500px; display: flex;">
+      <button
+        id="buyWinFormDesktopClose"
+        aria-label="Tutup"
+        style="position: absolute; top: 18px; right: 24px; z-index: 3; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 22px; line-height: 1; color: #1a1a4d; font-weight: bold; cursor: pointer;"
+      >&times;</button>
+      <div style="flex: 0 0 66%; overflow: hidden; position: relative; background: linear-gradient(135deg, #7fd8f5 0%, #eef8fd 45%, #b7c6ea 75%, #7295c8 100%);">
+        <img src="assets/merdeka/desktop-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block;" />
+        <button
+          id="buyWinFormDesktopBack"
+          style="position: absolute; bottom: 24px; left: 24px; z-index: 2; display: flex; align-items: center; gap: 10px; background: #e2001a; color: #fff; border: none; border-radius: 30px; padding: 12px 24px; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);"
+        ><span style="font-size: 18px;">&#171;</span> Kembali</button>
+      </div>
+      <div style="flex: 1 1 34%; min-width: 320px; background: linear-gradient(160deg, #14265c 0%, #1a3a8f 100%); padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; overflow-y: auto;">
+        <h2 style="margin: 0 0 4px; font-size: 24px; font-weight: 700; color: #ffb347; font-family: inherit;">Saya berminat untuk mendaftar!</h2>
+        <p style="margin: 0 0 18px; color: #dce3f5; font-size: 14px;">Sila isi maklumat di bawah.</p>
+        <form id="buy-win-form-desktop">
+          <input type="text" name="fullName" placeholder="Nama" required style="width: 100%; padding: 12px 14px; margin-bottom: 10px; border: none; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+          <input type="email" name="email" placeholder="Alamat Emel" required style="width: 100%; padding: 12px 14px; margin-bottom: 10px; border: none; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+          <input type="tel" name="phoneNo" placeholder="Nombor Tel." required style="width: 100%; padding: 12px 14px; margin-bottom: 14px; border: none; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
+          <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: #dce3f5; margin-bottom: 16px; line-height: 1.4;">
+            <input type="checkbox" required style="margin-top: 2px;" />
+            <span>Saya telah membaca dan bersetuju menerima Dasar Privasi, dan saya membenarkan pemprosesan data peribadi saya seperti yang diterangkan dalam <a href="https://www.pkns.gov.my/ms/dasar-privasi/" target="_blank" rel="noopener noreferrer" style="color: #ffb347; font-weight: 600; text-decoration: underline;">Dasar Privasi</a>.</span>
+          </label>
+          <button type="submit" id="buyWinFormDesktopSubmitBtn" style="width: 100%; background: #e2001a; color: #fff; border: none; border-radius: 8px; padding: 13px; font-size: 15px; font-weight: 700; cursor: pointer;">
+            <span class="btn-text">HANTAR</span>
+            <span class="btn-loader" style="display: none;">Menghantar...</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Buy & Win Merdeka Desktop Registration Form Popup End -->
 
   <!-- Buy & Win Merdeka Mobile Popup (mobile only, shows on page load) -->
   <div
@@ -5012,21 +5048,64 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   <!-- Buy & Win Merdeka Mobile Popup End -->
 
   <!-- Buy & Win Merdeka Mobile Banner (mobile only, appears after popup is closed) -->
-  <a
-    href="https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/"
-    target="_blank"
-    rel="noopener noreferrer"
+  <button
+    type="button"
     id="buyWinMobileBanner"
-    onclick="dataLayer.push({event: 'promo_banner_click', promo_name: 'buy_win_merdeka', banner_type: 'mobile'});"
     aria-label="PKNS Homes Buy and Win Merdeka Edition - klik untuk maklumat lanjut"
-    style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0;"
+    style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0; border: none; padding: 0; margin: 0; background: none; cursor: pointer;"
   >
     <img src="assets/merdeka/mobile-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
-  </a>
+  </button>
+  <!-- Buy & Win Merdeka Mobile Banner End -->
+
+  <!-- Buy & Win Merdeka Mobile Registration Form Popup (mobile only, opens from bottom banner) -->
+  <div
+    id="buyWinFormPopupMobile"
+    style="display: none; position: fixed; inset: 0; z-index: 9999999; background: linear-gradient(180deg, #d9edfb 0%, #a9d5f0 45%, #4f97d6 100%); overflow-y: auto;"
+  >
+    <button
+      id="buyWinFormMobileClose"
+      aria-label="Tutup"
+      style="position: absolute; top: 16px; right: 16px; z-index: 2; background: transparent; border: none; font-size: 32px; line-height: 1; color: #1a1a4d; font-weight: bold; cursor: pointer; padding: 4px 8px;"
+    >&times;</button>
+    <div style="max-width: 480px; margin: 0 auto; padding: 56px 24px 40px;">
+      <div style="position: relative; width: 100%; padding-top: 71%; overflow: hidden;">
+        <img src="assets/merdeka/mobile-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="position: absolute; top: 0; left: 0; width: 100%; display: block;" />
+      </div>
+      <div style="background: #fff; border-radius: 20px; margin-top: 16px; padding: 28px 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
+        <h2 style="margin: 0 0 4px; font-size: 22px; font-weight: 700; color: #1a1a4d; font-family: inherit;">Saya berminat untuk mendaftar!</h2>
+        <p style="margin: 0 0 16px; color: #666; font-size: 15px;">Sila isi maklumat di bawah.</p>
+        <form id="buy-win-form-mobile">
+          <input type="text" name="fullName" placeholder="Nama" required style="width: 100%; padding: 12px 14px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; box-sizing: border-box;" />
+          <input type="email" name="email" placeholder="Alamat Emel" required style="width: 100%; padding: 12px 14px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; box-sizing: border-box;" />
+          <input type="tel" name="phoneNo" placeholder="Nombor Tel." required style="width: 100%; padding: 12px 14px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; box-sizing: border-box;" />
+          <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #333; margin-bottom: 20px;">
+            <input type="checkbox" required style="margin-top: 3px;" />
+            <span>Saya telah membaca dan bersetuju menerima Dasar Privasi, dan saya membenarkan pemprosesan data peribadi saya seperti yang diterangkan dalam <a href="https://www.pkns.gov.my/ms/dasar-privasi/" target="_blank" rel="noopener noreferrer" style="color: #1a1a4d; font-weight: 600; text-decoration: underline;">Dasar Privasi</a>.</span>
+          </label>
+          <button type="submit" id="buyWinFormMobileSubmitBtn" style="width: 100%; background: #e2001a; color: #fff; border: none; border-radius: 8px; padding: 14px; font-size: 16px; font-weight: 700; cursor: pointer;">
+            <span class="btn-text">HANTAR</span>
+            <span class="btn-loader" style="display: none;">Menghantar...</span>
+          </button>
+        </form>
+      </div>
+      <button id="buyWinFormMobileBack" style="display: flex; align-items: center; justify-content: center; gap: 8px; margin: 24px auto 0; background: none; border: none; color: #1a1a4d; font-weight: 700; font-size: 16px; cursor: pointer;">
+        <span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; border: 2px solid #1a1a4d;">&#8249;</span> KEMBALI
+      </button>
+    </div>
+  </div>
+  <!-- Buy & Win Merdeka Mobile Registration Form Popup End -->
+
   <style>
     @media (min-width: 993px) {
       #buyWinPopupOverlay,
-      #buyWinMobileBanner {
+      #buyWinMobileBanner,
+      #buyWinFormPopupMobile {
+        display: none !important;
+      }
+    }
+    @media (max-width: 992px) {
+      #buyWinFormPopupDesktop {
         display: none !important;
       }
     }
@@ -5038,7 +5117,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       var bottomBanner = document.getElementById("buyWinMobileBanner");
       var wa = document.getElementById("whatsapp-float");
 
-      if (window.innerWidth <= 992 && overlay) {
+      if (window.innerWidth <= 992 && overlay && !localStorage.getItem("buyWinPopupSeen")) {
         overlay.style.display = "block";
         dataLayer.push({ event: "promo_popup_view", promo_name: "buy_win_merdeka" });
       }
@@ -5046,6 +5125,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       if (closeBtn) {
         closeBtn.addEventListener("click", function () {
           overlay.style.display = "none";
+          localStorage.setItem("buyWinPopupSeen", "1");
           if (window.innerWidth <= 992 && bottomBanner) {
             bottomBanner.style.display = "block";
             if (wa) {
@@ -5055,9 +5135,112 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
           }
         });
       }
+
+      // --- Mobile registration form popup (opens from bottom sticky banner) ---
+      var formPopupMobile = document.getElementById("buyWinFormPopupMobile");
+      var formMobileClose = document.getElementById("buyWinFormMobileClose");
+      var formMobileBack = document.getElementById("buyWinFormMobileBack");
+
+      if (bottomBanner) {
+        bottomBanner.addEventListener("click", function () {
+          dataLayer.push({ event: "promo_banner_click", promo_name: "buy_win_merdeka", banner_type: "mobile" });
+          if (formPopupMobile) {
+            formPopupMobile.style.display = "block";
+            dataLayer.push({ event: "promo_form_view", promo_name: "buy_win_merdeka", form_type: "mobile" });
+          }
+        });
+      }
+      function closeMobileFormPopup() {
+        if (formPopupMobile) formPopupMobile.style.display = "none";
+      }
+      if (formMobileClose) formMobileClose.addEventListener("click", closeMobileFormPopup);
+      if (formMobileBack) formMobileBack.addEventListener("click", closeMobileFormPopup);
+
+      // --- Desktop registration form popup (opens from desktop banner) ---
+      var desktopBanner = document.getElementById("buyWinDesktopBanner");
+      var formPopupDesktop = document.getElementById("buyWinFormPopupDesktop");
+      var formDesktopClose = document.getElementById("buyWinFormDesktopClose");
+      var formDesktopBack = document.getElementById("buyWinFormDesktopBack");
+
+      if (desktopBanner) {
+        desktopBanner.addEventListener("click", function () {
+          dataLayer.push({ event: "promo_banner_click", promo_name: "buy_win_merdeka", banner_type: "desktop" });
+          if (formPopupDesktop) {
+            formPopupDesktop.style.display = "block";
+            dataLayer.push({ event: "promo_form_view", promo_name: "buy_win_merdeka", form_type: "desktop" });
+          }
+        });
+      }
+      function closeDesktopFormPopup() {
+        if (formPopupDesktop) formPopupDesktop.style.display = "none";
+      }
+      if (formDesktopClose) formDesktopClose.addEventListener("click", closeDesktopFormPopup);
+      if (formDesktopBack) formDesktopBack.addEventListener("click", closeDesktopFormPopup);
+
+      // --- Shared submit handler for both Buy & Win registration forms ---
+      function wireBuyWinForm(formId, submitBtnId, formType, onSuccessClose) {
+        var form = document.getElementById(formId);
+        if (!form) return;
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          dataLayer.push({ event: "promo_form_submit_attempt", promo_name: "buy_win_merdeka", form_type: formType });
+
+          var formData = new FormData(form);
+          var indexed_array = {};
+          formData.forEach(function (value, key) { indexed_array[key] = value; });
+          indexed_array["accountId"] = "a320ef06-e6da-11ec-a2c5-a3d3f6ecf8b4";
+          indexed_array["projectId"] = "623eca18-1b0b-433b-b912-f1e15551fc32";
+          indexed_array["remark"] = "Linkar52, SA Sentral - Buy & Win Merdeka Campaign";
+          if (indexed_array["phoneNo"]) {
+            indexed_array["phoneNo"] = normalizePhone(indexed_array["phoneNo"]);
+          }
+
+          var btn = document.getElementById(submitBtnId);
+          var text = btn.querySelector(".btn-text");
+          var loader = btn.querySelector(".btn-loader");
+          btn.disabled = true;
+          text.style.display = "none";
+          loader.style.display = "inline";
+
+          var body = Object.keys(indexed_array)
+            .map(function (k) { return encodeURIComponent(k) + "=" + encodeURIComponent(indexed_array[k]); })
+            .join("&");
+
+          fetch(postUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: body
+          })
+            .then(function (res) { return res.text(); })
+            .then(function (resp) {
+              if (resp.trim() === "OK") {
+                dataLayer.push({ event: "promo_form_submit_success", promo_name: "buy_win_merdeka", form_type: formType });
+                Swal.fire({ title: "Terima Kasih", icon: "success", confirmButtonText: "Okay" });
+                form.reset();
+                if (onSuccessClose) onSuccessClose();
+              } else {
+                dataLayer.push({ event: "promo_form_submit_error", promo_name: "buy_win_merdeka", form_type: formType });
+                Swal.fire({ title: resp || "Ralat telah berlaku.", icon: "error", confirmButtonText: "Okay" });
+              }
+            })
+            .catch(function () {
+              dataLayer.push({ event: "promo_form_submit_error", promo_name: "buy_win_merdeka", form_type: formType });
+              Swal.fire({ title: "Ralat telah berlaku.", icon: "error", confirmButtonText: "Okay" });
+            })
+            .finally(function () {
+              btn.disabled = false;
+              text.style.display = "inline";
+              loader.style.display = "none";
+            });
+        });
+      }
+
+      wireBuyWinForm("buy-win-form-mobile", "buyWinFormMobileSubmitBtn", "mobile", closeMobileFormPopup);
+      wireBuyWinForm("buy-win-form-desktop", "buyWinFormDesktopSubmitBtn", "desktop", function () {
+        if (formPopupDesktop) formPopupDesktop.style.display = "none";
+      });
     });
   </script>
-  <!-- Buy & Win Merdeka Mobile Banner End -->
 
   </body>
 </html>
