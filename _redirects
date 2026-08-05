@@ -7,5 +7,10 @@ https://linkar52.pages.dev/* https://pknslinkar52.com.my/:splat 301
 https://www.pknslinkar52.com.my/* https://pknslinkar52.com.my/:splat 301
 
 # EN route only — root serves index.html automatically
-/en/    /index-en.html    200
-/en     /index-en.html    200
+# NOTE: rewrite target must be extensionless. Cloudflare Pages auto-redirects
+# .html paths to their clean-URL form even as a 200 rewrite target, which was
+# turning this into a visible redirect (/en/ -> /index-en) instead of a silent
+# rewrite — that's why Google was refusing to index /en/ and picking /index-en
+# as the canonical instead.
+/en/    /index-en    200
+/en     /index-en    200
