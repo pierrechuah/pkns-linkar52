@@ -5116,10 +5116,7 @@
       if (bottomBanner) {
         bottomBanner.addEventListener("click", function () {
           dataLayer.push({ event: "promo_banner_click", promo_name: "buy_win_merdeka", banner_type: "mobile" });
-          if (formPopupMobile) {
-            formPopupMobile.style.display = "block";
-            dataLayer.push({ event: "promo_form_view", promo_name: "buy_win_merdeka", form_type: "mobile" });
-          }
+          window.open("https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/", "_blank", "noopener,noreferrer");
         });
       }
       function closeMobileFormPopup() {
@@ -5137,10 +5134,7 @@
       if (desktopBanner) {
         desktopBanner.addEventListener("click", function () {
           dataLayer.push({ event: "promo_banner_click", promo_name: "buy_win_merdeka", banner_type: "desktop" });
-          if (formPopupDesktop) {
-            formPopupDesktop.style.display = "block";
-            dataLayer.push({ event: "promo_form_view", promo_name: "buy_win_merdeka", form_type: "desktop" });
-          }
+          window.open("https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/", "_blank", "noopener,noreferrer");
         });
       }
       function closeDesktopFormPopup() {
