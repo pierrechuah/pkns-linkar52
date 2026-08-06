@@ -33,15 +33,15 @@
 
 
     <!-- Preload LCP images (desktop + mobile) -->
-    <link rel="preload" as="image" href="/assets/images/linkar-graphic-2.webp"
+    <link rel="preload" as="image" href="assets/images/linkar-graphic-2.webp"
           fetchpriority="high" />
-    <link rel="preload" as="image" href="/assets/images/home-main-banner.webp"
+    <link rel="preload" as="image" href="assets/images/home-main-banner.webp"
           media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/assets/m_images/home.webp"
+    <link rel="preload" as="image" href="assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/assets/images/homebanner.png"
+    <link rel="preload" as="image" href="assets/images/homebanner.png"
           media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="/assets/m_images/home-en.webp"
+    <link rel="preload" as="image" href="assets/m_images/home-en.webp"
           media="(max-width: 767px)" fetchpriority="high" />
 
     <!-- Preconnect: warm TCP/TLS to external origins before their requests fire -->
@@ -50,24 +50,24 @@
     <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
     <!-- Bootstrap (synchronous — hero depends on it) -->
-    <link rel="stylesheet" href="/assets/vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
 
     <!-- Vendor CSS — synchronous (async loading confirmed to regress LCP to 36s+, do not change) -->
-    <link rel="stylesheet" href="/assets/vendor/css/splide.min.css" />
-    <link rel="stylesheet" href="/assets/vendor/css/sweetalert2.min.css" />
-    <link rel="stylesheet" href="/assets/vendor/css/aos.css" />
+    <link rel="stylesheet" href="assets/vendor/css/splide.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="assets/vendor/css/aos.css" />
 
     <!-- Fonts loaded directly to avoid @import chain delay -->
-    <link rel="stylesheet" href="/assets/css/fonts/fonts.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Glide CSS synchronous (hero-area, keep blocking to protect LCP); JS sync in head -->
-    <link rel="stylesheet" href="/assets/vendor/css/glide.core.min.css" />
-    <script src="/assets/vendor/js/glide.min.js"></script>
+    <link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" />
+    <script src="assets/vendor/js/glide.min.js"></script>
 
-    <link rel="icon" type="image/png" href="/favicon.png">
-	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
 	<link rel="alternate" hreflang="en" href="https://pknslinkar52.com.my/en/" />
 <link rel="alternate" hreflang="ms" href="https://pknslinkar52.com.my/" />
 <link rel="alternate" hreflang="x-default" href="https://pknslinkar52.com.my/" />
@@ -417,7 +417,7 @@
 
     <!-- 2. LOGO -->
     <div id="logo-animate" class="logo-container mt-3">
-      <img src="/assets/images/logo.webp" alt="Linker52" />
+      <img src="assets/images/logo.webp" alt="Linker52" />
     </div>
 
     <!-- Header Start -->
@@ -429,7 +429,7 @@
               <i class="icon mx-md-2 mx-1" data-name="menu"></i>
             </button>
             <a
-              href="/assets/brochure/booklet.pdf"
+              href="assets/brochure/booklet.pdf"
               target="_blank"
               class="Btn Primary_Btn Close_Modal noshowmobile"
               ><span style="height: unset; display: flex; align-items: center"
@@ -458,7 +458,7 @@
             class="header-menu-container flex-column Primary_Font px-2 d-flex"
           >
             <a
-              href="/assets/brochure/booklet.pdf"
+              href="assets/brochure/booklet.pdf"
               target="_blank"
               class="Btn Primary_Btn Close_Modal noshowdesktop mb-3"
               ><span style="height: unset; display: flex; align-items: center"
@@ -552,15 +552,15 @@
           <img
             id="Linkar_Graphic_2"
             class="h-100 object-fit-contain w-100 start-0"
-            src="/assets/images/linkar-graphic-2.webp"
+            src="assets/images/linkar-graphic-2.webp"
             alt="Linkar52 city graphic illustration Shah Alam"
             style="animation-delay: unset"
             fetchpriority="high"
             loading="eager"
             decoding="sync"
           />
-          <!--<img class="left_img zoom-in slide-in-left" src="/assets/images/leaf2.webp" alt="" />
-        <img class="right_img zoom-in slide-in-right" src="/assets/images/leaf.webp" alt="" />-->
+          <!--<img class="left_img zoom-in slide-in-left" src="assets/images/leaf2.webp" alt="" />
+        <img class="right_img zoom-in slide-in-right" src="assets/images/leaf.webp" alt="" />-->
         </div>
       </div>
       <div class="content">
@@ -572,13 +572,13 @@
       <div class="expand-section">
         <div class="main_image">
           <img
-            src="/assets/images/home-main-banner.webp"
+            src="assets/images/home-main-banner.webp"
             alt="Linkar52 — transit-oriented development in Seksyen 14, Shah Alam"
             class="d_img h-100 object-fit-cover d-none d-md-block"
             loading="eager" decoding="sync" fetchpriority="high"
           />
           <img
-            src="/assets/m_images/home.webp"
+            src="assets/m_images/home.webp"
             alt="Linkar52 — transit-oriented development in Seksyen 14, Shah Alam (mobile)"
             class="m_img h-100 object-fit-cover d-block d-md-none"
             loading="eager" decoding="sync" fetchpriority="high"
@@ -587,13 +587,13 @@
         </div>
         <div class="home-overlay-image">
           <img
-            src="/assets/images/homebanner.png"
+            src="assets/images/homebanner.png"
             alt="Linkar52 Shah Alam — Transit-Oriented Living"
             class="w-100 d-none d-md-block"
             loading="eager" decoding="sync" fetchpriority="high"
           />
           <img
-            src="/assets/m_images/home-en.webp"
+            src="assets/m_images/home-en.webp"
             alt="Linkar52 Shah Alam — Transit-Oriented Living (mobile)"
             class="w-100 d-block d-md-none"
             loading="eager" decoding="sync" fetchpriority="high"
@@ -625,7 +625,7 @@
       class="z-n1"
       style="clip-path: circle(25% at 50% 50%)"
     >
-      <img src="/assets/images/galeri-linkar.jpg" alt="Linkar52 — development overview" loading="lazy" />
+      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — development overview" loading="lazy" />
       <div class="imgremark">*Image for illustration purposes only.</div>
     </div>
     <div class="Section_Two_Extra_Scroll"></div>
@@ -1092,13 +1092,13 @@
         <div class="bg-image-usp-lrt-expand position-relative">
           <img
             class="d-none d-md-block"
-            src="/assets/images/USP-LRT.jpg"
+            src="assets/images/USP-LRT.jpg"
             alt="Linkar52 — 50m from Dato Menteri LRT Station, Shah Alam"
           
             loading="lazy"/>
           <img
             class="d-block d-md-none"
-            src="/assets/m_images/lrt.jpg"
+            src="assets/m_images/lrt.jpg"
             alt="Linkar52 — 50m from Dato Menteri LRT Station, Shah Alam"
           
             loading="lazy"/>
@@ -1133,7 +1133,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="mb-lg-5 mb-4 pb-3 pt-5">
-                  <img src="/assets/images/lrt-line.png" width="100%" alt="LRT Line 3 route map connecting Linkar52 to Klang Valley" loading="lazy" />
+                  <img src="assets/images/lrt-line.png" width="100%" alt="LRT Line 3 route map connecting Linkar52 to Klang Valley" loading="lazy" />
                 </div>
                 <div class="d-flex justify-content-center">
                   <div
@@ -1216,13 +1216,13 @@
         <div class="main_img position-relative">
           <img
             class="d-none d-md-block"
-            src="/assets/images/Location_LRT.webp?v5"
+            src="assets/images/Location_LRT.webp?v5"
             alt="Linkar52 — 100m from Federal Highway with NKVE, ELITE and LKSA access"
           
             loading="lazy"/>
           <img
             class="d-block d-md-none"
-            src="/assets/m_images/usp-highway.jpg?v5"
+            src="assets/m_images/usp-highway.jpg?v5"
             alt="Linkar52 — 100m from Federal Highway with NKVE, ELITE and LKSA access"
           
             loading="lazy"/>
@@ -1380,7 +1380,7 @@
               <div class="col-lg-8 col-12 ps-lg-0">
                 <div class="mb-lg-5 mb-4">
                   <img
-                    src="/assets/images/map.png?v3"
+                    src="assets/images/map.png?v3"
                     style=""
                     width="100%"
                     height="100%"
@@ -1473,13 +1473,13 @@
         <div class="main_img position-relative">
           <img
             class="d-none d-md-block"
-            src="/assets/images/linkar_52_type_d1.webp"
+            src="assets/images/linkar_52_type_d1.webp"
             alt="Linkar52 exclusive low-density design for privacy"
           
             loading="lazy"/>
           <img
             class="d-block d-md-none"
-            src="/assets/m_images/usp-privacy-main.webp"
+            src="assets/m_images/usp-privacy-main.webp"
             alt="Linkar52 exclusive low-density design for privacy"
           
             loading="lazy"/>
@@ -1510,7 +1510,7 @@
             <div class="position-relative px-md-3">
               <div class="position-relative Grid_Img_1" style="width: 60%">
                 <img
-                  src="/assets/images/usp-privacy-expand-image-2.jpg"
+                  src="assets/images/usp-privacy-expand-image-2.jpg"
                   alt="Linkar52 exclusive corridor design"
                   class="w-100"
                 />
@@ -1534,7 +1534,7 @@
               </div>
               <div class="position-relative d-flex justify-content-end z1">
                 <img
-                  src="/assets/images/usp-privacy-expand-image-3.webp"
+                  src="assets/images/usp-privacy-expand-image-3.webp"
                   alt="Linkar52 residential unit view"
                   style="width: 50%; margin-left: auto; margin-top: -32%"
                   class="Grid_Img_2"
@@ -1559,7 +1559,7 @@
         <div
           class="Sec_3 w-100"
           style="
-            background-image: url(/assets/images/usp-privacy-footer-image.webp);
+            background-image: url(assets/images/usp-privacy-footer-image.webp);
             background-repeat: no-repeat;
             background-size: cover;
           "
@@ -1581,7 +1581,7 @@
                       class="bg-blur d-flex justify-content-between align-items-center p-4 mb-2"
                       style="height: 240px"
                     >
-                      <img src="/assets/images/usp-privacy.png?v2" alt="Linkar52 private entrance design illustration" loading="lazy" />
+                      <img src="assets/images/usp-privacy.png?v2" alt="Linkar52 private entrance design illustration" loading="lazy" />
                       <div class="ps-3">
                         <h6
                           class="text-whitex"
@@ -1612,7 +1612,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="/assets/images/usp-privacy-footer-menu-image-2.webp"
+                        src="assets/images/usp-privacy-footer-menu-image-2.webp"
                         width="197px"
                         height="95px"
                         alt="Semi-private corridor at Linkar52"
@@ -1647,7 +1647,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="/assets/images/usp-privacy-footer-menu-image-3.webp"
+                        src="assets/images/usp-privacy-footer-menu-image-3.webp"
                         width="200px"
                         height="100%"
                         alt="360-degree views from Linkar52 units"
@@ -1683,7 +1683,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="/assets/images/usp-privacy-footer-menu-image-4.webp"
+                        src="assets/images/usp-privacy-footer-menu-image-4.webp"
                         width="191px"
                         height="100%"
                         alt="Peaceful living at Linkar52"
@@ -1719,7 +1719,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="/assets/images/usp-privacy-footer-menu-image-5.webp"
+                        src="assets/images/usp-privacy-footer-menu-image-5.webp"
                         width="191px"
                         height="100%"
                         alt="Open landscape area at Linkar52"
@@ -1844,13 +1844,13 @@
         <div class="main_img position-relative">
           <img
             class="d-none d-md-block"
-            src="/assets/images/usp-facilities-expand-image-1.webp"
+            src="assets/images/usp-facilities-expand-image-1.webp"
             alt="Linkar52 commercial hub with shops and dining nearby"
           
             loading="lazy"/>
           <img
             class="d-block d-md-none"
-            src="/assets/m_images/usp_facilities_expand.webp"
+            src="assets/m_images/usp_facilities_expand.webp"
             alt="Linkar52 commercial hub with shops and dining nearby"
           
             loading="lazy"/>
@@ -1889,7 +1889,7 @@
           </div>
           <div class="w-100 d-flex justify-content-end Img_1">
             <img
-              src="/assets/images/linkar_52_playground.webp"
+              src="assets/images/linkar_52_playground.webp"
               width="85%"
               alt="Children's playground at Linkar52"
               class="object-fit-contain"
@@ -1903,7 +1903,7 @@
         <div class="mt-md-5 mt-4">
           <div class="Img_2" style="position: relative; width: 47.5%">
             <img
-              src="/assets/images/linkar_52_basketball.webp"
+              src="assets/images/linkar_52_basketball.webp"
               width="100%"
               alt="Sports court at Linkar52"
              
@@ -1917,7 +1917,7 @@
             style="margin-top: -10%; position: relative"
           >
             <img
-              src="/assets/images/workspace.jpg?v3"
+              src="assets/images/workspace.jpg?v3"
               width="47.5%"
               alt="Co-working space at Linkar52"
               class="object-fit-contain"
@@ -2034,13 +2034,13 @@
         <div class="main_img position-relative">
           <img
             class="d-none d-md-block"
-            src="/assets/images/commercial.jpg?v5"
+            src="assets/images/commercial.jpg?v5"
             alt="Linkar52 commercial hub with shops and dining nearby"
           
             loading="lazy"/>
           <img
             class="d-block d-md-none"
-            src="/assets/m_images/usp_commercial.webp"
+            src="assets/m_images/usp_commercial.webp"
             alt="Linkar52 commercial hub with shops and dining nearby"
           
             loading="lazy"/>
@@ -2159,7 +2159,7 @@
               <div class="col-md-6 col-7 px-0">
                 <div class="py-lg-5 py-0 mb-lg-5 mb-4">
                   <img
-                    src="/assets/images/usp-commercial-person.jpg"
+                    src="assets/images/usp-commercial-person.jpg"
                     width="100%"
                     height="100%"
                     alt="Commercial hub and lifestyle at Linkar52"
@@ -2277,7 +2277,7 @@
           </div>
           <div class="w-100 h-100 position-relative">
             <img
-              src="/assets/images/location.webp?v6"
+              src="assets/images/location.webp?v6"
               class="z-3"
               alt="Linkar52 location in Seksyen 14 Shah Alam"
               width="100%"
@@ -2316,13 +2316,13 @@
         </div>
 
         <img
-          src="/assets/images/facilities.webp?v5"
+          src="assets/images/facilities.webp?v5"
           alt="PKNS"
           class="d-none d-md-block"
         
             loading="lazy"/>
         <img
-          src="/assets/m_images/facilities-bm.webp"
+          src="assets/m_images/facilities-bm.webp"
           alt="PKNS"
           class="d-block d-md-none"
         
@@ -2414,7 +2414,7 @@
                 <!-- Unit_A1 -->
                 <h2 class="Unit_Title visible" id="Unit_A1_Title">Unit A1</h2>
                 <img
-                  src="/assets/images/linkar_52_type_a1.webp"
+                  src="assets/images/linkar_52_type_a1.webp"
                   alt="Unit A1"
                   class="visible"
                   id="Unit_A1_Main_Image"
@@ -2427,7 +2427,7 @@
                 <!-- Unit_A2 -->
                 <h2 class="Unit_Title" id="Unit_A2_Title">Unit A2</h2>
                 <img
-                  src="/assets/images/linkar_52_type_a2_living.webp"
+                  src="assets/images/linkar_52_type_a2_living.webp"
                   alt="Unit A2"
                   id="Unit_A2_Main_Image"
                 />
@@ -2436,7 +2436,7 @@
                 <!-- Unit_B1 -->
                 <h2 class="Unit_Title" id="Unit_B1_Title">Unit B1</h2>
                 <img
-                  src="/assets/images/linkar_52_type_b_masterbedroom.webp"
+                  src="assets/images/linkar_52_type_b_masterbedroom.webp"
                   alt="Unit B1"
                   id="Unit_B1_Main_Image"
                 />
@@ -2445,7 +2445,7 @@
                 <!-- Unit_B2 -->
                 <h2 class="Unit_Title" id="Unit_B2_Title">Unit B2</h2>
                 <img
-                  src="/assets/images/linkar_52_type_b2.webp"
+                  src="assets/images/linkar_52_type_b2.webp"
                   alt="Unit B2"
                   id="Unit_B2_Main_Image"
                 />
@@ -2454,7 +2454,7 @@
                 <!-- Unit_B2A -->
                 <h2 class="Unit_Title" id="Unit_B2A_Title">Unit B2A</h2>
                 <img
-                  src="/assets/images/linkar_52_type_b2a.webp"
+                  src="assets/images/linkar_52_type_b2a.webp"
                   alt="Unit B2A"
                   id="Unit_B2A_Main_Image"
                 />
@@ -2463,7 +2463,7 @@
                 <!-- Unit_C1 -->
                 <h2 class="Unit_Title" id="Unit_C1_Title">Unit C1</h2>
                 <img
-                  src="/assets/images/linkar_52_type_c1_kitchen.webp"
+                  src="assets/images/linkar_52_type_c1_kitchen.webp"
                   alt="Unit C1"
                   id="Unit_C1_Main_Image"
                 />
@@ -2472,7 +2472,7 @@
                 <!-- Unit_C2 -->
                 <h2 class="Unit_Title" id="Unit_C2_Title">Unit C2</h2>
                 <img
-                  src="/assets/images/linkar_52_type_c2_living_&_dining.webp"
+                  src="assets/images/linkar_52_type_c2_living_&_dining.webp"
                   alt="Unit C2"
                   id="Unit_C2_Main_Image"
                 />
@@ -2481,7 +2481,7 @@
                 <!-- Unit_D1 -->
                 <h2 class="Unit_Title" id="Unit_D1_Title">Unit D1</h2>
                 <img
-                  src="/assets/images/linkar_52_type_d1.webp"
+                  src="assets/images/linkar_52_type_d1.webp"
                   alt="Unit D1"
                   id="Unit_D1_Main_Image"
                 />
@@ -2490,7 +2490,7 @@
                 <!-- Unit_D2 -->
                 <h2 class="Unit_Title" id="Unit_D2_Title">Unit D2</h2>
                 <img
-                  src="/assets/images/linkar_52_type_d2.webp"
+                  src="assets/images/linkar_52_type_d2.webp"
                   alt="Unit D2"
                   id="Unit_D2_Main_Image"
                 />
@@ -2499,7 +2499,7 @@
                 <!-- Unit_D3 -->
                 <h2 class="Unit_Title" id="Unit_D3_Title">Unit D3</h2>
                 <img
-                  src="/assets/images/linkar_52_type_d3.webp"
+                  src="assets/images/linkar_52_type_d3.webp"
                   alt="Unit D3"
                   id="Unit_D3_Main_Image"
                 />
@@ -2508,7 +2508,7 @@
                 <!-- Unit_E -->
                 <h2 class="Unit_Title" id="Unit_E_Title">Unit E</h2>
                 <img
-                  src="/assets/images/linkar_52_type_e.webp"
+                  src="assets/images/linkar_52_type_e.webp"
                   alt="Unit E"
                   id="Unit_E_Main_Image"
                 />
@@ -2803,7 +2803,7 @@
                 <div class="Unit_Map_Image px-5 px-md-0">
                   <!-- Unit_A1 -->
                   <img
-                    src="/assets/layout/en/a1.png"
+                    src="assets/layout/en/a1.png"
                     alt="Unit A1 Map"
                     width="100%"
                     class="visible"
@@ -2813,7 +2813,7 @@
 
                   <!-- Unit_A2 -->
                   <img
-                    src="/assets/layout/en/a2.png"
+                    src="assets/layout/en/a2.png"
                     alt="Unit A2 Map"
                     width="100%"
                     id="Unit_A2_Map"
@@ -2822,7 +2822,7 @@
 
                   <!-- Unit_B1 -->
                   <img
-                    src="/assets/layout/en/b1.png"
+                    src="assets/layout/en/b1.png"
                     alt="Unit B1 Map"
                     width="100%"
                     id="Unit_B1_Map"
@@ -2831,7 +2831,7 @@
 
                   <!-- Unit_B2 -->
                   <img
-                    src="/assets/layout/en/b2.png"
+                    src="assets/layout/en/b2.png"
                     alt="Unit B2 Map"
                     width="100%"
                     id="Unit_B2_Map"
@@ -2840,7 +2840,7 @@
 
                   <!-- Unit_B2A -->
                   <img
-                    src="/assets/layout/en/b2a.png"
+                    src="assets/layout/en/b2a.png"
                     alt="Unit B2A Map"
                     width="100%"
                     id="Unit_B2A_Map"
@@ -2849,7 +2849,7 @@
 
                   <!-- Unit_C1 -->
                   <img
-                    src="/assets/layout/en/c1.png"
+                    src="assets/layout/en/c1.png"
                     alt="Unit C1 Map"
                     width="100%"
                     id="Unit_C1_Map"
@@ -2858,7 +2858,7 @@
 
                   <!-- Unit_C2 -->
                   <img
-                    src="/assets/layout/en/c2.png"
+                    src="assets/layout/en/c2.png"
                     alt="Unit C2 Map"
                     width="100%"
                     id="Unit_C2_Map"
@@ -2867,7 +2867,7 @@
 
                   <!-- Unit_D1 -->
                   <img
-                    src="/assets/layout/en/d1.png"
+                    src="assets/layout/en/d1.png"
                     alt="Unit D1 Map"
                     width="100%"
                     id="Unit_D1_Map"
@@ -2876,7 +2876,7 @@
 
                   <!-- Unit_D2 -->
                   <img
-                    src="/assets/layout/en/d2.png"
+                    src="assets/layout/en/d2.png"
                     alt="Unit D2 Map"
                     width="100%"
                     id="Unit_D2_Map"
@@ -2885,7 +2885,7 @@
 
                   <!-- Unit_D3 -->
                   <img
-                    src="/assets/layout/en/d3.png"
+                    src="assets/layout/en/d3.png"
                     alt="Unit D3 Map"
                     width="100%"
                     id="Unit_D3_Map"
@@ -2894,7 +2894,7 @@
 
                   <!-- Unit_E -->
                   <img
-                    src="/assets/layout/en/e.png"
+                    src="assets/layout/en/e.png"
                     alt="Unit E Map"
                     width="100%"
                     id="Unit_E_Map"
@@ -3130,7 +3130,7 @@
             <div class="w-100 Unit_Map2_Image slide-anim">
               <!-- Unit_A1 -->
               <img
-                src="/assets/images/unit-A1.png"
+                src="assets/images/unit-A1.png"
                 alt="Unit A1 Map"
                 width="100%"
                 class="visible"
@@ -3140,7 +3140,7 @@
 
               <!-- Unit_A2 -->
               <img
-                src="/assets/images/unit-A2.png"
+                src="assets/images/unit-A2.png"
                 alt="Unit A2 Map"
                 width="100%"
                 id="Unit_A2_Map2"
@@ -3149,7 +3149,7 @@
 
               <!-- Unit_B1 -->
               <img
-                src="/assets/images/unit-B1.png"
+                src="assets/images/unit-B1.png"
                 alt="Unit B1 Map"
                 width="100%"
                 id="Unit_B1_Map2"
@@ -3158,7 +3158,7 @@
 
               <!-- Unit_B2 -->
               <img
-                src="/assets/images/unit-B2.png"
+                src="assets/images/unit-B2.png"
                 alt="Unit B2 Map"
                 width="100%"
                 id="Unit_B2_Map2"
@@ -3167,7 +3167,7 @@
 
               <!-- Unit_B2A -->
               <img
-                src="/assets/images/unit-B2A.png"
+                src="assets/images/unit-B2A.png"
                 alt="Unit B2A Map"
                 width="100%"
                 id="Unit_B2A_Map2"
@@ -3177,7 +3177,7 @@
 
               <!-- Unit_C1 -->
               <img
-                src="/assets/images/unit-C1.png"
+                src="assets/images/unit-C1.png"
                 alt="Unit C1 Map"
                 width="100%"
                 id="Unit_C1_Map2"
@@ -3186,7 +3186,7 @@
 
               <!-- Unit_C2 -->
               <img
-                src="/assets/images/unit-C2.png"
+                src="assets/images/unit-C2.png"
                 alt="Unit C2 Map"
                 width="100%"
                 id="Unit_C2_Map2"
@@ -3195,7 +3195,7 @@
 
               <!-- Unit_D1 -->
               <img
-                src="/assets/images/unit-D1.png"
+                src="assets/images/unit-D1.png"
                 alt="Unit D1 Map"
                 width="100%"
                 id="Unit_D1_Map2"
@@ -3204,7 +3204,7 @@
 
               <!-- Unit_D2 -->
               <img
-                src="/assets/images/unit-D2.png"
+                src="assets/images/unit-D2.png"
                 alt="Unit D2 Map"
                 width="100%"
                 id="Unit_D2_Map2"
@@ -3213,7 +3213,7 @@
 
               <!-- Unit_D3 -->
               <img
-                src="/assets/images/unit-D3.png"
+                src="assets/images/unit-D3.png"
                 alt="Unit D3 Map"
                 width="100%"
                 id="Unit_D3_Map2"
@@ -3222,7 +3222,7 @@
 
               <!-- Unit_E -->
               <img
-                src="/assets/images/unit-E.png"
+                src="assets/images/unit-E.png"
                 alt="Unit E Map"
                 width="100%"
                 id="Unit_E_Map2"
@@ -3353,31 +3353,31 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g1.webp" alt="Linkar52 — swimming pool facilities illustration" loading="eager" />
+                  <img src="assets/gallery/g1.webp" alt="Linkar52 — swimming pool facilities illustration" loading="eager" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g2.webp" alt="Linkar52 — unit interior illustration" loading="lazy" />
+                  <img src="assets/gallery/g2.webp" alt="Linkar52 — unit interior illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g3.webp" alt="Linkar52 — landscaped grounds illustration" loading="lazy" />
+                  <img src="assets/gallery/g3.webp" alt="Linkar52 — landscaped grounds illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g4.webp" alt="Linkar52 — residential lobby illustration" loading="lazy" />
+                  <img src="assets/gallery/g4.webp" alt="Linkar52 — residential lobby illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g5.webp" alt="Linkar52 — gymnasium facilities illustration" loading="lazy" />
+                  <img src="assets/gallery/g5.webp" alt="Linkar52 — gymnasium facilities illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g6.webp" alt="Linkar52 — children's pool area illustration" loading="lazy" />
+                  <img src="assets/gallery/g6.webp" alt="Linkar52 — children's pool area illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g7.webp" alt="Linkar52 — city view illustration" loading="lazy" />
+                  <img src="assets/gallery/g7.webp" alt="Linkar52 — city view illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g8.webp" alt="Linkar52 — living room illustration" loading="lazy" />
+                  <img src="assets/gallery/g8.webp" alt="Linkar52 — living room illustration" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="/assets/gallery/g9.webp" alt="Linkar52 — green landscape illustration" loading="lazy" />
+                  <img src="assets/gallery/g9.webp" alt="Linkar52 — green landscape illustration" loading="lazy" />
                 </li>
               </ul>
             </div>
@@ -3396,42 +3396,42 @@
       <div class="Home_Section_Six">
         <div class="Main_Image">
           <img
-            src="/assets/images/galeri-1-main.webp"
+            src="assets/images/galeri-1-main.webp"
             id="1_Main_Image"
             class="visible"
           />
-          <img src="/assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
+          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
         </div>
         <div class="Top_Right_Image">
           <img
-            src="/assets/images/galeri-1-right.webp"
+            src="assets/images/galeri-1-right.webp"
             id="1_Top_Right_Image"
             class="visible"
           />
           <img
-            src="/assets/images/galeri-2-right.webp"
+            src="assets/images/galeri-2-right.webp"
             id="2_Top_Right_Image"
           />
         </div>
         <div class="Bottom_Left_Image">
           <img
-            src="/assets/images/galeri-1-bottom-left.webp"
+            src="assets/images/galeri-1-bottom-left.webp"
             id="1_Bottom_Left_Image"
             class="visible"
           />
           <img
-            src="/assets/images/galeri-2-bottom-left.webp"
+            src="assets/images/galeri-2-bottom-left.webp"
             id="2_Bottom_Left_Image"
           />
         </div>
         <div class="Bottom_Right_Image">
           <img
-            src="/assets/images/galeri-1-bottom-right.webp"
+            src="assets/images/galeri-1-bottom-right.webp"
             id="1_Bottom_Right_Image"
             class="visible"
           />
           <img
-            src="/assets/images/galeri-2-bottom-right.webp"
+            src="assets/images/galeri-2-bottom-right.webp"
             id="2_Bottom_Right_Image"
           />
         </div>
@@ -3519,7 +3519,7 @@
                       >
                         <div style="max-width: 200px; margin: 0 auto">
                           <img
-                            src="/assets/images/section-seven-award-image.png"
+                            src="assets/images/section-seven-award-image.png"
                             width="100%"
                             height="auto"
                             alt="PKNS Award — Best Designed Development Malaysia 2025"
@@ -3530,7 +3530,7 @@
                           style="max-width: 200px; margin: 0 auto"
                         >
                           <img
-                            src="/assets/images/section-seven-award-2.png"
+                            src="assets/images/section-seven-award-2.png"
                             width="100%"
                             height="auto"
                             alt="PKNS Award — People's Choice Award 2025"
@@ -3546,7 +3546,7 @@
 
           <img
             class="d-block d-md-none"
-            src="/assets/images/award-m.webp"
+            src="assets/images/award-m.webp"
             alt="PKNS excellence award recognition"
           
             loading="lazy"/>
@@ -3735,7 +3735,7 @@
     <div id="Sec_Eight_Position_Start"></div>
     <div style="z-index: 9" id="kalkulator-pinjaman" class="Home_Section_Eight">
       <img
-        src="/assets/images/sa-sentral.webp?v2"
+        src="assets/images/sa-sentral.webp?v2"
         width="100%"
         height="auto"
         class="Main_Img"
@@ -3756,7 +3756,7 @@
             <div class="col-lg-8 col-9"></div>
             <div class="col-lg-2 col-3">
               <img
-                src="/assets/images/pkns-signature.png"
+                src="assets/images/pkns-signature.png"
                 width="90%"
                 height="auto"
                 alt="PKNS signature"
@@ -3784,7 +3784,7 @@
               </div>
               <div class="col-lg-2 col-3">
                 <img
-                  src="/assets/images/sa-sentral-logo.png"
+                  src="assets/images/sa-sentral-logo.png"
                   width="80%"
                   style="max-width: 180px"
                   height="auto"
@@ -3810,7 +3810,7 @@
           class="w-100 d-flex justify-content-center mb-lg-5 mb-3 slide-anim"
         >
           <img
-            src="/assets/images/footer-logo.webp"
+            src="assets/images/footer-logo.webp"
             alt="Linker52"
             class="footer-logo"
           />
@@ -4115,7 +4115,7 @@
     // document.body.style.overflowY = 'hidden';
   </script>
 
-  <script src="/assets/vendor/js/splide.min.js"></script>
+  <script src="assets/vendor/js/splide.min.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -4144,7 +4144,7 @@
       "In Seksyen 14, Shah Alam,<br>Everything is Made Closer<br>for a Connected Lifestyle";
   </script>
 
-  <script src="/assets/js/index.js"></script>
+  <script src="assets/js/index.js"></script>
 
   <!-- usp-lrt -->
   <script>
@@ -4633,7 +4633,7 @@
   </script>
 
   <!-- Aos-animation -->
-  <script src="/assets/vendor/js/aos.js"></script>
+  <script src="assets/vendor/js/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ once: true, duration: 800 });
@@ -4769,7 +4769,7 @@
   </script>
 
 <!-- SweetAlert2 JS -->
-<script src="/assets/vendor/js/sweetalert2.all.min.js"></script>
+<script src="assets/vendor/js/sweetalert2.all.min.js"></script>
 
 <script>
   // Vanilla JS form handler — jQuery removed (saves 87KB)
@@ -4833,7 +4833,7 @@
 </script>
   <!-- ===== Deferred JS (moved from head to prevent render-blocking) ===== -->
   <script
-    src="/assets/vendor/js/bootstrap.bundle.min.js"
+    src="assets/vendor/js/bootstrap.bundle.min.js"
   ></script>
 
   <!-- Instant jump to form / showroom location — skip smooth scroll animation -->
@@ -4941,7 +4941,7 @@
     aria-label="PKNS Homes Buy & Win Merdeka Edition - click for more information"
     style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0; border: none; padding: 0; margin: 0; background: none; cursor: pointer;"
   >
-    <img src="/assets/merdeka/desktop-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
+    <img src="assets/merdeka/desktop-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
   </button>
   <script>
     window.addEventListener("load", function () {
@@ -4967,7 +4967,7 @@
         style="position: absolute; top: 18px; right: 24px; z-index: 3; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 22px; line-height: 1; color: #1a1a4d; font-weight: bold; cursor: pointer;"
       >&times;</button>
       <div style="flex: 0 0 66%; overflow: hidden; position: relative; background: linear-gradient(135deg, #7fd8f5 0%, #eef8fd 45%, #b7c6ea 75%, #7295c8 100%);">
-        <img src="/assets/merdeka/desktop-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block;" />
+        <img src="assets/merdeka/desktop-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block;" />
         <button
           id="buyWinFormDesktopBack"
           style="position: absolute; bottom: 24px; left: 24px; z-index: 2; display: flex; align-items: center; gap: 10px; background: #e2001a; color: #fff; border: none; border-radius: 30px; padding: 12px 24px; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);"
@@ -5000,7 +5000,7 @@
     style="display: none; position: fixed; inset: 0; z-index: 9999999; background: rgba(0,0,0,0.6); overflow-y: auto;"
   >
     <div style="position: relative; max-width: 480px; margin: 40px auto; aspect-ratio: 941 / 1672;">
-      <img src="/assets/merdeka/mobile-popup.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; display: block; object-fit: contain;" />
+      <img src="assets/merdeka/mobile-popup.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; display: block; object-fit: contain;" />
       <button
         id="buyWinPopupClose"
         aria-label="Close"
@@ -5026,7 +5026,7 @@
     aria-label="PKNS Homes Buy & Win Merdeka Edition - click for more information"
     style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0; border: none; padding: 0; margin: 0; background: none; cursor: pointer;"
   >
-    <img src="/assets/merdeka/mobile-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
+    <img src="assets/merdeka/mobile-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
   </button>
   <!-- Buy & Win Merdeka Mobile Banner End -->
 
@@ -5042,7 +5042,7 @@
     >&times;</button>
     <div style="max-width: 480px; margin: 0 auto; padding: 56px 24px 40px;">
       <div style="position: relative; width: 100%; padding-top: 71%; overflow: hidden;">
-        <img src="/assets/merdeka/mobile-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="position: absolute; top: 0; left: 0; width: 100%; display: block;" />
+        <img src="assets/merdeka/mobile-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="position: absolute; top: 0; left: 0; width: 100%; display: block;" />
       </div>
       <div style="background: #fff; border-radius: 20px; margin-top: 16px; padding: 28px 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
         <h2 style="margin: 0 0 4px; font-size: 22px; font-weight: 700; color: #1a1a4d; font-family: inherit;">I'm interested to register!</h2>
