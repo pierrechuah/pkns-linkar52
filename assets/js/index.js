@@ -390,6 +390,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const SectionFiveElement_Bottom =
       HomeSectionFive.getBoundingClientRect().bottom - getViewportHeight();
     const whatsappFloat = document.getElementById("whatsapp-float");
+    // The Buy & Win Merdeka banner (desktop or mobile, whichever is
+    // currently shown) is also fixed to the bottom of the viewport with a
+    // very high z-index, which covers the floor plan tab bar underneath it.
+    // Measure whichever banner is actually visible so the tab bar can be
+    // shifted upward by that height and stay clear of it.
+    const merdekaDesktopBanner = document.getElementById("buyWinDesktopBanner");
+    const merdekaMobileBanner = document.getElementById("buyWinMobileBanner");
+    let merdekaBannerHeight = 0;
+    if (
+      merdekaDesktopBanner &&
+      merdekaDesktopBanner.offsetHeight > 0 &&
+      getComputedStyle(merdekaDesktopBanner).display !== "none"
+    ) {
+      merdekaBannerHeight = merdekaDesktopBanner.offsetHeight;
+    } else if (
+      merdekaMobileBanner &&
+      merdekaMobileBanner.offsetHeight > 0 &&
+      getComputedStyle(merdekaMobileBanner).display !== "none"
+    ) {
+      merdekaBannerHeight = merdekaMobileBanner.offsetHeight;
+    }
     if (SectionFiveElement_Top > 0) {
       HomeSectionFive.querySelector(".Unit_Bars").style.position = "absolute";
       HomeSectionFive.querySelector(".Unit_Bars").style.top = "unset";
@@ -398,9 +419,11 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (SectionFiveElement_Top <= 0 && SectionFiveElement_Bottom >= 0) {
       HomeSectionFive.querySelector(".Unit_Bars").style.position = "fixed";
       HomeSectionFive.querySelector(".Unit_Bars").style.top = "unset";
-      HomeSectionFive.querySelector(".Unit_Bars").style.bottom = "-30px";
+      HomeSectionFive.querySelector(".Unit_Bars").style.bottom =
+        (merdekaBannerHeight - 30) + "px";
       // Floor plan tab bar is fixed and occupying the bottom of the viewport —
-      // hide the WhatsApp widget so the two fixed elements don't overlap
+      // hide the WhatsApp widget so the two fixed elements don't overlap.
+      // (Offset above already keeps it clear of the Merdeka banner.)
       if (whatsappFloat) whatsappFloat.style.display = "none";
     } else {
       HomeSectionFive.querySelector(".Unit_Bars").style.position = "absolute";
