@@ -5022,32 +5022,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </div>
   <!-- Buy & Win Merdeka Desktop Registration Form Popup End -->
 
-  <!-- Buy & Win Merdeka Mobile Popup (mobile only, shows on page load) -->
-  <div
-    id="buyWinPopupOverlay"
-    style="display: none; position: fixed; inset: 0; z-index: 9999999; background: rgba(0,0,0,0.6); overflow-y: auto;"
-  >
-    <div style="position: relative; max-width: 480px; margin: 40px auto; aspect-ratio: 941 / 1672;">
-      <img src="assets/merdeka/mobile-popup.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; display: block; object-fit: contain;" />
-      <button
-        id="buyWinPopupClose"
-        aria-label="Tutup"
-        style="position: absolute; top: 0; right: 0; width: 16%; height: 7%; background: transparent; border: none; padding: 0; margin: 0; cursor: pointer;"
-      ></button>
-      <a
-        id="buyWinPopupLearnMore"
-        href="https://www.pkns.gov.my/en/promotions/pkns-homes-buy-win-merdeka-edition/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Ketahui lebih lanjut"
-        onclick="dataLayer.push({event: 'promo_banner_click', promo_name: 'buy_win_merdeka', banner_type: 'mobile_popup'});"
-        style="position: absolute; left: 28%; right: 28%; top: 77%; height: 7%;"
-      ></a>
-    </div>
-  </div>
-  <!-- Buy & Win Merdeka Mobile Popup End -->
-
-  <!-- Buy & Win Merdeka Mobile Banner (mobile only, appears after popup is closed) -->
+  <!-- Buy & Win Merdeka Mobile Banner (mobile only, shows on page load) -->
   <button
     type="button"
     id="buyWinMobileBanner"
@@ -5098,7 +5073,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 
   <style>
     @media (min-width: 993px) {
-      #buyWinPopupOverlay,
       #buyWinMobileBanner,
       #buyWinFormPopupMobile {
         display: none !important;
@@ -5112,28 +5086,15 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      var overlay = document.getElementById("buyWinPopupOverlay");
-      var closeBtn = document.getElementById("buyWinPopupClose");
       var bottomBanner = document.getElementById("buyWinMobileBanner");
       var wa = document.getElementById("whatsapp-float");
 
-      if (window.innerWidth <= 992 && overlay && !localStorage.getItem("buyWinPopupSeen")) {
-        overlay.style.display = "block";
-        dataLayer.push({ event: "promo_popup_view", promo_name: "buy_win_merdeka" });
-      }
-
-      if (closeBtn) {
-        closeBtn.addEventListener("click", function () {
-          overlay.style.display = "none";
-          localStorage.setItem("buyWinPopupSeen", "1");
-          if (window.innerWidth <= 992 && bottomBanner) {
-            bottomBanner.style.display = "block";
-            if (wa) {
-              var h = bottomBanner.offsetHeight;
-              wa.style.bottom = (65 + h + 16) + "px";
-            }
-          }
-        });
+      if (window.innerWidth <= 992 && bottomBanner) {
+        bottomBanner.style.display = "block";
+        if (wa) {
+          var h = bottomBanner.offsetHeight;
+          wa.style.bottom = (65 + h + 16) + "px";
+        }
       }
 
       // --- Mobile registration form popup (opens from bottom sticky banner) ---
