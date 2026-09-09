@@ -479,17 +479,16 @@
             <a class="header-menu Close_Modal pt-2" href="#Lokasi"
               >Ciri Istimewa</a
             >
-            <a class="header-menu Close_Modal" href="#Bandar">Bandar</a>
+            <a class="header-menu Close_Modal" href="#Bandar">Bandar SA Sentral</a>
             <a class="header-menu Close_Modal" href="#Kemudahan">Kemudahan</a>
             <a class="header-menu Close_Modal" href="#Pelan_Lantai"
               >Pelan Lantai</a
             >
             <a class="header-menu Close_Modal" href="#Galeri">Galeri</a>
             <a
-              class="header-menu Close_Modal"
-              href="#showroom-location"
-              onclick="dataLayer.push({event: 'showroom_nav_click', nav_source: 'dropdown_menu'});"
-              >Lokasi Galeri Jualan</a
+              class="header-menu Calculator_Link"
+              href="javascript:void(0)"
+              >Kalkulator Pinjaman</a
             >
             <a
               class="header-menu Close_Modal"
@@ -675,7 +674,7 @@
                           type="text"
                           id="purchaseValue"
                           class="calculator-input"
-                          value="500,000"
+                          value="350,000"
                         />
                         <div class="d-flex flex-column ps-3">
                           <button class="calculator-arrow-btn" id="purchaseUp">
@@ -727,7 +726,7 @@
                       min="100000"
                       max="1000000"
                       step="10000"
-                      value="500000"
+                      value="350000"
                     />
                   </div>
 
@@ -880,7 +879,7 @@
                           type="number"
                           id="interestRateValue"
                           class="calculator-input"
-                          value="2.5"
+                          value="4.0"
                         />
                         <span class="calculator-label">%</span>
                         <div class="d-flex flex-column ps-3">
@@ -936,7 +935,7 @@
                       min="1"
                       max="10"
                       step="0.5"
-                      value="2.5"
+                      value="4.0"
                     />
                   </div>
 
@@ -962,26 +961,14 @@
                     >
                       RM 0.00
                     </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
+                    <p
+                      class="Secondary_Font text-white mt-2 mb-3 M_SM"
+                      style="font-weight: 400; font-size: 12px"
                     >
-                      <p
-                        class="Secondary_Font mb-0 text-white"
-                        style="font-weight: 400; font-size: 26px"
-                      >
-                        Prinsipal & Faedah
-                      </p>
-                      <div class="d-flex align-items-center">
-                        <p
-                          class="Secondary_Font mb-0 text-white"
-                          style="font-weight: 400; font-size: 26px"
-                          id="interestPayment"
-                        >
-                          RM 0.00
-                        </p>
-                        <sup class="d-inline text-white fs-5 mt-3">*</sup>
-                      </div>
-                    </div>
+                      *Pengiraan ini adalah anggaran sahaja dan tidak membentuk
+                      tawaran rasmi. Sila berunding dengan pihak bank untuk maklumat
+                      yang tepat mengenai kadar faedah dan kelulusan pinjaman.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1019,14 +1006,6 @@
                   ></i>
                 </span>
               </a>
-              <p
-                class="Secondary_Font text-white mt-5 M_SM"
-                style="font-weight: 400; font-size: 12px"
-              >
-                *Pengiraan ini adalah anggaran sahaja dan tidak membentuk
-                tawaran rasmi. Sila berunding dengan pihak bank untuk maklumat
-                yang tepat mengenai kadar faedah dan kelulusan pinjaman.
-              </p>
             </div>
           </div>
         </div>
@@ -4473,20 +4452,36 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
         ".Loan_Calculator_Scroll_Modal"
       );
       const closeBtn = document.querySelector(".Close_Btn");
+      const calculatorLinks = document.querySelectorAll(".Calculator_Link");
+      const logo = document.getElementById("logo-animate");
       let isVisible = false;
 
-      // NOTE: The loan calculator modal currently has no trigger links in the
-      // design (the former .Calculator_Link / .Calculator_Link2 elements were
-      // removed). The open-on-click logic has therefore been removed to stop a
-      // ReferenceError that was halting this whole script block. The close,
-      // wheel and scroll-to-close handlers below now run correctly. If the
-      // calculator is reinstated later, add a trigger element and re-add an
-      // addEventListener("click", ...) that calls scrollSection.classList.add("active").
+      calculatorLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          // GA4 tracking — loan calculator opened
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "calculator_open_click"
+          });
+
+          document.querySelector(".header-menu-container")?.classList.remove("open");
+          scrollSection.classList.add("active");
+          document.body.style.overflowY = "hidden";
+          logo?.classList.add("hide-logo");
+          isVisible = true;
+          setTimeout(() => {
+            closeBtn.style.display = "flex";
+          }, 1000);
+        });
+      });
 
       const handleClose = () => {
         scrollSection.scrollTop = 0;
         scrollSection.classList.remove("active");
         document.body.style.overflowY = "auto";
+        logo?.classList.remove("hide-logo");
         isVisible = false;
         closeBtn.style.display = "none";
       };
@@ -4538,7 +4533,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       const interestRange = document.getElementById("interestRate");
 
       const monthlyPayment = document.getElementById("monthlyPayment");
-      const interestPayment = document.getElementById("interestPayment");
 
       // --- BUTTONS ---
       const purchaseUp = document.getElementById("purchaseUp");
@@ -4635,7 +4629,6 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 
         if (principal <= 0 || interestRate <= 0 || months <= 0) {
           monthlyPayment.textContent = "RM 0.00";
-          interestPayment.textContent = "RM 0.00";
           return;
         }
 
@@ -4643,8 +4636,10 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
           (principal * interestRate) /
           (1 - Math.pow(1 + interestRate, -months));
 
-        monthlyPayment.textContent = `RM ${monthly.toFixed(2)}`;
-        interestPayment.textContent = `RM ${monthly.toFixed(2)}`;
+        monthlyPayment.textContent = `RM ${monthly.toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        })}`;
       }
 
       // Initialize
