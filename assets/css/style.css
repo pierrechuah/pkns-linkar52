@@ -1623,7 +1623,6 @@ input.form-check-input {
 }
 
 /* ===== SCROLL MODALS ===== */
-.Loan_Calculator_Scroll_Modal,
 .Usp_Privacy_Scroll_Modal,
 .Usp_Facilities_Scroll_Modal,
 .Usp_Commercial_Scroll_Modal,
@@ -1650,53 +1649,12 @@ input.form-check-input {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.loan-calculator-scroll-section {
-  width: 100%;
-  transition: top 0.8s ease-in-out;
-  z-index: 100;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.Loan_Calculator_Scroll_Modal.active,
 .Usp_Privacy_Scroll_Modal.active,
 .Usp_Facilities_Scroll_Modal.active,
 .Usp_Commercial_Scroll_Modal.active,
 .Usp-HighwayScroll_Modal.active,
 .Usp_Lrt_Scroll_Modal.active {
   display: block;
-}
-
-/* ===== LOAN CALCULATOR ===== */
-.bg-image-loan-calculator {
-  background-image: url("../images/calculator-bg.webp");
-  padding-top: 110px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 1428px;
-  width: 100%;
-}
-
-.calculator-label {
-  font-family: 'Gotham Book';
-  font-weight: 400;
-  font-size: 28px;
-  color: white;
-}
-
-.calculator {
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 30px;
-  width: 100%;
-}
-
-.calculator h2 {
-  margin-bottom: 20px;
-  font-size: 26px;
-  font-weight: 600;
 }
 
 .input-group {
@@ -1706,29 +1664,6 @@ input.form-check-input {
 input[type="range"] {
   width: 100%;
   accent-color: #DA0D82;
-}
-
-.calculator-arrow-btn {
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-}
-
-.calculator-input {
-  background-color: transparent;
-  border: 0;
-  font-size: 26px;
-  color: white;
-  font-family: 'Gotham Book';
-  font-size: 28px;
-  text-align: end;
-  letter-spacing: 1px;
-}
-
-.calculator-input:focus {
-  border: 0px;
-  box-shadow: none;
-  outline: 0;
 }
 
 input[type=number]::-webkit-outer-spin-button,
@@ -2438,47 +2373,13 @@ input[type=number] {
     gap: 2.5% 2.5%;
   }
 
-  .bg-image-loan-calculator {
-    background-image: url("../m_images/linkar_52_overall_view1_2.webp");
-    padding: 70px 24px;
-    height: fit-content !important;
-  }
-
-  #monthlyPayment,
-  .Loan_Calculator_Scroll_Modal h3 {
-    font-size: 18px !important;
-    line-height: 24px;
-  }
-
   .Usp_Privacy_Scroll_Modal .Sec_3 h6,
   .Usp_Facilities_Scroll_Modal p,
   .Usp_Commercial_Scroll_Modal p,
-  .Usp-HighwayScroll_Modal p,
-  .Loan_Calculator_Scroll_Modal h3.M_SM,
-  .Loan_Calculator_Scroll_Modal .calculator span,
-  .Loan_Calculator_Scroll_Modal .calculator input,
-  .Loan_Calculator_Scroll_Modal .calculator label,
-  .Loan_Calculator_Scroll_Modal p {
+  .Usp-HighwayScroll_Modal p {
     font-size: 14px !important;
     line-height: 18px !important;
     font-weight: 400 !important;
-  }
-
-  .Loan_Calculator_Scroll_Modal .calculator .calculator-input {
-    width: 100px !important;
-  }
-
-  .Loan_Calculator_Scroll_Modal .calculator .calculator-arrow-btn {
-    height: 20px;
-  }
-
-  .Loan_Calculator_Scroll_Modal .calculator .calculator-arrow-btn svg {
-    height: 12px;
-    width: 12px;
-  }
-
-  #loanYearsValue {
-    width: 20px !important;
   }
 
   .Usp_Facilities_Scroll_Modal p.M_SM,
@@ -2487,8 +2388,7 @@ input[type=number] {
   .Usp_Privacy_Scroll_Modal p,
   .Usp_Privacy_Scroll_Modal .content-box p,
   .Usp-HighwayScroll_Modal .content-box p,
-  .Usp_Lrt_Scroll_Modal p,
-  .Loan_Calculator_Scroll_Modal p.M_SM {
+  .Usp_Lrt_Scroll_Modal p {
     font-size: 12px !important;
     line-height: 16px !important;
     font-weight: 400 !important;
@@ -2653,10 +2553,6 @@ input[type=number] {
   .Header_Left .icon {
     height: 30px;
     width: 30px;
-  }
-
-  .bg-image-loan-calculator {
-    padding: 70px 0px;
   }
 
   .location-image-paragraph p {
