@@ -1237,15 +1237,23 @@ i[data-name="tik-tok"] {
   opacity: 1;
 }
 
-.Home_Section_Five .unit_details h2 {
+/* Reserve space from width/height attributes without distorting images
+   (zero specificity, so any class-based sizing still wins) */
+:where(img[width][height]) {
+  height: auto;
+}
+
+.Home_Section_Five .unit_details .unit-spec {
   color: white;
   font-family: 'Co Headline';
   font-weight: 400;
   font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
   color: var(--green);
 }
 
-.Home_Section_Five .unit_details h2 strong {
+.Home_Section_Five .unit_details .unit-spec strong {
   font-size: 28px;
 }
 
@@ -2302,7 +2310,7 @@ input[type=number] {
     line-height: 16px !important;
   }
 
-  .Unit_Details_Box .unit_details h2 {
+  .Unit_Details_Box .unit_details .unit-spec {
     font-size: 18px !important;
   }
 
@@ -2373,6 +2381,7 @@ input[type=number] {
     gap: 2.5% 2.5%;
   }
 
+  html[lang="en"] .Usp_Privacy_Scroll_Modal .Sec_3 h3,
   .Usp_Privacy_Scroll_Modal .Sec_3 h6,
   .Usp_Facilities_Scroll_Modal p,
   .Usp_Commercial_Scroll_Modal p,
@@ -2631,4 +2640,16 @@ i[data-name="google-maps"] {
 
 i[data-name="waze"] {
   background-image: url("../icons/waze.svg");
+}
+
+
+/* Keyword sub-line inside section headings */
+.h2-sub {
+  display: block;
+  font-size: 0.4em;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0.5em;
 }

@@ -33,15 +33,15 @@
 
 
     <!-- Preload LCP images (desktop + mobile) -->
-    <link rel="preload" as="image" href="assets/images/linkar-graphic-2.webp"
+    <link rel="preload" as="image" href="/assets/images/linkar-graphic-2.webp"
           fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/images/home-main-banner.webp"
+    <link rel="preload" as="image" href="/assets/images/home-main-banner.webp"
           media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/m_images/home.webp"
+    <link rel="preload" as="image" href="/assets/m_images/home.webp"
           media="(max-width: 767px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/images/homebanner-BM.webp"
+    <link rel="preload" as="image" href="/assets/images/homebanner-BM.webp"
           media="(min-width: 768px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/m_images/home-bm.webp"
+    <link rel="preload" as="image" href="/assets/m_images/home-bm.webp"
           media="(max-width: 767px)" fetchpriority="high" />
 
     <!-- Preconnect: warm TCP/TLS to external origins before their requests fire -->
@@ -50,21 +50,21 @@
     <link rel="dns-prefetch" href="https://www.clarity.ms" />
 
     <!-- Bootstrap (synchronous — hero depends on it) -->
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/css/bootstrap.min.css" />
     <!-- Bootstrap JS moved to bottom -->
 
     <!-- Vendor CSS — synchronous (async loading confirmed to regress LCP to 36s+, do not change) -->
-    <link rel="stylesheet" href="assets/vendor/css/splide.min.css" />
-    <link rel="stylesheet" href="assets/vendor/css/sweetalert2.min.css" />
-    <link rel="stylesheet" href="assets/vendor/css/aos.css" />
+    <link rel="stylesheet" href="/assets/vendor/css/splide.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/css/sweetalert2.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/css/aos.css" />
 
     <!-- Fonts loaded directly to avoid @import chain delay -->
-    <link rel="stylesheet" href="assets/css/fonts/fonts.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/fonts/fonts.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
     <!-- Glide CSS synchronous (hero-area, keep blocking to protect LCP); JS sync in head -->
-    <link rel="stylesheet" href="assets/vendor/css/glide.core.min.css" />
-    <script src="assets/vendor/js/glide.min.js"></script>
+    <link rel="stylesheet" href="/assets/vendor/css/glide.core.min.css" />
+    <script src="/assets/vendor/js/glide.min.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" type="image/png" href="favicon.png">
@@ -217,8 +217,9 @@
         }
       },
       "sameAs": [
-        "https://www.facebook.com/pkns.gov.my",
-        "https://www.instagram.com/pkns.gov.my"
+        "https://www.facebook.com/sasentral.bypkns/",
+        "https://www.instagram.com/sa.sentral/",
+        "https://www.tiktok.com/@sa.sentral"
       ]
     }
     </script>
@@ -277,103 +278,8 @@
     </script>
 
 
+    
     <!-- FAQ Schema — appears as expandable Q&A in Google search results -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Berapakah harga unit di Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Harga unit Linkar52 bermula dari RM250,000 hingga RM674,800 untuk Pangsapuri Servis, dan RM350,600 hingga RM363,600 untuk unit SOHO. Harga adalah tertakluk kepada perubahan."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Bila Linkar52 akan siap?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Jangkaan tarikh siap Linkar52 adalah Jun 2029."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Berapa jauh Linkar52 dari stesen LRT?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 terletak hanya 50 meter dari Stesen LRT Dato' Menteri (Laluan Kelana Jaya), menjadikannya salah satu pembangunan paling strategik di Shah Alam."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Siapakah pemaju Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 dibangunkan oleh PKNS (Perbadanan Kemajuan Negeri Selangor), sebuah badan berkanun kerajaan negeri Selangor yang ditubuhkan sejak 1964."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah jenis hartanah di Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 menawarkan 495 unit Pangsapuri Servis dan 120 unit SOHO, tersebar dalam dua menara 33 tingkat — Anjung Utara (304 unit) dan Anjung Selatan (311 unit). Jumlah keseluruhan 615 unit."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah status pegangan tanah Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 adalah hartanah pajakan selama 78 tahun, berakhir pada 7 Januari 2103. Tiada bebanan tanah."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Di mana galeri jualan Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Galeri jualan Linkar52 terletak di Galeria SA Sentral, No. 1, Jalan Persidangan 14/2, Seksyen 14, 40000 Shah Alam, Selangor. Hubungi kami di 010-928 0187."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah kemudahan yang ada di Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Linkar52 dilengkapi dengan kolam renang, gimnasium, dewan serba guna, kedai runcit di tingkat bawah, tempat letak kereta berbumbung, dan kawasan keselamatan 24 jam."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Apakah itu SA Sentral dan apakah hubungannya dengan Linkar52?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SA Sentral ialah inisiatif peremajaan bandar utama PKNS di Seksyen 14, Shah Alam — merangkumi kawasan seluas 58.6 hektar dengan nilai pembangunan kasar (GDV) dianggarkan RM3 bilion. Pembangunan ini merangkumi tiga teras utama: Rejuvenate, Reconnect dan Reinvent. Linkar52 merupakan projek kediaman pertama di SA Sentral, dihubungkan terus melalui sistem pejalan kaki bersepadu yang menghubungkan Galeria SA Sentral, Aneka Walk, Plaza Alam Sentral dan Stesen LRT3 Dato' Menteri."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Adakah Linkar52 berdekatan dengan Stesen LRT3?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ya. Linkar52 terletak hanya 50 meter dari Stesen LRT3 Dato' Menteri, yang kini beroperasi sepenuhnya sebagai sebahagian daripada Laluan LRT3 (Laluan Shah Alam). Kedudukan ini menjadikan Linkar52 antara kediaman paling dekat dengan rangkaian LRT3, memberikan penghuni akses mudah ke seluruh Lembah Klang tanpa bergantung kepada kenderaan persendirian. Sebagai pembangunan berorientasikan transit (TOD), Linkar52 menghubungkan terus penghuni dengan pengangkutan awam, SA Sentral, dan pusat bandar Shah Alam."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Adakah Linkar52 memenangi sebarang anugerah?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ya. Linkar52 telah dianugerahkan 'Best Transit-Oriented Development (TOD)' di PropertyGuru Asia Awards Malaysia 2025. Pemaju Linkar52, PKNS, turut menerima beberapa anugerah lain pada tahun yang sama termasuk People's Choice Award, Sustainable Design Champion dan Low Carbon Champion, manakala Galeria SA Sentral memenangi Best Designed Development (Malaysia) dan Best Sales Gallery Design."
-          }
-        }
-      ]
-    }
-    </script>
 
     <!-- BreadcrumbList Schema -->
     <script type="application/ld+json">
@@ -419,7 +325,7 @@
 
     <!-- 2. LOGO -->
     <div id="logo-animate" class="logo-container mt-3">
-      <img src="assets/images/logo.webp" alt="Logo Linkar52 oleh PKNS" />
+      <img width="560" height="173" src="/assets/images/logo.webp" alt="Logo Linkar52 oleh PKNS" />
     </div>
 
     <!-- Header Start -->
@@ -431,7 +337,7 @@
               <i class="icon mx-md-2 mx-1" data-name="menu"></i>
             </button>
             <a
-              href="assets/brochure/booklet.pdf"
+              href="/assets/brochure/booklet.pdf"
               target="_blank"
               class="Btn Primary_Btn Close_Modal noshowmobile"
               ><span style="height: unset; display: flex; align-items: center"
@@ -460,7 +366,7 @@
             class="header-menu-container flex-column Primary_Font px-2 d-flex"
           >
             <a
-              href="assets/brochure/booklet.pdf"
+              href="/assets/brochure/booklet.pdf"
               target="_blank"
               class="Btn Primary_Btn Close_Modal noshowdesktop mb-3"
               ><span style="height: unset; display: flex; align-items: center"
@@ -548,36 +454,36 @@
     <section class="Home_Section_One">
       <div class="initial_section">
         <div class="position-relative h-100 w-100">
-          <img
+          <img width="1800" height="1506"
             id="Linkar_Graphic_2"
             class="h-100 object-fit-contain w-100 start-0"
-            src="assets/images/linkar-graphic-2.webp"
+            src="/assets/images/linkar-graphic-2.webp"
             alt="Linkar52 ilustrasi grafik bandar Shah Alam"
             style="animation-delay: unset"
             fetchpriority="high"
             loading="eager"
             decoding="sync"
           />
-          <!--<img class="left_img zoom-in slide-in-left" src="assets/images/leaf2.webp" alt="" />
-        <img class="right_img zoom-in slide-in-right" src="assets/images/leaf.webp" alt="" />-->
+          <!--<img class="left_img zoom-in slide-in-left" src="/assets/images/leaf2.webp" alt="" />
+        <img class="right_img zoom-in slide-in-right" src="/assets/images/leaf.webp" alt="" />-->
         </div>
       </div>
       <div class="content">
         <div class="content-wrapper slide-up">
-          <h1>Linkar52 — Pembangunan Berorientasikan Transit di Seksyen 14, Shah Alam</h1>
+          <h1>Linkar52 oleh PKNS — Pembangunan Berorientasikan Transit di Seksyen 14, Shah Alam</h1>
           <p>Di Seksyen 14, Shah Alam, Segalanya Terhubung untuk Gaya Hidup Moden</p>
         </div>
       </div>
       <div class="expand-section">
         <div class="main_image">
-          <img
-            src="assets/images/home-main-banner.webp"
+          <img width="1440" height="1137"
+            src="/assets/images/home-main-banner.webp"
             alt="Linkar52 — kediaman TOD di Seksyen 14, Shah Alam"
             class="d_img h-100 object-fit-cover d-none d-md-block"
             loading="eager" decoding="sync" fetchpriority="high"
           />
-          <img
-            src="assets/m_images/home.webp"
+          <img width="1080" height="2270"
+            src="/assets/m_images/home.webp"
             alt="Linkar52 — kediaman TOD di Seksyen 14, Shah Alam (mobile)"
             class="m_img h-100 object-fit-cover d-block d-md-none"
             loading="eager" decoding="sync" fetchpriority="high"
@@ -585,14 +491,14 @@
           />
         </div>
         <div class="home-overlay-image">
-          <img
-            src="assets/images/homebanner-BM.webp"
+          <img width="2000" height="1579"
+            src="/assets/images/homebanner-BM.webp"
             alt="Linkar52 Shah Alam — Pembangunan Berorientasikan Transit"
             class="w-100 d-none d-md-block"
             loading="eager" decoding="sync" fetchpriority="high"
           />
-          <img
-            src="assets/m_images/home-bm.webp"
+          <img width="1080" height="2270"
+            src="/assets/m_images/home-bm.webp"
             alt="Linkar52 Shah Alam — Pembangunan Berorientasikan Transit (mobile)"
             class="w-100 d-block d-md-none"
             loading="eager" decoding="sync" fetchpriority="high"
@@ -609,10 +515,8 @@
 
     <!-- Section Two Start -->
     <div class="Home_Section_Two content" id="Lokasi">
-      <h2>
-        HANYA 50m<br />
-        DARI STESEN LRT DATO MENTERI
-      </h2>
+      <h2>HANYA 50m<br />
+        DARI STESEN LRT DATO MENTERI, SHAH ALAM</h2>
       <p>
         Selamat datang ke Linkar52, sebuah kediaman dengan ketersambungan terus ke stesen LRT dan lebuhraya utama. Tiada kesesakan, tiada masa terbuang – hanya detik berharga yang dikembalikan.
       </p>
@@ -624,7 +528,7 @@
       class="z-n1"
       style="clip-path: circle(25% at 50% 50%)"
     >
-      <img src="assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" loading="lazy" />
+      <img width="2500" height="1563" src="/assets/images/galeri-linkar.jpg" alt="Linkar52 — pemandangan pembangunan" loading="lazy" />
       <div class="imgremark">*Gambar untuk tujuan ilustrasi sahaja.</div>
     </div>
     <div class="Section_Two_Extra_Scroll"></div>
@@ -646,9 +550,7 @@
                   class="d-flex flex-column vh-100 justify-content-md-center pt-5 pt-md-0"
                 >
                   <div data-aos="fade-up">
-                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">
-                      Dekat Dengan Rangkaian Bersepadu
-                    </h2>
+                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">Dekat Dengan Rangkaian Bersepadu<span class="h2-sub">Akses LRT3 ke Lembah Klang</span></h2>
                     <p class="paragraph-1 Secondary_Font py-4 pt-2 mb-0 mt-0">
                       Hanya 50m dari<br />Stesen LRT Dato' Menteri
                     </p>
@@ -690,15 +592,15 @@
     <div class="Usp_Lrt_Scroll_Modal">
       <section class="scroll-section">
         <div class="bg-image-usp-lrt-expand position-relative">
-          <img
+          <img width="1920" height="1797"
             class="d-none d-md-block"
-            src="assets/images/USP-LRT-BM.jpg"
+            src="/assets/images/USP-LRT-BM.jpg"
             alt="Linkar52 — 50m dari Stesen LRT Dato Menteri, Shah Alam"
           
             loading="lazy"/>
-          <img
+          <img width="1080" height="1700"
             class="d-block d-md-none"
-            src="assets/m_images/lrt-bm.jpg"
+            src="/assets/m_images/lrt-bm.jpg"
             alt="Linkar52 — 50m dari Stesen LRT Dato Menteri, Shah Alam"
           
             loading="lazy"/>
@@ -732,8 +634,8 @@
             <div class="row">
               <div class="col-12">
                 <div class="mb-lg-5 mb-4 pb-3 pt-5">
-                  <img
-                    src="assets/images/pelan-tapak-linkar.webp"
+                  <img width="1162" height="388"
+                    src="/assets/images/pelan-tapak-linkar.webp"
                     width="100%"
                     alt="Pelan tapak Linkar52 Seksyen 14 Shah Alam"
                   />
@@ -742,12 +644,12 @@
                   <div
                     class="d-flex justify-content-center Scroll_Section_Footer"
                   >
-                    <h2
-                      style="color: #ffffff; font-size: 30px"
+                    <div
+                      style="color: #ffffff; font-size: 30px; line-height: 1.2; font-weight: 500"
                       class="Primary_Font py-2 mb-0"
                     >
                       Skrol
-                    </h2>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -773,9 +675,7 @@
                   class="d-flex flex-column vh-100 justify-content-md-center pt-5 pt-md-0"
                 >
                   <div data-aos="fade-up">
-                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">
-                      Dekat Dengan Destinasi Pilihan
-                    </h2>
+                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">Dekat Dengan Destinasi Pilihan<span class="h2-sub">Lebuh Raya Persekutuan, NKVE, ELITE dan LKSA</span></h2>
                     <p class="paragraph-1 Secondary_Font py-4 pt-2 mb-0 mt-0">
                       Hanya 100m dari Lebuhraya Persekutuan
                     </p>
@@ -817,15 +717,15 @@
     <div class="Usp-HighwayScroll_Modal">
       <section class="scroll-section">
         <div class="main_img position-relative">
-          <img
+          <img width="1920" height="970"
             class="d-none d-md-block"
-            src="assets/images/Location_LRT-BM.jpg?"
+            src="/assets/images/Location_LRT-BM.jpg?"
             alt="Linkar52 — 100m dari Lebuhraya Persekutuan dengan akses NKVE, ELITE dan LKSA"
           
             loading="lazy"/>
-          <img
+          <img width="1080" height="1000"
             class="d-block d-md-none"
-            src="assets/m_images/usp-highway-bm.jpg"
+            src="/assets/m_images/usp-highway-bm.jpg"
             alt="Linkar52 — 100m dari Lebuhraya Persekutuan dengan akses NKVE, ELITE dan LKSA"
           
             loading="lazy"/>
@@ -982,7 +882,7 @@
               <div class="col-lg-8 col-12 ps-lg-0">
                 <div class="mb-lg-5 mb-4">
                   <img
-                    src="assets/images/map-bm.png?"
+                    src="/assets/images/map-bm.png?"
                     style=""
                     width="100%"
                     height="100%"
@@ -994,12 +894,12 @@
                 <div
                   class="d-flex justify-content-center Scroll_Section_Footer"
                 >
-                  <h2
-                    style="color: #ffffff; font-size: 30px"
+                  <div
+                    style="color: #ffffff; font-size: 30px; line-height: 1.2; font-weight: 500"
                     class="Primary_Font py-2 mb-0"
                   >
                     Skrol
-                  </h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1025,9 +925,7 @@
                   class="d-flex flex-column vh-100 justify-content-md-center pt-5 pt-md-0"
                 >
                   <div data-aos="fade-up">
-                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">
-                      Dekat Dengan Kedamaian & Rekaan Eksklusif
-                    </h2>
+                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">Dekat Dengan Kedamaian & Rekaan Eksklusif<span class="h2-sub">Kediaman Berkepadatan Rendah, Privasi dan Keselamatan</span></h2>
                     <p class="paragraph-1 Secondary_Font py-4 pt-2 mb-0 mt-0">
                       Rekaan plot lantai eksklusif untuk lebih privasi,
                       ketenangan dan kenyamanan
@@ -1073,15 +971,15 @@
         style="background-color: #e4d9bd !important"
       >
         <div class="main_img position-relative">
-          <img
+          <img width="2048" height="1280"
             class="d-none d-md-block"
-            src="assets/images/linkar_52_type_d1.webp"
+            src="/assets/images/linkar_52_type_d1.webp"
             alt="Rekaan kepadatan rendah Linkar52 untuk privasi eksklusif"
           
             loading="lazy"/>
-          <img
+          <img width="1560" height="1804"
             class="d-block d-md-none"
-            src="assets/m_images/usp-privacy-main.webp"
+            src="/assets/m_images/usp-privacy-main.webp"
             alt="Rekaan kepadatan rendah Linkar52 untuk privasi eksklusif"
           
             loading="lazy"/>
@@ -1110,8 +1008,8 @@
           <div class="container px-0 px-md-3">
             <div class="position-relative px-md-3">
               <div class="position-relative Grid_Img_1" style="width: 60%">
-                <img
-                  src="assets/images/usp-privacy-expand-image-2.jpg"
+                <img width="1000" height="667"
+                  src="/assets/images/usp-privacy-expand-image-2.jpg"
                   alt="Rekaan koridor eksklusif Linkar52"
                   class="w-100"
                 />
@@ -1134,8 +1032,8 @@
                 </div>
               </div>
               <div class="position-relative d-flex justify-content-end z1">
-                <img
-                  src="assets/images/usp-privacy-expand-image-3.webp"
+                <img width="537" height="721"
+                  src="/assets/images/usp-privacy-expand-image-3.webp"
                   alt="Pemandangan unit kediaman Linkar52"
                   style="width: 50%; margin-left: auto; margin-top: -32%"
                   class="Grid_Img_2"
@@ -1160,7 +1058,7 @@
         <div
           class="Sec_3 w-100"
           style="
-            background-image: url(assets/images/usp-privacy-footer-image.webp);
+            background-image: url(/assets/images/usp-privacy-footer-image.webp);
             background-repeat: no-repeat;
             background-size: cover;
           "
@@ -1182,7 +1080,7 @@
                       class="bg-blur d-flex justify-content-between align-items-center p-4 mb-2"
                       style="height: 240px"
                     >
-                      <img src="assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" loading="lazy" />
+                      <img width="199" height="144" src="/assets/images/usp-privacy.png?" alt="Ilustrasi privasi rekaan pintu masuk Linkar52" loading="lazy" />
                       <div class="ps-3">
                         <h3
                           class="text-whitex"
@@ -1213,7 +1111,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="assets/images/usp-privacy-footer-menu-image-2.webp"
+                        src="/assets/images/usp-privacy-footer-menu-image-2.webp"
                         width="197px"
                         height="95px"
                         alt="Koridor separa peribadi Linkar52"
@@ -1249,7 +1147,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="assets/images/usp-privacy-footer-menu-image-3.webp"
+                        src="/assets/images/usp-privacy-footer-menu-image-3.webp"
                         width="200px"
                         height="100%"
                         alt="Pemandangan 360 darjah dari unit Linkar52"
@@ -1286,7 +1184,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="assets/images/usp-privacy-footer-menu-image-4.webp"
+                        src="/assets/images/usp-privacy-footer-menu-image-4.webp"
                         width="191px"
                         height="100%"
                         alt="Kehidupan tenang di Linkar52"
@@ -1322,7 +1220,7 @@
                       style="height: 237px"
                     >
                       <img
-                        src="assets/images/usp-privacy-footer-menu-image-5.webp"
+                        src="/assets/images/usp-privacy-footer-menu-image-5.webp"
                         width="191px"
                         height="100%"
                         alt="Ruang landskap terbuka Linkar52"
@@ -1365,12 +1263,12 @@
                       class="d-flex justify-content-center Scroll_Section_Footer"
                       style="background-color: rgba(0, 0, 0, 0.25)"
                     >
-                      <h2
-                        style="color: #ffffff; font-size: 30px"
+                      <div
+                        style="color: #ffffff; font-size: 30px; line-height: 1.2; font-weight: 500"
                         class="Primary_Font py-2 mb-0"
                       >
                         Skrol
-                      </h2>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1398,9 +1296,7 @@
                   class="d-flex flex-column vh-100 justify-content-md-center pt-5 pt-md-0"
                 >
                   <div data-aos="fade-up">
-                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font text-wrap">
-                      Dekat Dengan Keseimbangan Hidup
-                    </h2>
+                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font text-wrap">Dekat Dengan Keseimbangan Hidup<span class="h2-sub">Kolam Infiniti, Lazy River dan Landskap Hijau</span></h2>
                     <p class="paragraph-1 Secondary_Font py-4 pt-2 mb-0 mt-0">
                       Fasiliti riadah, ruang kerja dan kemudahan harian di satu
                       lokasi
@@ -1446,15 +1342,15 @@
         style="background-color: #e4d9bd !important"
       >
         <div class="main_img position-relative">
-          <img
+          <img width="1600" height="960"
             class="d-none d-md-block"
-            src="assets/images/usp-facilities-expand-image-1.webp"
+            src="/assets/images/usp-facilities-expand-image-1.webp"
             alt="Hab komersial Linkar52 dengan kedai dan restoran berdekatan"
           
             loading="lazy"/>
-          <img
+          <img width="1560" height="1676"
             class="d-block d-md-none"
-            src="assets/m_images/usp_facilities_expand.webp"
+            src="/assets/m_images/usp_facilities_expand.webp"
             alt="Hab komersial Linkar52 dengan kedai dan restoran berdekatan"
           
             loading="lazy"/>
@@ -1493,8 +1389,8 @@
             </p>
           </div>
           <div class="w-100 d-flex justify-content-end Img_1">
-            <img
-              src="assets/images/linkar_52_playground.webp"
+            <img width="2048" height="1280"
+              src="/assets/images/linkar_52_playground.webp"
               width="85%"
               alt="Kawasan permainan kanak-kanak di Linkar52"
               class="object-fit-contain"
@@ -1507,8 +1403,8 @@
 
         <div class="mt-md-5 mt-4">
           <div class="Img_2" style="position: relative; width: 47.5%">
-            <img
-              src="assets/images/linkar_52_basketball.webp"
+            <img width="1080" height="648"
+              src="/assets/images/linkar_52_basketball.webp"
               width="100%"
               alt="Gelanggang sukan di Linkar52"
             />
@@ -1520,8 +1416,8 @@
             class="w-100 Img_3 d-flex justify-content-end"
             style="margin-top: -10%; position: relative"
           >
-            <img
-              src="assets/images/workspace.jpg?"
+            <img width="800" height="533"
+              src="/assets/images/workspace.jpg?"
               width="47.5%"
               alt="Ruang kerja bersama di Linkar52"
               class="object-fit-contain"
@@ -1559,12 +1455,12 @@
             class="d-flex justify-content-center Scroll_Section_Footer"
             style="background-color: rgba(0, 0, 0, 0.25)"
           >
-            <h2
-              style="color: #ffffff; font-size: 30px"
+            <div
+              style="color: #ffffff; font-size: 30px; line-height: 1.2; font-weight: 500"
               class="Primary_Font py-2 mb-0"
             >
               Skrol
-            </h2>
+            </div>
           </div>
         </div>
       </section>
@@ -1587,9 +1483,7 @@
                   class="d-flex flex-column vh-100 justify-content-md-center pt-5 pt-md-0"
                 >
                   <div data-aos="fade-up">
-                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">
-                      Dekat Dengan Segala Kemudahan Harian
-                    </h2>
+                    <h2 class="pt-4 pt-md-0 heading-1 Primary_Font">Dekat Dengan Segala Kemudahan Harian<span class="h2-sub">Aneka Walk, Kompleks PKNS dan Pusat Shah Alam</span></h2>
                     <p class="paragraph-1 Secondary_Font py-4 pt-2 mb-0 mt-0">
                       Berdekatan hab komersial yang lengkap
                     </p>
@@ -1634,15 +1528,15 @@
         style="background-color: #e4d9bd !important"
       >
         <div class="main_img position-relative">
-          <img
+          <img width="1920" height="970"
             class="d-none d-md-block"
-            src="assets/images/commercial-bm.jpg?"
+            src="/assets/images/commercial-bm.jpg?"
             alt="Hab komersial Linkar52 dengan kedai dan restoran berdekatan"
           
             loading="lazy"/>
-          <img
+          <img width="1080" height="1124"
             class="d-block d-md-none"
-            src="assets/m_images/usp_commercial.webp"
+            src="/assets/m_images/usp_commercial.webp"
             alt="Hab komersial Linkar52 dengan kedai dan restoran berdekatan"
           
             loading="lazy"/>
@@ -1761,7 +1655,7 @@
               <div class="col-md-6 col-7 px-0">
                 <div class="py-lg-5 py-0 mb-lg-5 mb-4">
                   <img
-                    src="assets/images/usp-commercial-person.jpg"
+                    src="/assets/images/usp-commercial-person.jpg"
                     width="100%"
                     height="100%"
                     alt="Hab komersial dan gaya hidup di Linkar52"
@@ -1776,12 +1670,12 @@
                   class="d-flex justify-content-center Scroll_Section_Footer"
                   style="background-color: rgba(0, 0, 0, 0.25)"
                 >
-                  <h2
-                    style="color: #ffffff; font-size: 30px"
+                  <div
+                    style="color: #ffffff; font-size: 30px; line-height: 1.2; font-weight: 500"
                     class="Primary_Font py-2 mb-0"
                   >
                     Skrol
-                  </h2>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1801,9 +1695,7 @@
         <div class="wrapper position-relative w-100 h-100">
           <div class="container">
             <div class="button-grid">
-              <h2 class="mb-2" style="grid-column: 1 / span 2">
-                Di Nadi Kehidupan,<br />Segalanya Lebih Dekat
-              </h2>
+              <h2 class="mb-2" style="grid-column: 1 / span 2">Di Nadi Kehidupan,<br />Segalanya Lebih Dekat<span class="h2-sub">Seksyen 14, CBD Shah Alam</span></h2>
               <div class="info-btn">
                 <div class="icon">
                   <i data-name="train" class="w-100 h-100"></i>
@@ -1878,8 +1770,8 @@
             </div>
           </div>
           <div class="w-100 h-100 position-relative">
-            <img
-              src="assets/images/location-bm.webp"
+            <img width="2400" height="1837"
+              src="/assets/images/location-bm.webp"
               class="z-3"
               alt="Peta lokasi Linkar52 di Seksyen 14 Shah Alam"
               width="100%"
@@ -1900,9 +1792,7 @@
       <div class="Home_Section_Four overflow-hidden" id="jenis-unit" style="z-index: 7">
         <div class="content">
           <div class="container">
-            <h2 class="mb-md-5 mb-1 slide-anim anim-delay-500">
-              Keriangan & Ketenangan,<br />Lebih Dekat Dari Jangkaan
-            </h2>
+            <h2 class="mb-md-5 mb-1 slide-anim anim-delay-500">Keriangan & Ketenangan,<br />Lebih Dekat Dari Jangkaan<span class="h2-sub">Gaya Hidup Resort</span></h2>
             <div class="d-flex justify-content-center pt-md-5 pt-2">
               <p
                 class="text-center slide-anim anim-delay-500"
@@ -1914,15 +1804,15 @@
           </div>
         </div>
 
-        <img
-          src="assets/images/facilities-BM.jpg?"
-          alt="PKNS"
+        <img width="2000" height="3100"
+          src="/assets/images/facilities-BM.jpg?"
+          alt="Kemudahan gaya resort Linkar52 — kolam infiniti dan ruang rekreasi"
           class="d-none d-md-block"
         
             loading="lazy"/>
-        <img
-          src="assets/m_images/facilities-bm.webp"
-          alt="PKNS"
+        <img width="1080" height="2000"
+          src="/assets/m_images/facilities-bm.webp"
+          alt="Kemudahan gaya resort Linkar52 — kolam infiniti dan ruang rekreasi (paparan mudah alih)"
           class="d-block d-md-none"
         
             loading="lazy"/>
@@ -1941,7 +1831,7 @@
       <div style="
         position: absolute;
         inset: 0;
-        background-image: url('assets/images/streetview.webp');
+        background-image: url('/assets/images/streetview.webp');
         background-size: cover;
         background-position: center 35%;
         z-index: 0;
@@ -2004,16 +1894,14 @@
               font-family: 'Co Headline';
               margin-bottom: 15px;
             "
-          >
-            Ruang Yang Mendekatkan Ketenangan
-          </h2>
+          >Ruang Yang Mendekatkan Ketenangan<span class="h2-sub">Jenis Unit dan Pelan Lantai</span></h2>
           <div class="d-flex w-100 flex-column">
             <div class="d-flex justify-content-center w-100 mb-3 slide-anim">
               <div class="Unit_Main_Image">
                 <!-- Unit_A1 -->
                 <h3 class="Unit_Title visible" id="Unit_A1_Title">Unit A1</h3>
-                <img
-                  src="assets/images/linkar_52_type_a1.webp"
+                <img width="2048" height="1543"
+                  src="/assets/images/linkar_52_type_a1.webp"
                   alt="Unit A1"
                   class="visible"
                   id="Unit_A1_Main_Image"
@@ -2025,8 +1913,8 @@
 
                 <!-- Unit_A2 -->
                 <h3 class="Unit_Title" id="Unit_A2_Title">Unit A2</h3>
-                <img
-                  src="assets/images/linkar_52_type_a2_living.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_a2_living.webp"
                   alt="Unit A2"
                   id="Unit_A2_Main_Image"
                 />
@@ -2034,8 +1922,8 @@
 
                 <!-- Unit_B1 -->
                 <h3 class="Unit_Title" id="Unit_B1_Title">Unit B1</h3>
-                <img
-                  src="assets/images/linkar_52_type_b_masterbedroom.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_b_masterbedroom.webp"
                   alt="Unit B1"
                   id="Unit_B1_Main_Image"
                 />
@@ -2043,8 +1931,8 @@
 
                 <!-- Unit_B2 -->
                 <h3 class="Unit_Title" id="Unit_B2_Title">Unit B2</h3>
-                <img
-                  src="assets/images/linkar_52_type_b2.webp"
+                <img width="2048" height="1365"
+                  src="/assets/images/linkar_52_type_b2.webp"
                   alt="Unit B2"
                   id="Unit_B2_Main_Image"
                 />
@@ -2052,8 +1940,8 @@
 
                 <!-- Unit_B2A -->
                 <h3 class="Unit_Title" id="Unit_B2A_Title">Unit B2A</h3>
-                <img
-                  src="assets/images/linkar_52_type_b2a.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_b2a.webp"
                   alt="Unit B2A"
                   id="Unit_B2A_Main_Image"
                 />
@@ -2061,8 +1949,8 @@
 
                 <!-- Unit_C1 -->
                 <h3 class="Unit_Title" id="Unit_C1_Title">Unit C1</h3>
-                <img
-                  src="assets/images/linkar_52_type_c1_kitchen.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_c1_kitchen.webp"
                   alt="Unit C1"
                   id="Unit_C1_Main_Image"
                 />
@@ -2070,8 +1958,8 @@
 
                 <!-- Unit_C2 -->
                 <h3 class="Unit_Title" id="Unit_C2_Title">Unit C2</h3>
-                <img
-                  src="assets/images/linkar_52_type_c2_living_&_dining.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_c2_living_&_dining.webp"
                   alt="Unit C2"
                   id="Unit_C2_Main_Image"
                 />
@@ -2079,8 +1967,8 @@
 
                 <!-- Unit_D1 -->
                 <h3 class="Unit_Title" id="Unit_D1_Title">Unit D1</h3>
-                <img
-                  src="assets/images/linkar_52_type_d1.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_d1.webp"
                   alt="Unit D1"
                   id="Unit_D1_Main_Image"
                 />
@@ -2088,8 +1976,8 @@
 
                 <!-- Unit_D2 -->
                 <h3 class="Unit_Title" id="Unit_D2_Title">Unit D2</h3>
-                <img
-                  src="assets/images/linkar_52_type_d2.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_d2.webp"
                   alt="Unit D2"
                   id="Unit_D2_Main_Image"
                 />
@@ -2097,8 +1985,8 @@
 
                 <!-- Unit_D3 -->
                 <h3 class="Unit_Title" id="Unit_D3_Title">Unit D3</h3>
-                <img
-                  src="assets/images/linkar_52_type_d3.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_d3.webp"
                   alt="Unit D3"
                   id="Unit_D3_Main_Image"
                 />
@@ -2106,8 +1994,8 @@
 
                 <!-- Unit_E -->
                 <h3 class="Unit_Title" id="Unit_E_Title">Unit E</h3>
-                <img
-                  src="assets/images/linkar_52_type_e.webp"
+                <img width="2048" height="1280"
+                  src="/assets/images/linkar_52_type_e.webp"
                   alt="Unit E"
                   id="Unit_E_Main_Image"
                 />
@@ -2403,8 +2291,8 @@
               <div class="col-md-6">
                 <div class="Unit_Map_Image px-5 px-md-0">
                   <!-- Unit_A1 -->
-                  <img
-                    src="assets/layout/bm/a1.png"
+                  <img width="571" height="660"
+                    src="/assets/layout/bm/a1.png"
                     alt="Unit A1 Map"
                     width="100%"
                     class="visible"
@@ -2413,8 +2301,8 @@
                   <!-- Unit_A1 -->
 
                   <!-- Unit_A2 -->
-                  <img
-                    src="assets/layout/bm/a2.png"
+                  <img width="594" height="660"
+                    src="/assets/layout/bm/a2.png"
                     alt="Unit A2 Map"
                     width="100%"
                     id="Unit_A2_Map"
@@ -2422,8 +2310,8 @@
                   <!-- Unit_A2 -->
 
                   <!-- Unit_B1 -->
-                  <img
-                    src="assets/layout/bm/b1.png"
+                  <img width="582" height="805"
+                    src="/assets/layout/bm/b1.png"
                     alt="Unit B1 Map"
                     width="100%"
                     id="Unit_B1_Map"
@@ -2431,8 +2319,8 @@
                   <!-- Unit_B1 -->
 
                   <!-- Unit_B2 -->
-                  <img
-                    src="assets/layout/bm/b2.png"
+                  <img width="611" height="733"
+                    src="/assets/layout/bm/b2.png"
                     alt="Unit B2 Map"
                     width="100%"
                     id="Unit_B2_Map"
@@ -2440,8 +2328,8 @@
                   <!-- Unit_B2 -->
 
                   <!-- Unit_B2A -->
-                  <img
-                    src="assets/layout/bm/b2a.png"
+                  <img width="588" height="794"
+                    src="/assets/layout/bm/b2a.png"
                     alt="Unit B2A Map"
                     width="100%"
                     id="Unit_B2A_Map"
@@ -2449,8 +2337,8 @@
                   <!-- Unit_B2A -->
 
                   <!-- Unit_C1 -->
-                  <img
-                    src="assets/layout/bm/c1.png"
+                  <img width="691" height="794"
+                    src="/assets/layout/bm/c1.png"
                     alt="Unit C1 Map"
                     width="100%"
                     id="Unit_C1_Map"
@@ -2458,8 +2346,8 @@
                   <!-- Unit_C1 -->
 
                   <!-- Unit_C2 -->
-                  <img
-                    src="assets/layout/bm/c2.png"
+                  <img width="671" height="794"
+                    src="/assets/layout/bm/c2.png"
                     alt="Unit C2 Map"
                     width="100%"
                     id="Unit_C2_Map"
@@ -2467,8 +2355,8 @@
                   <!-- Unit_C2 -->
 
                   <!-- Unit_D1 -->
-                  <img
-                    src="assets/layout/bm/d1.png"
+                  <img width="725" height="660"
+                    src="/assets/layout/bm/d1.png"
                     alt="Unit D1 Map"
                     width="100%"
                     id="Unit_D1_Map"
@@ -2476,8 +2364,8 @@
                   <!-- Unit_D1 -->
 
                   <!-- Unit_D2 -->
-                  <img
-                    src="assets/layout/bm/d2.png"
+                  <img width="638" height="660"
+                    src="/assets/layout/bm/d2.png"
                     alt="Unit D2 Map"
                     width="100%"
                     id="Unit_D2_Map"
@@ -2485,8 +2373,8 @@
                   <!-- Unit_D2 -->
 
                   <!-- Unit_D3 -->
-                  <img
-                    src="assets/layout/bm/d3.png"
+                  <img width="639" height="660"
+                    src="/assets/layout/bm/d3.png"
                     alt="Unit D3 Map"
                     width="100%"
                     id="Unit_D3_Map"
@@ -2494,8 +2382,8 @@
                   <!-- Unit_D3 -->
 
                   <!-- Unit_E -->
-                  <img
-                    src="assets/layout/bm/e.png"
+                  <img width="768" height="657"
+                    src="/assets/layout/bm/e.png"
                     alt="Unit E Map"
                     width="100%"
                     id="Unit_E_Map"
@@ -2518,13 +2406,13 @@
                         <a class="mirror-button" id="a1m-button">A1M</a>
                       </div>
                       <hr />
-                      <h2><strong>450</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>450</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2536,13 +2424,13 @@
                   >
                     <div class="p-3 unit_details" id="Unit_A2_Details">
                       <hr />
-                      <h2><strong>450</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>450</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2558,13 +2446,13 @@
                         <a class="mirror-button" id="b1m-button">B1M</a>
                       </div>
                       <hr />
-                      <h2><strong>550</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>550</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2576,13 +2464,13 @@
                   >
                     <div class="p-3 unit_details" id="Unit_B2_Details">
                       <hr />
-                      <h2><strong>550</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>550</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2594,13 +2482,13 @@
                   >
                     <div class="p-3 unit_details" id="Unit_B2A_Details">
                       <hr />
-                      <h2><strong>550</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>550</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>1</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>1</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2616,13 +2504,13 @@
                         <a class="mirror-button" id="c1m-button">C1M</a>
                       </div>
                       <hr />
-                      <h2><strong>690</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>690</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2634,13 +2522,13 @@
                   >
                     <div class="p-3 unit_details" id="Unit_C2_Details">
                       <hr />
-                      <h2><strong>690</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>690</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2656,13 +2544,13 @@
                         <a class="mirror-button" id="d1m-button">D1M</a>
                       </div>
                       <hr />
-                      <h2><strong>780</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>780</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>2 + 1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>2 + 1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2674,13 +2562,13 @@
                   >
                     <div class="p-3 unit_details" id="Unit_D2_Details">
                       <hr />
-                      <h2><strong>780</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>780</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>2 + 1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>2 + 1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2692,13 +2580,13 @@
                   >
                     <div class="p-3 unit_details" id="Unit_D3_Details">
                       <hr />
-                      <h2><strong>780</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>780</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>2 + 1</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>2 + 1</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>1</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>1</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2714,13 +2602,13 @@
                         <a class="mirror-button" id="em-button">EM</a>
                       </div>
                       <hr />
-                      <h2><strong>850</strong> kps Keluasan Binaan</h2>
+                      <div class="unit-spec"><strong>850</strong> kps Keluasan Binaan</div>
                       <hr />
-                      <h2><strong>3</strong> Bilik Tidur</h2>
+                      <div class="unit-spec"><strong>3</strong> Bilik Tidur</div>
                       <hr />
-                      <h2><strong>2</strong> Bilik Air</h2>
+                      <div class="unit-spec"><strong>2</strong> Bilik Air</div>
                       <hr />
-                      <h2><strong>2</strong> Unit Parkir</h2>
+                      <div class="unit-spec"><strong>2</strong> Unit Parkir</div>
                       <hr />
                     </div>
                   </div>
@@ -2730,8 +2618,8 @@
             </div>
             <div class="w-100 Unit_Map2_Image slide-anim">
               <!-- Unit_A1 -->
-              <img
-                src="assets/images/plan/unit-A1.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-A1.webp"
                 alt="Unit A1 Map"
                 width="100%"
                 class="visible"
@@ -2740,8 +2628,8 @@
               <!-- Unit_A1 -->
 
               <!-- Unit_A2 -->
-              <img
-                src="assets/images/plan/unit-A2.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-A2.webp"
                 alt="Unit A2 Map"
                 width="100%"
                 id="Unit_A2_Map2"
@@ -2749,8 +2637,8 @@
               <!-- Unit_A2 -->
 
               <!-- Unit_B1 -->
-              <img
-                src="assets/images/plan/unit-B1.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-B1.webp"
                 alt="Unit B1 Map"
                 width="100%"
                 id="Unit_B1_Map2"
@@ -2758,8 +2646,8 @@
               <!-- Unit_B1 -->
 
               <!-- Unit_B2 -->
-              <img
-                src="assets/images/plan/unit-B2.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-B2.webp"
                 alt="Unit B2 Map"
                 width="100%"
                 id="Unit_B2_Map2"
@@ -2767,8 +2655,8 @@
               <!-- Unit_B2 -->
 
               <!-- Unit_B2A -->
-              <img
-                src="assets/images/plan/unit-B2A.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-B2A.webp"
                 alt="Unit B2A Map"
                 width="100%"
                 id="Unit_B2A_Map2"
@@ -2777,8 +2665,8 @@
               <!-- Unit_B2A -->
 
               <!-- Unit_C1 -->
-              <img
-                src="assets/images/plan/unit-C1.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-C1.webp"
                 alt="Unit C1 Map"
                 width="100%"
                 id="Unit_C1_Map2"
@@ -2786,8 +2674,8 @@
               <!-- Unit_C1 -->
 
               <!-- Unit_C2 -->
-              <img
-                src="assets/images/plan/unit-C2.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-C2.webp"
                 alt="Unit C2 Map"
                 width="100%"
                 id="Unit_C2_Map2"
@@ -2795,8 +2683,8 @@
               <!-- Unit_C2 -->
 
               <!-- Unit_D1 -->
-              <img
-                src="assets/images/plan/unit-D1.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-D1.webp"
                 alt="Unit D1 Map"
                 width="100%"
                 id="Unit_D1_Map2"
@@ -2804,8 +2692,8 @@
               <!-- Unit_D1 -->
 
               <!-- Unit_D2 -->
-              <img
-                src="assets/images/plan/unit-D2.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-D2.webp"
                 alt="Unit D2 Map"
                 width="100%"
                 id="Unit_D2_Map2"
@@ -2813,8 +2701,8 @@
               <!-- Unit_D2 -->
 
               <!-- Unit_D3 -->
-              <img
-                src="assets/images/plan/unit-D3.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-D3.webp"
                 alt="Unit D3 Map"
                 width="100%"
                 id="Unit_D3_Map2"
@@ -2822,8 +2710,8 @@
               <!-- Unit_D3 -->
 
               <!-- Unit_E -->
-              <img
-                src="assets/images/plan/unit-E.webp"
+              <img width="1025" height="550"
+                src="/assets/images/plan/unit-E.webp"
                 alt="Unit E Map"
                 width="100%"
                 id="Unit_E_Map2"
@@ -2954,31 +2842,31 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
-                  <img src="assets/gallery/g1.webp" alt="Linkar52 — ilustrasi kemudahan kolam renang" loading="eager" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-main-entrance-shah-alam.webp" alt="Pintu masuk utama Residensi Linkar52, Shah Alam" loading="eager" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g2.webp" alt="Linkar52 — ilustrasi ruang dalaman unit" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-central-park.webp" alt="Taman landskap di Residensi Linkar52, Shah Alam" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g3.webp" alt="Linkar52 — ilustrasi kawasan landskap" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-childrens-splash-pool.webp" alt="Pancutan air berbentuk cendawan di kolam percikan kanak-kanak Residensi Linkar52" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g4.webp" alt="Linkar52 — ilustrasi lobi kediaman" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-family-pool.webp" alt="Kolam keluarga dengan kawasan percikan kanak-kanak di Residensi Linkar52" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g5.webp" alt="Linkar52 — ilustrasi kemudahan gimnasium" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-infinity-pool.webp" alt="Kolam renang infiniti di Residensi Linkar52, Shah Alam" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g6.webp" alt="Linkar52 — ilustrasi kawasan kolam kanak-kanak" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-indoor-playground.webp" alt="Taman permainan kanak-kanak dalaman di Residensi Linkar52" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g7.webp" alt="Linkar52 — ilustrasi pemandangan bandar" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-living-room.webp" alt="Ruang tamu unit apartmen servis Residensi Linkar52" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g8.webp" alt="Linkar52 — ilustrasi ruang tamu unit" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-kitchen-dining.webp" alt="Ruang dapur dan ruang makan unit apartmen servis Residensi Linkar52" loading="lazy" />
                 </li>
                 <li class="splide__slide">
-                  <img src="assets/gallery/g9.webp" alt="Linkar52 — ilustrasi kawasan hijau" loading="lazy" />
+                  <img width="1200" height="750" src="/assets/gallery/residensi-linkar52-grand-lobby.webp" alt="Lobi utama Residensi Linkar52" loading="lazy" />
                 </li>
               </ul>
             </div>
@@ -2995,70 +2883,62 @@
     <div id="Galeri" style="z-index: 9; display: none">
       <div class="Home_Section_Six">
         <div class="Main_Image">
-          <img
-            src="assets/images/galeri-1-main.webp"
+          <img width="866" height="551" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej utama)"
+            src="/assets/images/galeri-1-main.webp"
             id="1_Main_Image"
             class="visible"
           />
-          <img src="assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
+          <img width="866" height="551" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej utama)" src="/assets/images/galeri-2-main.webp" id="2_Main_Image" loading="lazy" />
         </div>
         <div class="Top_Right_Image">
-          <img
-            src="assets/images/galeri-1-right.webp"
+          <img width="751" height="478" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej kanan atas)"
+            src="/assets/images/galeri-1-right.webp"
             id="1_Top_Right_Image"
             class="visible"
           />
-          <img
-            src="assets/images/galeri-2-right.webp"
+          <img width="751" height="478" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej kanan atas)"
+            src="/assets/images/galeri-2-right.webp"
             id="2_Top_Right_Image"
           />
         </div>
         <div class="Bottom_Left_Image">
-          <img
-            src="assets/images/galeri-1-bottom-left.webp"
+          <img width="771" height="478" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej kiri bawah)"
+            src="/assets/images/galeri-1-bottom-left.webp"
             id="1_Bottom_Left_Image"
             class="visible"
           />
-          <img
-            src="assets/images/galeri-2-bottom-left.webp"
+          <img width="2500" height="1500" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej kiri bawah)"
+            src="/assets/images/galeri-2-bottom-left.webp"
             id="2_Bottom_Left_Image"
           />
         </div>
         <div class="Bottom_Right_Image">
-          <img
-            src="assets/images/galeri-1-bottom-right.webp"
+          <img width="751" height="478" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej kanan bawah)"
+            src="/assets/images/galeri-1-bottom-right.webp"
             id="1_Bottom_Right_Image"
             class="visible"
           />
-          <img
-            src="assets/images/galeri-2-bottom-right.webp"
+          <img width="751" height="478" alt="Linkar52 — ilustrasi aktiviti keluarga di kemudahan Aras 8 (imej kanan bawah)"
+            src="/assets/images/galeri-2-bottom-right.webp"
             id="2_Bottom_Right_Image"
           />
         </div>
         <div class="Top_Text_Box">
           <p id="1_Top_Text_Box" class="visible">
-            Precious Moments Made Closer
+            Detik Berharga, Lebih Dekat
           </p>
-          <p id="2_Top_Text_Box">Precious Moments Made Closer</p>
+          <p id="2_Top_Text_Box">Detik Berharga, Lebih Dekat</p>
         </div>
         <div class="Bottom_Text_Box">
           <p id="1_Bottom_Text_Box" class="visible">
-            Spend your time creating memories with family and loved ones,
-            engaging in activities that truly matter. On Level 8, a dedicated
-            kids' pool and a stunning infinity pool await to make every day more
-            meaningful.
+            Luangkan masa mencipta kenangan bersama keluarga dan insan tersayang, melakukan aktiviti yang benar-benar bermakna. Di Aras 8, kolam kanak-kanak khas dan kolam infiniti yang menawan menanti untuk menjadikan setiap hari lebih bermakna.
             <br /><br />
-            At Linkar52, small joys and grand adventures are all part of the
-            everyday experience.
+            Di Linkar52, kegembiraan kecil dan pengembaraan besar adalah sebahagian daripada pengalaman harian.
           </p>
           <p id="2_Bottom_Text_Box">
-            Spend your time creating memories with family and loved ones,
-            engaging in activities that truly matter. On Level 8, a dedicated
-            kids' pool and a stunning infinity pool await to make every day more
-            meaningful.
+            Luangkan masa mencipta kenangan bersama keluarga dan insan tersayang, melakukan aktiviti yang benar-benar bermakna. Di Aras 8, kolam kanak-kanak khas dan kolam infiniti yang menawan menanti untuk menjadikan setiap hari lebih bermakna.
             <br /><br />
-            At Linkar52, small joys and grand adventures are all part of the
-            everyday experience.
+            Di Linkar52, kegembiraan kecil dan pengembaraan besar adalah sebahagian daripada pengalaman harian.
           </p>
         </div>
         <div
@@ -3119,7 +2999,7 @@
                       >
                         <div style="max-width: 200px; margin: 0 auto">
                           <img
-                            src="assets/images/section-seven-award-image.png"
+                            src="/assets/images/section-seven-award-image.png"
                             width="100%"
                             height="auto"
                             alt="Anugerah PKNS — Best Designed Development Malaysia 2025"
@@ -3130,7 +3010,7 @@
                           style="max-width: 200px; margin: 0 auto"
                         >
                           <img
-                            src="assets/images/section-seven-award-2.png"
+                            src="/assets/images/section-seven-award-2.png"
                             width="100%"
                             height="auto"
                             alt="Anugerah PKNS — People's Choice Award 2025"
@@ -3146,7 +3026,7 @@
 
           <img
             class="d-block d-md-none"
-            src="assets/images/award-m.webp"
+            src="/assets/images/award-m.webp"
             alt="Pengiktirafan anugerah kecemerlangan PKNS"
             width="800" height="600"
             loading="lazy"/>
@@ -3335,7 +3215,7 @@
     <div id="Sec_Eight_Position_Start"></div>
     <div style="z-index: 9" id="kalkulator-pinjaman" class="Home_Section_Eight">
       <img
-        src="assets/images/sa-sentral.webp?"
+        src="/assets/images/sa-sentral.webp?"
         width="100%"
         height="auto"
         class="Main_Img"
@@ -3355,7 +3235,7 @@
             <div class="col-lg-8 col-9"></div>
             <div class="col-lg-2 col-3">
               <img
-                src="assets/images/pkns-signature.png"
+                src="/assets/images/pkns-signature.png"
                 width="90%"
                 height="auto"
                 alt="Tandatangan PKNS"
@@ -3377,8 +3257,9 @@
             <div class="row">
               <div class="col-lg-2 col-12"></div>
               <div class="col-lg-8 col-9">
-                <p class="M_SM" style="font-size: 15px; font-weight: 400">
-                  Linkar52 merupakan pembangunan kediaman pertama di SA Sentral — mencetuskan cara hidup bandar yang lebih mudah, moden dan terhubung. Melalui SA Sentral, PKNS bertekad meningkatkan ketersambungan, mengurangkan kesesakan dan mewujudkan kehidupan yang lebih seimbang untuk semua.<br><br>
+                <h2 style="font-size: 22px; font-weight: 600; line-height: 1.3; margin: 0 0 10px">Linkar52 oleh PKNS: Pembangunan Kediaman Pertama di SA Sentral</h2>
+                  <p class="M_SM" style="font-size: 15px; font-weight: 400">
+                  Linkar52 merupakan pembangunan kediaman pertama di SA Sentral — mencetuskan cara hidup bandar yang lebih mudah, moden dan terhubung. Melalui SA Sentral, PKNS (Perbadanan Kemajuan Negeri Selangor) bertekad meningkatkan ketersambungan, mengurangkan kesesakan dan mewujudkan kehidupan yang lebih seimbang untuk semua.<br><br>
 
 Visinya adalah untuk membentuk sebuah bandar yang terhubung, menginspirasikan dan penuh kerancakan komuniti.<br><br>
 
@@ -3387,7 +3268,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
               </div>
               <div class="col-lg-2 col-3">
                 <img
-                  src="assets/images/sa-sentral-logo.png"
+                  src="/assets/images/sa-sentral-logo.png"
                   width="80%"
                   style="max-width: 180px"
                   height="auto"
@@ -3412,8 +3293,8 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
         <div
           class="w-100 d-flex justify-content-center mb-lg-5 mb-3 slide-anim"
         >
-          <img
-            src="assets/images/footer-logo.webp"
+          <img width="386" height="118"
+            src="/assets/images/footer-logo.webp"
             alt="Logo Linkar52 oleh PKNS"
             class="footer-logo"
           />
@@ -3423,12 +3304,8 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
           <div
             class="col-lg-6 mb-4 pe-lg-5 px-3 px-lg-0 d-flex flex-column align-items-center align-items-lg-start"
           >
-            <h2 class="fw-bold mb-3 slide-anim">
-              Terokai Linkar52<br />Dengan Lebih Dekat
-            </h2>
-            <h2 class="fw-normal mb-3 slide-anim M_sm" style="font-size: 22px">
-              Daftar Minat Anda
-            </h2>
+            <h2 class="fw-bold mb-3 slide-anim">Terokai Linkar52<br />Dengan Lebih Dekat<span class="h2-sub">Galeri dan Lawatan Maya 360°</span></h2>
+            <h2 class="fw-normal mb-3 slide-anim M_sm" style="font-size: 22px">Daftar Minat Anda untuk Linkar52</h2>
 
             <span id="daftar-form" style="display:block; position:relative; top:-20px; visibility:hidden;"></span>
             <form id="form-ajax" class="d-flex flex-column align-items-start w-100">
@@ -3516,7 +3393,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
             class="col-lg-6 mb-4 ps-lg-5 px-3 px-lg-0 d-flex flex-column align-items-start"
           >
             <span id="showroom-location" style="display:block; position:relative; top:-20px; visibility:hidden;"></span>
-            <h2 class="fw-bold mb-3 slide-anim">Ada<br />Pertanyaan?</h2>
+            <h2 class="fw-bold mb-3 slide-anim">Ada<br />Pertanyaan?<span class="h2-sub">Hubungi Kami dan Lawati Galeri Jualan</span></h2>
             <h3 class="fw-normal mb-3 slide-anim M_sm" style="font-size: 22px">
               Kunjungi Galeri Jualan Kami
             </h3>
@@ -3645,9 +3522,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
         </div>
         <div class="row">
           <div class="col-12 px-3 px-lg-0">
-            <h2 class="fw-normal mb-3 slide-anim" style="font-size: 22px">
-              Perbadanan Kemajuan Negeri Selangor
-            </h2>
+            <p class="fw-normal mb-3 slide-anim" style="line-height:1.2; font-size: 22px">Pemaju: Perbadanan Kemajuan Negeri Selangor (PKNS)</p>
             <p class="footer-bottom-desc slide-anim M_SM">
               Bahagian Jualan Hartanah, Tingkat 3, Blok B, No. 2, Jalan Indah
               14/8, Seksyen 14, 40000 Shah Alam, Selangor Darul Ehsan.
@@ -3714,7 +3589,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     // document.body.style.overflowY = 'hidden';
   </script>
 
-  <script src="assets/vendor/js/splide.min.js"></script>
+  <script src="/assets/vendor/js/splide.min.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -3743,7 +3618,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
       "Di Seksyen 14, Shah Alam,<br>Segalanya Terhubung untuk<br>Gaya Hidup Moden";
   </script>
 
-  <script src="assets/js/index.js"></script>
+  <script src="/assets/js/index.js"></script>
 
   <!-- usp-lrt -->
   <script>
@@ -4067,7 +3942,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </script>
 
   <!-- Aos-animation -->
-  <script src="assets/vendor/js/aos.js"></script>
+  <script src="/assets/vendor/js/aos.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({ once: true, duration: 800 });
@@ -4203,7 +4078,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
   </script>
 
 <!-- SweetAlert2 JS -->
-<script src="assets/vendor/js/sweetalert2.all.min.js"></script>
+<script src="/assets/vendor/js/sweetalert2.all.min.js"></script>
 
 <script>
   // Vanilla JS form handler — jQuery removed (saves 87KB)
@@ -4270,7 +4145,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
 </script>
   <!-- ===== Deferred JS (moved from head to prevent render-blocking) ===== -->
   <script
-    src="assets/vendor/js/bootstrap.bundle.min.js"
+    src="/assets/vendor/js/bootstrap.bundle.min.js"
   ></script>
 
   <!-- Instant jump to form / showroom location — skip smooth scroll animation -->
@@ -4378,7 +4253,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     aria-label="PKNS Homes Buy and Win Merdeka Edition - klik untuk maklumat lanjut"
     style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0; border: none; padding: 0; margin: 0; background: none; cursor: pointer;"
   >
-    <img src="assets/merdeka/desktop-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
+    <img width="1920" height="75" src="/assets/merdeka/desktop-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
   </button>
   <script>
     window.addEventListener("load", function () {
@@ -4404,14 +4279,14 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
         style="position: absolute; top: 18px; right: 24px; z-index: 3; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 38px; height: 38px; font-size: 22px; line-height: 1; color: #1a1a4d; font-weight: bold; cursor: pointer;"
       >&times;</button>
       <div style="flex: 0 0 66%; overflow: hidden; position: relative; background: linear-gradient(135deg, #7fd8f5 0%, #eef8fd 45%, #b7c6ea 75%, #7295c8 100%);">
-        <img src="assets/merdeka/desktop-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block;" />
+        <img width="1920" height="540" src="/assets/merdeka/desktop-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block;" />
         <button
           id="buyWinFormDesktopBack"
           style="position: absolute; bottom: 24px; left: 24px; z-index: 2; display: flex; align-items: center; gap: 10px; background: #e2001a; color: #fff; border: none; border-radius: 30px; padding: 12px 24px; font-size: 15px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);"
         ><span style="font-size: 18px;">&#171;</span> Kembali</button>
       </div>
       <div style="flex: 1 1 34%; min-width: 320px; background: linear-gradient(160deg, #14265c 0%, #1a3a8f 100%); padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; overflow-y: auto;">
-        <h2 style="margin: 0 0 4px; font-size: 24px; font-weight: 700; color: #ffb347; font-family: inherit;">Saya berminat untuk mendaftar!</h2>
+        <p style="line-height:1.2; margin: 0 0 4px; font-size: 24px; font-weight: 700; color: #ffb347; font-family: inherit;">Saya berminat untuk mendaftar!</p>
         <p style="margin: 0 0 18px; color: #dce3f5; font-size: 14px;">Sila isi maklumat di bawah.</p>
         <form id="buy-win-form-desktop">
           <input type="text" name="fullName" placeholder="Nama" required style="width: 100%; padding: 12px 14px; margin-bottom: 10px; border: none; border-radius: 8px; font-size: 14px; box-sizing: border-box;" />
@@ -4438,7 +4313,7 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     aria-label="PKNS Homes Buy and Win Merdeka Edition - klik untuk maklumat lanjut"
     style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99998; line-height: 0; border: none; padding: 0; margin: 0; background: none; cursor: pointer;"
   >
-    <img src="assets/merdeka/mobile-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
+    <img width="1080" height="158" src="/assets/merdeka/mobile-banner.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="width: 100%; display: block;" loading="lazy" />
   </button>
   <!-- Buy & Win Merdeka Mobile Banner End -->
 
@@ -4454,10 +4329,10 @@ Sebagai projek perintis di SA Sentral, Linkar52 menandakan era baharu bagi PKNS 
     >&times;</button>
     <div style="max-width: 480px; margin: 0 auto; padding: 56px 24px 40px;">
       <div style="position: relative; width: 100%; padding-top: 71%; overflow: hidden;">
-        <img src="assets/merdeka/mobile-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="position: absolute; top: 0; left: 0; width: 100%; display: block;" />
+        <img width="1081" height="1921" src="/assets/merdeka/mobile-form.webp" alt="PKNS Homes Buy & Win Merdeka Edition" style="position: absolute; top: 0; left: 0; width: 100%; display: block;" />
       </div>
       <div style="background: #fff; border-radius: 20px; margin-top: 16px; padding: 28px 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);">
-        <h2 style="margin: 0 0 4px; font-size: 22px; font-weight: 700; color: #1a1a4d; font-family: inherit;">Saya berminat untuk mendaftar!</h2>
+        <p style="line-height:1.2; margin: 0 0 4px; font-size: 22px; font-weight: 700; color: #1a1a4d; font-family: inherit;">Saya berminat untuk mendaftar!</p>
         <p style="margin: 0 0 16px; color: #666; font-size: 15px;">Sila isi maklumat di bawah.</p>
         <form id="buy-win-form-mobile">
           <input type="text" name="fullName" placeholder="Nama" required style="width: 100%; padding: 12px 14px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 15px; box-sizing: border-box;" />
