@@ -4045,6 +4045,42 @@
     });
   </script>
 
+  <!-- Event Popup (shows on page load) -->
+  <div id="eventPopup" role="dialog" aria-modal="true" aria-label="Linkar52 invitation — Invest In Your Dream: 1 November 2026, 10AM to 3PM at Galeria SA Sentral, Seksyen 14, Shah Alam. Stand a chance to win amazing prizes">
+    <div class="event-popup-box">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/assets/m_images/l52-signing-mobile.webp" />
+        <img src="/assets/images/l52-signing-desktop.webp" alt="Linkar52 invitation — Invest In Your Dream: 1 November 2026, 10AM to 3PM at Galeria SA Sentral, Seksyen 14, Shah Alam. Stand a chance to win amazing prizes" decoding="async" />
+      </picture>
+      <button type="button" id="eventPopupClose" aria-label="Close"></button>
+    </div>
+  </div>
+  <style>
+    #eventPopup { position: fixed; inset: 0; z-index: 100000; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(0, 0, 0, 0.65); }
+    #eventPopup.is-closed { display: none; }
+    #eventPopup .event-popup-box { position: relative; line-height: 0; }
+    #eventPopup picture, #eventPopup img { display: block; }
+    #eventPopup img { max-width: min(92vw, 820px); max-height: 88vh; width: auto; height: auto; border-radius: 6px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45); }
+    #eventPopup #eventPopupClose { position: absolute; top: 0; right: 0; width: 48px; height: 48px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+    #eventPopup #eventPopupClose:focus-visible { outline: 2px solid #da0d82; outline-offset: -4px; border-radius: 6px; }
+  </style>
+  <script>
+    (function () {
+      var popup = document.getElementById("eventPopup");
+      var closeBtn = document.getElementById("eventPopupClose");
+      function closePopup() {
+        popup.classList.add("is-closed");
+        document.removeEventListener("keydown", onKey);
+      }
+      function onKey(e) { if (e.key === "Escape") closePopup(); }
+      closeBtn.addEventListener("click", closePopup);
+      popup.addEventListener("click", function (e) { if (e.target === popup) closePopup(); });
+      document.addEventListener("keydown", onKey);
+      closeBtn.focus({ preventScroll: true });
+    })();
+  </script>
+  <!-- Event Popup End -->
+
   <!-- Floating WhatsApp Widget -->
   <a
     href="https://wa.me/60109280187"
