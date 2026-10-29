@@ -32,6 +32,11 @@
     <meta name="twitter:image" content="https://pknslinkar52.com.my/assets/images/fb-share.jpg" />
 
 
+    <!-- Preload event popup image (shown immediately on load) -->
+    <link rel="preload" as="image" href="/assets/m_images/l52-signing-mobile.webp"
+          media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/images/l52-signing-desktop.webp"
+          media="(min-width: 768px)" fetchpriority="high" />
     <!-- Preload LCP images (desktop + mobile) -->
     <link rel="preload" as="image" href="/assets/images/linkar-graphic-2.webp"
           fetchpriority="high" />
@@ -4048,7 +4053,7 @@
     <div class="event-popup-box">
       <picture>
         <source media="(max-width: 767px)" srcset="/assets/m_images/l52-signing-mobile.webp" />
-        <img src="/assets/images/l52-signing-desktop.webp" alt="Linkar52 invitation — Invest In Your Dream: 1 November 2026, 10AM to 3PM at Galeria SA Sentral, Seksyen 14, Shah Alam. Stand a chance to win amazing prizes" decoding="async" />
+        <img src="/assets/images/l52-signing-desktop.webp" alt="Linkar52 invitation — Invest In Your Dream: 1 November 2026, 10AM to 3PM at Galeria SA Sentral, Seksyen 14, Shah Alam. Stand a chance to win amazing prizes" loading="eager" fetchpriority="high" decoding="async" />
       </picture>
       <button type="button" id="eventPopupClose" aria-label="Close"></button>
     </div>
