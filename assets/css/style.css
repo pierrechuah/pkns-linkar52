@@ -1074,34 +1074,8 @@ i[data-name="tik-tok"] {
 }
 
 /* USP Expand Sections */
-.bg-image-usp-commercial-expand {
-  background-image: url("../images/usp-commercial-expand.webp");
-  padding-top: 110px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 942px;
-  width: 100%;
-}
 
-.bg-image-usp-facilities-expand {
-  background-image: url("../images/usp-facilities-expand-image-1.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 930px;
-  width: 100%;
-}
 
-.bg-image-usp-highway-expand {
-  background-image: url("../images/Location_LRT.webp?v=6");
-  padding-top: 110px;
-  background-size: cover;
-  background-position: left top;
-  background-repeat: no-repeat;
-  height: 942px;
-  width: 100%;
-}
 
 .bg-image-usp-lrt-expand {
   background-size: cover;
@@ -1120,16 +1094,6 @@ i[data-name="tik-tok"] {
   padding-top: 110px;
 }
 
-.bg-image-usp-privacy-expand-img-1 {
-  background-image: url("../images/linkar_52_type_d1.webp");
-  padding-top: 110px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 942px;
-  width: 100%;
-  margin-bottom: -20px;
-}
 
 .expand-footer-bg-color {
   background-color: #014A49;
@@ -1967,12 +1931,6 @@ input[type=number] {
     font-size: 24px;
   }
 
-  .bg-image-usp-commercial-expand,
-  .bg-image-usp-facilities-expand,
-  .bg-image-usp-highway-expand,
-  .bg-image-usp-privacy-expand-img-1 {
-    padding-top: 60px;
-  }
 
   .position-absolute-usp-commercial-paragraph,
   .position-absolute-usp-facilities-paragraph,
