@@ -2194,16 +2194,15 @@ input[type=number] {
     bottom: 25px !important;
   }
 
-  .section-seven-conatent h3,
-  html[lang="en"] .section-seven-conatent h2 {
+  .section-seven-conatent h3 {
     font-size: 14px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
   }
 
-  html[lang="en"] .section-seven-conatent h2 .h2-sub {
-    font-size: 12px !important;
-    margin-top: 4px;
+  /* Keep the award logos from running into the large heading on phones */
+  .section-seven-conatent .col-5 > div > div {
+    max-width: 110px !important;
   }
 
   .Home_Section_Seven .glide__slide h2 {
