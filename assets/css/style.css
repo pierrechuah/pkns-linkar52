@@ -2194,10 +2194,16 @@ input[type=number] {
     bottom: 25px !important;
   }
 
-  .section-seven-conatent h3 {
+  .section-seven-conatent h3,
+  html[lang="en"] .section-seven-conatent h2 {
     font-size: 14px !important;
     line-height: 20px !important;
     font-weight: 400 !important;
+  }
+
+  html[lang="en"] .section-seven-conatent h2 .h2-sub {
+    font-size: 12px !important;
+    margin-top: 4px;
   }
 
   .Home_Section_Seven .glide__slide h2 {
