@@ -1,10 +1,9 @@
 # Cloudflare Pages _redirects
 
-# Block pages.dev — redirect to real domain
-https://linkar52.pages.dev/* https://pknslinkar52.com.my/:splat 301
-
-# Redirect WWW to root domain
-https://www.pknslinkar52.com.my/* https://pknslinkar52.com.my/:splat 301
+# NOTE: Pages _redirects cannot match on host names, so the old rules for
+# linkar52.pages.dev and www.pknslinkar52.com.my never worked here. Those
+# redirects (www / pages.dev -> pknslinkar52.com.my, 301) are handled in
+# functions/_middleware.js instead.
 
 # EN route only — root serves index.html automatically
 # NOTE: rewrite target must be extensionless. Cloudflare Pages auto-redirects
