@@ -1094,7 +1094,7 @@ i[data-name="tik-tok"] {
 }
 
 .bg-image-usp-highway-expand {
-  background-image: url("../images/Location_LRT.webp");
+  background-image: url("../images/Location_LRT.webp?v=6");
   padding-top: 110px;
   background-size: cover;
   background-position: left top;
