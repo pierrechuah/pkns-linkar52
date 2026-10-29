@@ -2211,6 +2211,25 @@ input[type=number] {
     line-height: 38px !important;
   }
 
+  /* SA Sentral blurb sits on a busy photo: give the text a readable panel */
+  .sa-sentral-copy {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 14px 16px;
+    border-radius: 12px;
+    color: #1a1a1a;
+  }
+
+  .sa-sentral-copy h2 {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .sa-sentral-copy p {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin: 0;
+  }
+
   /* Keyword sub-line under headings on phones */
   .h2-sub {
     font-size: 14px !important;
