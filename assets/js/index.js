@@ -587,6 +587,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   handleAnim();
+  // The hero image is sized by the script above; keep it hidden until that first
+  // pass is done so it doesn't visibly jump (and count as layout shift).
+  document.body.classList.add("hero-ready");
   window.addEventListener("scroll", handleAnim);
   window.addEventListener("resize", () => {
     initializeContent();

@@ -613,6 +613,19 @@ i[data-name="tik-tok"] {
   width: 160vw;
 }
 
+/* Hide the mobile hero image until the script has sized it (adds .hero-ready).
+   The animation is a safety net: it reveals the image after 2s even if the script fails. */
+body:not(.hero-ready) .Home_Section_One .expand-section .main_image img.m_img {
+  visibility: hidden;
+  animation: heroReveal 0s linear 2s forwards;
+}
+
+@keyframes heroReveal {
+  to {
+    visibility: visible;
+  }
+}
+
 .Home_Section_One .expand-section.expanded .main_image {
   border-radius: 0px;
   width: 100%;
