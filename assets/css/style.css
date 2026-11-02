@@ -2313,6 +2313,14 @@ input[type=number] {
     font-size: 22px !important;
   }
 
+  /* Floor plans: keep clear of the Enquire/Showroom side tabs and the B1/B1M buttons below */
+  .Unit_Map_Image img {
+    width: 80%;
+    height: 86%;
+    left: 4%;
+    top: 0;
+  }
+
   .unit-bar {
     gap: 2px;
   }
