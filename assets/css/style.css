@@ -2315,9 +2315,9 @@ input[type=number] {
 
   /* Floor plans: keep clear of the Enquire/Showroom side tabs and the B1/B1M buttons below */
   .Unit_Map_Image img {
-    width: 80%;
-    height: 86%;
-    left: 4%;
+    width: 88%;
+    height: 93%;
+    left: 3%;
     top: 0;
   }
 
